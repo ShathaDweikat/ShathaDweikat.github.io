@@ -352,3 +352,801 @@ section {
 
 
 /* End of Part 1 */
+/* =========================================
+   Hero Section
+========================================= */
+
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    padding-top: 120px;
+
+    overflow: hidden;
+
+}
+
+
+
+/* Decorative Background Shapes */
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    background: var(--mint);
+
+    opacity: 0.35;
+
+    border-radius: 50%;
+
+    top: -180px;
+
+    right: -150px;
+
+    z-index: -1;
+
+}
+
+
+
+.hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    background: var(--mint);
+
+    opacity: 0.25;
+
+    border-radius: 50%;
+
+    bottom: -120px;
+
+    left: -100px;
+
+    z-index: -1;
+
+}
+
+
+
+
+.hero-content {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+}
+
+
+
+/* Hero Text */
+
+
+.hero-text {
+
+    animation: fadeUp 1s ease;
+
+}
+
+
+
+.hero-text .small-title {
+
+    color: var(--emerald);
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.hero-text h1 {
+
+    font-size: clamp(3rem, 6vw, 5rem);
+
+    line-height: 1.1;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.hero-text h1 span {
+
+    color: var(--emerald);
+
+}
+
+
+
+.hero-text .arabic-name {
+
+    font-family: "Cairo", sans-serif;
+
+    font-size: 2rem;
+
+    color: #555;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.hero-tagline {
+
+    font-size: 1.2rem;
+
+    font-weight: 500;
+
+    color: var(--emerald-dark);
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.hero-description {
+
+    max-width: 520px;
+
+    color: #555;
+
+    margin-bottom: 35px;
+
+}
+
+
+
+
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+/* Hero Image */
+
+
+.hero-image {
+
+    display: flex;
+
+    justify-content: center;
+
+    position: relative;
+
+}
+
+
+
+.hero-image img {
+
+    width: 380px;
+
+    height: 380px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 8px solid rgba(15,118,110,0.15);
+
+    box-shadow: var(--soft-shadow);
+
+    animation: floating 5s ease-in-out infinite;
+
+}
+
+
+
+/* Floating Animation */
+
+
+@keyframes floating {
+
+    0% {
+
+        transform: translateY(0);
+
+    }
+
+
+    50% {
+
+        transform: translateY(-15px);
+
+    }
+
+
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+/* Fade Animation */
+
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+/* =========================================
+   Brand Statement
+========================================= */
+
+
+.brand-statement {
+
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+
+
+.brand-statement h3 {
+
+    font-size: 2rem;
+
+    font-weight: 600;
+
+    color: var(--charcoal);
+
+}
+
+
+
+.brand-statement h3 span {
+
+    color: var(--emerald);
+
+}
+
+
+
+
+/* =========================================
+   Responsive Hero
+========================================= */
+
+
+@media(max-width: 900px) {
+
+
+    .hero-content {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+    }
+
+
+    .hero-description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+
+    .hero-image {
+
+        order: -1;
+
+    }
+
+
+    .hero-image img {
+
+        width: 260px;
+
+        height: 260px;
+
+    }
+
+
+    .nav-links {
+
+        display: none;
+
+    }
+
+
+}
+
+/* =========================================
+   About Section
+========================================= */
+
+
+.about {
+
+    background: rgba(255,255,255,0.35);
+
+}
+
+
+
+.about-content {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+}
+
+
+
+.about-text h3 {
+
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+
+    color: var(--emerald-dark);
+
+}
+
+
+
+.about-text p {
+
+    color: #555;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+.about-highlight {
+
+    margin-top: 30px;
+
+    padding: 25px;
+
+    border-left: 4px solid var(--emerald);
+
+    background: rgba(184,227,209,0.25);
+
+    border-radius: 10px;
+
+}
+
+
+
+.about-highlight p {
+
+    font-style: italic;
+
+    margin: 0;
+
+}
+
+
+
+
+.about-card {
+
+    background: white;
+
+    padding: 45px;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--soft-shadow);
+
+    transition: var(--transition);
+
+}
+
+
+
+.about-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+
+/* =========================================
+   Research Section
+========================================= */
+
+
+.research-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 30px;
+
+}
+
+
+
+.research-card {
+
+    background: white;
+
+    padding: 35px 25px;
+
+    border-radius: var(--radius);
+
+    text-align: center;
+
+    box-shadow: var(--soft-shadow);
+
+    transition: var(--transition);
+
+}
+
+
+
+.research-card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+
+.research-icon {
+
+    width: 60px;
+
+    height: 60px;
+
+    margin: auto auto 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background: var(--mint);
+
+    color: var(--emerald-dark);
+
+    border-radius:50%;
+
+    font-size:1.5rem;
+
+}
+
+
+
+.research-card h3 {
+
+    margin-bottom:15px;
+
+    color: var(--emerald-dark);
+
+}
+
+
+
+.research-card p {
+
+    color:#666;
+
+    font-size:.95rem;
+
+}
+
+
+
+/* =========================================
+   Learning Hub
+========================================= */
+
+
+.learning {
+
+    background: rgba(184,227,209,0.15);
+
+}
+
+
+
+.cards-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.learning-card {
+
+    background:white;
+
+    border-radius:var(--radius);
+
+    padding:35px;
+
+    box-shadow:var(--soft-shadow);
+
+    transition:var(--transition);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+.learning-card::before {
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:var(--emerald);
+
+}
+
+
+
+.learning-card:hover {
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.badge {
+
+    display:inline-block;
+
+    padding:6px 15px;
+
+    background:var(--mint);
+
+    color:var(--emerald-dark);
+
+    border-radius:30px;
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.learning-card h3 {
+
+    font-size:1.4rem;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.learning-card p {
+
+    color:#666;
+
+    margin-bottom:25px;
+
+}
+
+
+
+/* =========================================
+   Social Impact Initiatives
+========================================= */
+
+
+.initiatives {
+
+    background:var(--cream);
+
+}
+
+
+
+.initiative-card {
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--soft-shadow);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:40px;
+
+    transition:var(--transition);
+
+}
+
+
+
+.initiative-card:hover {
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.initiative-content h3 {
+
+    color:var(--emerald-dark);
+
+    font-size:1.8rem;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.status {
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    background:rgba(184,227,209,.4);
+
+    color:var(--emerald-dark);
+
+    font-size:.85rem;
+
+}
+
+
+
+/* =========================================
+   Responsive Sections
+========================================= */
+
+
+@media(max-width:900px){
+
+
+.about-content {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.research-grid,
+
+.cards-grid {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.initiative-card {
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+
+}
