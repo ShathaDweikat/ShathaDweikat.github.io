@@ -1,92 +1,354 @@
+/* =========================================
+   Shatha Dweikat Personal Brand Website
+   Main Stylesheet
+========================================= */
+
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&display=swap');
+
+
+/* =========================================
+   Root Variables
+========================================= */
+
+:root {
+
+    /* Brand Colors */
+    --cream: #F7F1E7;
+    --emerald: #0F766E;
+    --emerald-dark: #115E59;
+    --mint: #B8E3D1;
+    --charcoal: #262626;
+    --white: #FFFFFF;
+
+    /* Shadows */
+    --soft-shadow:
+    0 10px 30px rgba(15, 118, 110, 0.08);
+
+    /* Border */
+    --radius: 20px;
+
+    /* Transition */
+    --transition: all 0.35s ease;
+
+}
+
+
+/* =========================================
+   Reset
+========================================= */
+
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
-    margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #f8f7f3;
-    color: #222;
+
+    background-color: var(--cream);
+
+    color: var(--charcoal);
+
+    font-family: "Inter", "Cairo", sans-serif;
+
+    line-height: 1.7;
+
+    overflow-x: hidden;
+
 }
 
-header {
-    background: linear-gradient(135deg, #071d36, #163f68);
-    color: white;
-    text-align: center;
-    padding: 90px 20px;
-}
 
-header h1 {
-    font-size: 52px;
-    margin: 0;
-}
+a {
 
-header h2 {
-    font-size: 22px;
-    font-weight: 400;
-    color: #d4af37;
-}
-
-.tagline {
-    font-size: 20px;
-    margin-top: 25px;
-    font-style: italic;
-}
-
-nav {
-    background: white;
-    padding: 20px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-}
-
-nav a {
     text-decoration: none;
-    color: #071d36;
-    margin: 0 15px;
-    font-weight: 600;
+
+    color: inherit;
+
 }
 
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 50px 25px;
-}
-
-.card {
-    background: white;
-    padding: 35px;
-    margin-bottom: 30px;
-    border-radius: 18px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-}
-
-h2 {
-    color: #071d36;
-}
-
-.gold {
-    color: #d4af37;
-}
 
 ul {
-    line-height: 2;
+
+    list-style: none;
+
 }
 
-.button {
-    display: inline-block;
-    background: #d4af37;
-    color: white;
-    padding: 12px 28px;
-    border-radius: 30px;
-    text-decoration: none;
-    margin-top: 15px;
+
+img {
+
+    max-width: 100%;
+
+    display: block;
+
 }
 
-footer {
-    background: #071d36;
-    color: white;
+
+
+/* =========================================
+   Container
+========================================= */
+
+.container {
+
+    width: min(1120px, 90%);
+
+    margin: auto;
+
+}
+
+
+
+/* =========================================
+   Navbar
+========================================= */
+
+
+header {
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background:
+
+    rgba(247,241,231,0.85);
+
+    backdrop-filter: blur(12px);
+
+}
+
+
+
+.navbar {
+
+    height: 90px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+
+/* Logo */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.logo img {
+
+    width: 45px;
+
+    height: 45px;
+
+    object-fit: contain;
+
+}
+
+
+
+.logo span {
+
+    font-size: 1.1rem;
+
+    font-weight: 600;
+
+    color: var(--emerald);
+
+}
+
+
+
+/* Menu */
+
+.nav-links {
+
+    display: flex;
+
+    gap: 35px;
+
+}
+
+
+.nav-links a {
+
+    font-size: 0.95rem;
+
+    font-weight: 500;
+
+    position: relative;
+
+    transition: var(--transition);
+
+}
+
+
+
+.nav-links a::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: -8px;
+
+    left: 0;
+
+    width: 0;
+
+    height: 2px;
+
+    background: var(--emerald);
+
+    transition: var(--transition);
+
+}
+
+
+
+.nav-links a:hover {
+
+    color: var(--emerald);
+
+}
+
+
+
+.nav-links a:hover::after {
+
+    width: 100%;
+
+}
+
+
+
+/* =========================================
+   Section General Style
+========================================= */
+
+
+section {
+
+    padding: 100px 0;
+
+}
+
+
+
+.section-title {
+
     text-align: center;
-    padding: 30px;
+
+    margin-bottom: 60px;
+
 }
+
+
+.section-title h2 {
+
+    font-size: 2.3rem;
+
+    color: var(--charcoal);
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.section-title p {
+
+    color: #666;
+
+    max-width: 600px;
+
+    margin: auto;
+
+}
+
+
+/* =========================================
+   Buttons
+========================================= */
+
+
+.btn {
+
+    display: inline-block;
+
+    padding: 14px 32px;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    transition: var(--transition);
+
+}
+
+
+
+.btn-primary {
+
+    background: var(--emerald);
+
+    color: var(--white);
+
+}
+
+
+
+.btn-primary:hover {
+
+    background: var(--emerald-dark);
+
+    transform: translateY(-3px);
+
+}
+
+
+
+.btn-outline {
+
+    border: 1px solid var(--emerald);
+
+    color: var(--emerald);
+
+}
+
+
+
+.btn-outline:hover {
+
+    background: var(--emerald);
+
+    color: white;
+
+}
+
+
+
+/* End of Part 1 */
