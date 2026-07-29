@@ -21,7 +21,6 @@
 --emerald:#0F766E;
 --mint:#B8E3D1;
 --dark:#222;
-
 --shadow:0 15px 35px rgba(0,0,0,.08);
 
 }
@@ -46,6 +45,7 @@ line-height:1.7;
 }
 
 
+
 .container{
 
 width:90%;
@@ -55,11 +55,13 @@ margin:auto;
 }
 
 
+
 section{
 
 padding:70px 0;
 
 }
+
 
 
 /* COVER */
@@ -101,6 +103,7 @@ gap:30px;
 }
 
 
+
 .profile-brand img{
 
 width:180px;
@@ -113,12 +116,14 @@ box-shadow:var(--shadow);
 }
 
 
+
 .brand-text h1{
 
 font-size:3.5rem;
 line-height:1.1;
 
 }
+
 
 
 .brand-text h1 span{
@@ -128,6 +133,7 @@ color:var(--emerald);
 }
 
 
+
 .arabic-name{
 
 font-family:"Cairo";
@@ -135,6 +141,7 @@ font-size:1.8rem;
 color:#555;
 
 }
+
 
 
 .tagline{
@@ -157,6 +164,7 @@ box-shadow:var(--shadow);
 }
 
 
+
 .nav-container{
 
 width:90%;
@@ -171,6 +179,7 @@ gap:35px;
 }
 
 
+
 .nav-container a{
 
 text-decoration:none;
@@ -181,11 +190,13 @@ font-family:"Cairo","Inter",sans-serif;
 }
 
 
+
 .nav-container a:hover{
 
 color:var(--emerald);
 
 }
+
 
 
 
@@ -199,11 +210,13 @@ margin-bottom:40px;
 }
 
 
+
 .section-title h2{
 
 font-size:2.5rem;
 
 }
+
 
 
 .section-title p{
@@ -226,12 +239,14 @@ box-shadow:var(--shadow);
 }
 
 
+
 .card h3{
 
 color:var(--emerald);
 margin-bottom:20px;
 
 }
+
 
 
 
@@ -251,42 +266,6 @@ text-decoration:none;
 
 
 
-/* MOBILE */
-
-@media(max-width:900px){
-
-.profile-brand{
-
-flex-direction:column;
-text-align:center;
-
-}
-
-
-.brand-text h1{
-
-font-size:2.7rem;
-
-}
-
-
-.cover{
-
-height:280px;
-
-}
-
-
-.nav-container{
-
-flex-wrap:wrap;
-gap:15px;
-
-}
-
-}
-
-
 </style>
 
 </head>
@@ -303,6 +282,7 @@ gap:15px;
 <img class="cover" src="cover.png">
 
 </section>
+
 
 
 
@@ -326,14 +306,17 @@ Shatha <span>Dweikat</span>
 </h1>
 
 
+
 <div class="arabic-name">
 شذا دويكات
 </div>
 
 
+
 <div class="tagline">
 Research • Strategy • Sustainability
 </div>
+
 
 
 </div>
@@ -349,6 +332,8 @@ Research • Strategy • Sustainability
 
 
 
+
+
 <nav class="navbar">
 
 
@@ -360,9 +345,11 @@ Research • Strategy • Sustainability
 </a>
 
 
+
 <a href="#about">
 من أنا
 </a>
+
 
 
 <a href="#research">
@@ -370,9 +357,11 @@ Research • Strategy • Sustainability
 </a>
 
 
+
 <a href="#courses">
 مركز المعرفة
 </a>
+
 
 
 <a href="#publications">
@@ -380,15 +369,19 @@ Research • Strategy • Sustainability
 </a>
 
 
+
 <a href="#contact">
 تواصل
 </a>
+
 
 
 </div>
 
 
 </nav>
+
+
 
 
 
@@ -400,9 +393,11 @@ Research • Strategy • Sustainability
 
 <div class="section-title">
 
+
 <h2>
 من أنا
 </h2>
+
 
 
 <p>
@@ -410,7 +405,9 @@ Research • Strategy • Sustainability
 </p>
 
 
+
 </div>
+
 
 
 
@@ -422,9 +419,11 @@ Research • Strategy • Sustainability
 </h3>
 
 
+
 <p>
 أنا شذا دويكات، شغوفة ببناء المعرفة وصناعة الأثر من خلال التعلم، التطوير، وتمكين الإنسان.
 </p>
+
 
 
 <p>
@@ -432,9 +431,11 @@ Research • Strategy • Sustainability
 </p>
 
 
+
 <p>
 أسعى من خلال مسيرتي ومشاريعي إلى الربط بين المعرفة والممارسة العملية، وتطوير أفكار ومبادرات تساهم في تعزيز الوعي، دعم التغيير الإيجابي، وخلق قيمة مستدامة للمجتمع.
 </p>
+
 
 
 </div>
@@ -470,8 +471,8 @@ Research • Strategy • Sustainability
 
 
 
-<div class="cards">
 
+<div class="cards">
 
 
 <div class="small-card">
@@ -540,6 +541,7 @@ CSR
 
 
 
+
 <section id="courses">
 
 
@@ -555,12 +557,15 @@ CSR
 </h2>
 
 
+
 <p>
 الدورات والموارد التعليمية المجانية
 </p>
 
 
+
 </div>
+
 
 
 
@@ -655,12 +660,161 @@ CSR
 
 
 
-
 </div>
 
 
 </section>
 <!-- PART 3/3 -->
+
+
+<style>
+
+
+/* RESEARCH CARDS */
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+
+}
+
+
+.small-card{
+
+background:white;
+padding:30px;
+border-radius:25px;
+box-shadow:var(--shadow);
+transition:.3s;
+text-align:center;
+
+}
+
+
+.small-card:hover{
+
+transform:translateY(-7px);
+
+}
+
+
+.small-card h3{
+
+color:var(--emerald);
+margin-bottom:15px;
+
+}
+
+
+
+/* COURSE */
+
+.course{
+
+background:rgba(184,227,209,.25);
+padding:40px;
+border-radius:30px;
+
+}
+
+
+.badge{
+
+display:inline-block;
+background:var(--mint);
+color:var(--emerald);
+padding:7px 18px;
+border-radius:30px;
+margin-bottom:15px;
+
+}
+
+
+
+/* CONTACT */
+
+#contact .card a{
+
+color:var(--emerald);
+font-weight:600;
+
+}
+
+
+#contact .card a:hover{
+
+text-decoration:underline;
+
+}
+
+
+
+/* FOOTER */
+
+footer{
+
+background:var(--dark);
+color:white;
+text-align:center;
+padding:30px;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+
+.profile-brand{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+
+.brand-text h1{
+
+font-size:2.7rem;
+
+}
+
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+
+.cover{
+
+height:280px;
+
+}
+
+
+.nav-container{
+
+flex-wrap:wrap;
+gap:15px;
+
+}
+
+
+}
+
+
+
+</style>
+
+
+
+
 
 
 <section id="contact">
@@ -685,7 +839,7 @@ CSR
 
 
 <p>
-📧 
+📧
 <a href="mailto:shatha.dweikat.official@gmail.com">
 shatha.dweikat.official@gmail.com
 </a>
@@ -694,7 +848,7 @@ shatha.dweikat.official@gmail.com
 
 
 <p>
-🔗 
+🔗
 <a href="https://www.linkedin.com/in/shatha-dweikat" target="_blank">
 LinkedIn
 </a>
