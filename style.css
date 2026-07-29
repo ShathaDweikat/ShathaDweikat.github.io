@@ -1404,3 +1404,15 @@ footer p {
     opacity:.8;
 
 }
+
+
+.cover-section{
+    padding:0;
+}
+
+.cover{
+    width:100%;
+    height:450px;
+    object-fit:contain;
+    display:block;
+}
