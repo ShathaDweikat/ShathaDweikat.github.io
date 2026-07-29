@@ -6,127 +6,951 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Shatha Dweikat | CSR & Sustainable Development</title>
+<title>Shatha Dweikat | Research • Strategy • Sustainability</title>
 
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<style>
+
+:root{
+--cream:#F7F1E7;
+--emerald:#0F766E;
+--emerald-dark:#115E59;
+--mint:#B8E3D1;
+--charcoal:#262626;
+--white:#ffffff;
+--shadow:0 15px 40px rgba(15,118,110,.10);
+}
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+html{
+scroll-behavior:smooth;
+}
+
+
+body{
+
+background:var(--cream);
+color:var(--charcoal);
+font-family:"Inter","Cairo",sans-serif;
+line-height:1.7;
+
+}
+
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+
+.container{
+
+width:90%;
+max-width:1150px;
+margin:auto;
+
+}
+
+
+section{
+
+padding:100px 0;
+
+}
+
+
+/* NAVBAR */
+
+
+header{
+
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+background:rgba(247,241,231,.88);
+backdrop-filter:blur(12px);
+
+}
+
+
+.navbar{
+
+height:85px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+
+.logo{
+
+display:flex;
+align-items:center;
+gap:12px;
+
+}
+
+
+.logo img{
+
+width:42px;
+
+}
+
+
+.logo span{
+
+font-weight:700;
+color:var(--emerald);
+
+}
+
+
+.nav-links{
+
+display:flex;
+gap:28px;
+
+}
+
+
+.nav-links a{
+
+font-size:.95rem;
+transition:.3s;
+
+}
+
+
+.nav-links a:hover{
+
+color:var(--emerald);
+
+}
+
+
+
+/* HERO */
+
+
+.hero{
+
+min-height:100vh;
+display:flex;
+align-items:center;
+padding-top:100px;
+
+}
+
+
+.hero-grid{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+gap:70px;
+
+}
+
+
+.hero h5{
+
+color:var(--emerald);
+letter-spacing:3px;
+margin-bottom:20px;
+
+}
+
+
+.hero h1{
+
+font-size:clamp(3rem,6vw,5rem);
+line-height:1.1;
+
+}
+
+
+.hero h1 span{
+
+color:var(--emerald);
+
+}
+
+
+.arabic-name{
+
+font-family:"Cairo";
+font-size:2rem;
+color:#555;
+margin-top:10px;
+
+}
+
+
+.tagline{
+
+color:var(--emerald-dark);
+font-size:1.2rem;
+font-weight:600;
+margin:25px 0;
+
+}
+
+
+.hero p{
+
+max-width:520px;
+color:#666;
+
+}
+
+
+.profile{
+
+display:flex;
+justify-content:center;
+
+}
+
+
+.profile img{
+
+width:380px;
+height:380px;
+object-fit:cover;
+border-radius:50%;
+border:8px solid rgba(15,118,110,.15);
+box-shadow:var(--shadow);
+
+}
+
+
+
+.btn{
+
+display:inline-block;
+background:var(--emerald);
+color:white;
+padding:14px 32px;
+border-radius:50px;
+margin-top:30px;
+transition:.3s;
+
+}
+
+
+.btn:hover{
+
+background:var(--emerald-dark);
+transform:translateY(-3px);
+
+}
+
+
+
+/* TITLES */
+
+
+.section-title{
+
+text-align:center;
+margin-bottom:55px;
+
+}
+
+
+.section-title h2{
+
+font-size:2.4rem;
+
+}
+
+
+.section-title p{
+
+color:#666;
+
+}
+
+
+
+/* ABOUT */
+
+
+.about-box{
+
+background:white;
+padding:45px;
+border-radius:25px;
+box-shadow:var(--shadow);
+
+}
+
+
+.about-box h3{
+
+color:var(--emerald);
+margin-bottom:20px;
+
+}
+
+
+.quote{
+
+margin-top:25px;
+padding:20px;
+border-left:4px solid var(--emerald);
+background:rgba(184,227,209,.3);
+font-style:italic;
+
+}
+
+
+/* CARDS */
+
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+
+}
+
+
+.card{
+
+background:white;
+padding:35px;
+border-radius:25px;
+box-shadow:var(--shadow);
+transition:.3s;
+
+}
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+.card h3{
+
+color:var(--emerald);
+margin-bottom:15px;
+
+}
+
+
+.card p{
+
+color:#666;
+
+}
+/* LEARNING HUB */
+
+.learning{
+
+background:rgba(184,227,209,.18);
+
+}
+
+
+.badge{
+
+display:inline-block;
+padding:6px 16px;
+border-radius:30px;
+background:var(--mint);
+color:var(--emerald-dark);
+font-size:.85rem;
+font-weight:600;
+margin-bottom:15px;
+
+}
+
+
+
+.outline-btn{
+
+display:inline-block;
+padding:10px 25px;
+border:1px solid var(--emerald);
+border-radius:30px;
+color:var(--emerald);
+margin-top:20px;
+transition:.3s;
+
+}
+
+
+.outline-btn:hover{
+
+background:var(--emerald);
+color:white;
+
+}
+
+
+
+/* INITIATIVES */
+
+
+.initiative-box{
+
+background:white;
+padding:45px;
+border-radius:25px;
+box-shadow:var(--shadow);
+
+}
+
+
+.status{
+
+display:inline-block;
+background:var(--mint);
+color:var(--emerald-dark);
+padding:8px 18px;
+border-radius:30px;
+margin-top:20px;
+font-size:.9rem;
+
+}
+
+
+
+/* CONTACT */
+
+
+.contact-box{
+
+text-align:center;
+background:white;
+padding:60px 40px;
+border-radius:25px;
+box-shadow:var(--shadow);
+
+}
+
+
+.contact-box p{
+
+color:#666;
+margin:20px auto;
+max-width:600px;
+
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+
+background:var(--charcoal);
+color:white;
+padding:35px;
+text-align:center;
+
+}
+
+
+
+/* MOBILE */
+
+
+@media(max-width:900px){
+
+.nav-links{
+
+display:none;
+
+}
+
+
+.hero-grid{
+
+grid-template-columns:1fr;
+text-align:center;
+
+}
+
+
+.hero p{
+
+margin:auto;
+
+}
+
+
+.profile{
+
+order:-1;
+
+}
+
+
+.profile img{
+
+width:260px;
+height:260px;
+
+}
+
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+
+.about-box,
+.initiative-box{
+
+padding:30px;
+
+}
+
+}
+
+</style>
 
 </head>
+
 
 
 <body>
 
 
-<header style="background-image: linear-gradient(rgba(7,29,54,0.85),rgba(7,29,54,0.85)), url('banner.jpg.png'); background-size:cover; background-position:40% center;">
+<header>
+
+<div class="container navbar">
 
 
-<img src="profile.jpg.png" 
-alt="Shatha Dweikat"
-style="width:170px;height:170px;border-radius:50%;object-fit:cover;border:5px solid white;">
+<div class="logo">
+
+<img src="logo.png">
+
+<span>Shatha Dweikat</span>
+
+</div>
 
 
-<h1>
-Shatha Dweikat
-</h1>
+<nav class="nav-links">
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#courses">Courses</a>
+<a href="#initiatives">Initiatives</a>
+<a href="#publications">Publications</a>
+<a href="#contact">Contact</a>
+
+</nav>
 
 
-<h2>
-Corporate Social Responsibility & Sustainable Development
-</h2>
-
-
-<p class="tagline">
-Human potential is the world's most valuable investment.
-</p>
-
-
-<a class="button" href="https://www.linkedin.com/in/shatha-dweikat">
-LinkedIn
-</a>
-
-
-<a class="button" href="https://github.com/ShathaDweikat">
-GitHub
-</a>
-
+</div>
 
 </header>
 
 
 
-<nav>
 
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="research.html">Research</a>
-<a href="projects.html">Projects</a>
-<a href="certifications.html">Certifications</a>
-<a href="contact.html">Contact</a>
+<main>
 
-</nav>
 
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="container hero-grid">
+
+
+<div>
+
+
+<h5>PERSONAL BRAND</h5>
+
+
+<h1>
+Shatha <span>Dweikat</span>
+</h1>
+
+
+<div class="arabic-name">
+شذا دويكات
+</div>
+
+
+<div class="tagline">
+Research • Strategy • Sustainability
+</div>
+
+
+<p>
+Human potential is the world's most valuable investment.
+My work focuses on research, sustainable development, and creating meaningful social impact.
+</p>
+
+
+<a href="#contact" class="btn">
+Let's Connect
+</a>
+
+
+</div>
+
+
+
+<div class="profile">
+
+<img src="profile.jpg">
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<!-- ABOUT -->
+
+
+<section id="about">
 
 
 <div class="container">
 
 
-<div class="card">
+<div class="section-title">
 
-<h2>Welcome</h2>
+<h2>About</h2>
+
+<p>My journey, philosophy and vision</p>
+
+</div>
+
+
+
+<div class="about-box">
+
+
+<h3>
+Building knowledge for meaningful impact
+</h3>
+
 
 <p>
-I am a researcher and social impact enthusiast with an academic focus on
-Corporate Social Responsibility, Sustainable Development, and community-centered change.
+My academic journey in Corporate Social Responsibility and Sustainable Development is driven by a belief that knowledge can create positive change.
 </p>
 
 
-<a class="button" href="research.html">
-Explore Research
+<p>
+I am interested in research, empowerment, sustainability, and developing initiatives that connect ideas with real-world impact.
+</p>
+
+
+<div class="quote">
+
+"Awareness is the first step toward transformation."
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- RESEARCH -->
+
+
+<section id="research">
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>Research</h2>
+
+<p>Areas of academic interest</p>
+
+</div>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>CSR</h3>
+
+<p>
+Corporate Social Responsibility and sustainable value creation.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Sustainability</h3>
+
+<p>
+Sustainable development strategies and community impact.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Social Impact</h3>
+
+<p>
+Human empowerment, communities, and meaningful change.
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- COURSES -->
+
+
+<section id="courses" class="learning">
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>Learning Hub</h2>
+
+<p>Free courses and educational initiatives</p>
+
+</div>
+
+
+
+<div class="card">
+
+
+<span class="badge">
+Free Course
+</span>
+
+
+<h3>
+رحلة التغيير | Journey of Change
+</h3>
+
+
+<p>
+An educational journey focused on awareness, growth, and meaningful personal transformation.
+</p>
+
+
+<a href="#" class="outline-btn">
+Start Learning
 </a>
 
-</div>
-
-
-
-<div class="card">
-
-<h2>Professional Focus</h2>
-
-<ul>
-
-<li>Corporate Social Responsibility (CSR)</li>
-<li>Sustainable Development Goals (SDGs)</li>
-<li>Social Impact</li>
-<li>Women's Empowerment</li>
-<li>ESG & Responsible Leadership</li>
-<li>Stakeholder Engagement</li>
-
-</ul>
 
 </div>
 
 
+</div>
 
-<div class="card">
+</section>
 
-<h2>Vision</h2>
+
+
+
+
+<!-- INITIATIVES -->
+
+
+<section id="initiatives">
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>Social Impact Initiatives</h2>
+
+<p>Concepts designed for future implementation</p>
+
+</div>
+
+
+
+<div class="initiative-box">
+
+
+<h3>
+خطوة 19 | Step 19
+</h3>
+
 
 <p>
-Creating meaningful impact by connecting research, responsibility,
-and sustainable solutions for stronger communities.
+
+A proposed initiative designed to support and empower orphaned girls through education, development, and empowerment opportunities.
+
+</p>
+
+
+<div class="status">
+
+Concept Development
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- PUBLICATIONS -->
+
+
+<section id="publications">
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>Publications</h2>
+
+<p>
+Research papers and academic contributions
 </p>
 
 </div>
 
 
+
+<div class="card">
+
+
+<h3>
+Coming Soon
+</h3>
+
+
+<p>
+Future research publications will be displayed here.
+</p>
+
+
 </div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- CONTACT -->
+
+
+<section id="contact">
+
+
+<div class="container">
+
+
+<div class="contact-box">
+
+
+<h2>
+Let's Connect
+</h2>
+
+
+<p>
+For research collaborations, projects, and learning initiatives.
+</p>
+
+
+<a href="mailto:your@email.com" class="btn">
+Contact Me
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+</main>
 
 
 
 <footer>
 
-© Shatha Dweikat
+<p>
+© 2026 Shatha Dweikat. All Rights Reserved.
+</p>
 
 </footer>
+
 
 
 </body>
