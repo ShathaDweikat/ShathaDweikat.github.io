@@ -232,163 +232,16 @@ color:var(--emerald);
 margin-bottom:20px;
 
 }
-  <!-- PART 2/3 -->
-
-
-/* RESEARCH CARDS */
-
-
-.cards{
-
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
-
-}
-
-
-.small-card{
-
-background:white;
-padding:30px;
-border-radius:25px;
-box-shadow:var(--shadow);
-transition:.3s;
-
-}
-
-
-.small-card:hover{
-
-transform:translateY(-7px);
-
-}
-
-
-.small-card h3{
-
-color:var(--emerald);
-margin-bottom:15px;
-
-}
-
-
-
-/* COURSE */
-
-
-.course{
-
-background:rgba(184,227,209,.25);
-padding:40px;
-border-radius:30px;
-
-}
-
-
-.badge{
-
-display:inline-block;
-background:var(--mint);
-color:var(--emerald);
-padding:7px 18px;
-border-radius:30px;
-margin-bottom:15px;
-
-}
-
-
-
-.button{
-
-display:inline-block;
-margin-top:20px;
-background:var(--emerald);
-color:white;
-padding:12px 30px;
-border-radius:50px;
-text-decoration:none;
-
-}
-
-
-
-/* FOOTER */
-
-
-footer{
-
-background:var(--dark);
-color:white;
-text-align:center;
-padding:30px;
-
-}
-
-
-
-/* MOBILE */
-
-
-@media(max-width:900px){
-
-
-.profile-brand{
-
-flex-direction:column;
-text-align:center;
-
-}
-
-
-
-.brand-text h1{
-
-font-size:2.7rem;
-
-}
-
-
-
-.cards{
-
-grid-template-columns:1fr;
-
-}
-
-
-
-.cover{
-
-height:280px;
-
-}
-
-
-
-.nav-container{
-
-flex-wrap:wrap;
-gap:15px;
-
-}
-
-
-}
-
 
 </style>
 
 </head>
 
 
-
 <body>
 
 
-
 <main>
-
 
 
 <section class="cover-section">
@@ -399,27 +252,20 @@ gap:15px;
 
 
 
-
 <section class="brand">
-
 
 <div class="container">
 
-
 <div class="profile-brand">
-
 
 <img src="profile.jpg.png">
 
 
-
 <div class="brand-text">
-
 
 <h1>
 Shatha <span>Dweikat</span>
 </h1>
-
 
 
 <div class="arabic-name">
@@ -427,38 +273,28 @@ Shatha <span>Dweikat</span>
 </div>
 
 
-
 <div class="tagline">
 Research • Strategy • Sustainability
 </div>
 
 
+</div>
 
 </div>
 
-
 </div>
-
-
-</div>
-
 
 </section>
 
 
 
-
-
 <nav class="navbar">
 
-
 <div class="nav-container">
-
 
 <a href="index.html">
 الرئيسية
 </a>
-
 
 
 <a href="#about">
@@ -466,11 +302,9 @@ Research • Strategy • Sustainability
 </a>
 
 
-
 <a href="#research">
 الأبحاث
 </a>
-
 
 
 <a href="knowledge-hub.html">
@@ -478,11 +312,9 @@ Research • Strategy • Sustainability
 </a>
 
 
-
 <a href="#publications">
 المنشورات
 </a>
-
 
 
 <a href="#contact">
@@ -490,45 +322,28 @@ Research • Strategy • Sustainability
 </a>
 
 
-
 </div>
-
 
 </nav>
 
 
 
-
-
 <section id="about">
-
 
 <div class="container">
 
 
-
 <div class="section-title">
-
 
 <h2>
 من أنا
 </h2>
 
-
-
 <p>
 رحلتي ورؤيتي
 </p>
 
-
-
 </div>
-
-
-
-
-
-<div class="card">
 
 
 <div class="card">
@@ -557,14 +372,10 @@ Research • Strategy • Sustainability
 </div>
 
 
-
 </div>
 
-
 </section>
-
-
-
+/* PART 2/3 */
 
 
 <section id="research">
@@ -575,11 +386,9 @@ Research • Strategy • Sustainability
 
 <div class="section-title">
 
-
 <h2>
 الأبحاث
 </h2>
-
 
 
 <p>
@@ -587,13 +396,11 @@ Research • Strategy • Sustainability
 </p>
 
 
-
 </div>
 
 
 
 <div class="cards">
-  <!-- PART 3/3 -->
 
 
 <div class="small-card">
@@ -613,7 +420,6 @@ CSR
 
 
 
-
 <div class="small-card">
 
 
@@ -628,7 +434,6 @@ CSR
 
 
 </div>
-
 
 
 
@@ -656,7 +461,6 @@ CSR
 
 
 </section>
-
 
 
 
@@ -734,8 +538,6 @@ CSR
 
 
 
-
-
 <section id="publications">
 
 
@@ -787,37 +589,68 @@ CSR
 
 
 </section>
+/* PART 3/3 */
+
+
+<section id="contact">
+
+
+<div class="container">
+
+
+<div class="card">
+
+
+<h3>
+تواصل معي
+</h3>
 
 
 
+<p>
+للتعاون البحثي، المشاريع، والمبادرات التعليمية.
+</p>
 
 
 
+<p>
+📧
 
-/* =========================================
-   Contact Links
-========================================= */
+<a href="mailto:shatha.dweikat.official@gmail.com">
 
-#contact .card a {
+shatha.dweikat.official@gmail.com
 
-    color: var(--emerald) !important;
+</a>
 
-    font-weight: 600;
+</p>
 
-    transition: var(--transition);
 
-}
 
-#contact .card a:hover {
+<p>
+🔗
 
-    color: var(--emerald-dark) !important;
+<a href="https://www.linkedin.com/in/shatha-dweikat" target="_blank">
 
-    text-decoration: underline;
+LinkedIn
 
-}
+</a>
+
+</p>
+
+
+
+<a href="mailto:shatha.dweikat.official@gmail.com" class="button">
+
+راسلني
+
+</a>
+
+
 
 </div>
 
+
+</div>
 
 
 </section>
@@ -838,7 +671,6 @@ CSR
 <p>
 © 2026 Shatha Dweikat. All Rights Reserved.
 </p>
-
 
 
 </footer>
