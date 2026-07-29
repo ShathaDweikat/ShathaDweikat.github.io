@@ -16,19 +16,26 @@
 <style>
 
 :root{
+
 --cream:#F7F1E7;
 --emerald:#0F766E;
 --mint:#B8E3D1;
 --dark:#222;
+
 --shadow:0 15px 35px rgba(0,0,0,.08);
+
 }
+
 
 
 *{
+
 margin:0;
 padding:0;
 box-sizing:border-box;
+
 }
+
 
 
 body{
@@ -41,6 +48,7 @@ line-height:1.7;
 }
 
 
+
 .container{
 
 width:90%;
@@ -50,6 +58,7 @@ margin:auto;
 }
 
 
+
 section{
 
 padding:70px 0;
@@ -57,13 +66,16 @@ padding:70px 0;
 }
 
 
+
 /* COVER */
+
 
 .cover-section{
 
 padding:0;
 
 }
+
 
 
 .cover{
@@ -87,6 +99,7 @@ padding:35px 0;
 }
 
 
+
 .profile-brand{
 
 display:flex;
@@ -95,6 +108,7 @@ justify-content:center;
 gap:30px;
 
 }
+
 
 
 .profile-brand img{
@@ -118,11 +132,13 @@ line-height:1.1;
 }
 
 
+
 .brand-text h1 span{
 
 color:var(--emerald);
 
 }
+
 
 
 .arabic-name{
@@ -132,6 +148,7 @@ font-size:1.8rem;
 color:#555;
 
 }
+
 
 
 .tagline{
@@ -155,6 +172,7 @@ box-shadow:var(--shadow);
 }
 
 
+
 .nav-container{
 
 width:90%;
@@ -169,6 +187,7 @@ gap:35px;
 }
 
 
+
 .nav-container a{
 
 text-decoration:none;
@@ -177,6 +196,7 @@ font-weight:600;
 font-family:"Cairo","Inter",sans-serif;
 
 }
+
 
 
 .nav-container a:hover{
@@ -198,11 +218,13 @@ margin-bottom:40px;
 }
 
 
+
 .section-title h2{
 
 font-size:2.5rem;
 
 }
+
 
 
 .section-title p{
@@ -226,6 +248,7 @@ box-shadow:var(--shadow);
 }
 
 
+
 .card h3{
 
 color:var(--emerald);
@@ -233,15 +256,153 @@ margin-bottom:20px;
 
 }
 
+
+
+/* RESEARCH CARDS */
+
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+
+}
+
+
+
+.small-card{
+
+background:white;
+padding:30px;
+border-radius:25px;
+box-shadow:var(--shadow);
+transition:.3s;
+
+}
+
+
+
+.small-card:hover{
+
+transform:translateY(-7px);
+
+}
+
+
+
+.small-card h3{
+
+color:var(--emerald);
+margin-bottom:15px;
+
+}
+
+
+
+/* COURSE */
+
+
+.course{
+
+background:rgba(184,227,209,.25);
+padding:40px;
+border-radius:30px;
+
+}
+
+
+
+.badge{
+
+display:inline-block;
+background:var(--mint);
+color:var(--emerald);
+padding:7px 18px;
+border-radius:30px;
+margin-bottom:15px;
+
+}
+
+
+
+.button{
+
+display:inline-block;
+margin-top:20px;
+background:var(--emerald);
+color:white;
+padding:12px 30px;
+border-radius:50px;
+text-decoration:none;
+
+}
+
+
+
+/* MOBILE */
+
+
+@media(max-width:900px){
+
+
+.profile-brand{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+
+
+.brand-text h1{
+
+font-size:2.7rem;
+
+}
+
+
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.cover{
+
+height:280px;
+
+}
+
+
+
+.nav-container{
+
+flex-wrap:wrap;
+gap:15px;
+
+}
+
+
+}
+
+
+
 </style>
 
+
 </head>
+
 
 
 <body>
 
 
 <main>
+
 
 
 <section class="cover-section">
@@ -252,49 +413,70 @@ margin-bottom:20px;
 
 
 
+
 <section class="brand">
+
 
 <div class="container">
 
+
 <div class="profile-brand">
+
 
 <img src="profile.jpg.png">
 
 
+
 <div class="brand-text">
+
 
 <h1>
 Shatha <span>Dweikat</span>
 </h1>
 
 
+
 <div class="arabic-name">
+
 شذا دويكات
+
 </div>
+
 
 
 <div class="tagline">
+
 Research • Strategy • Sustainability
+
+</div>
+
+
+
+</div>
+
+
 </div>
 
 
 </div>
 
-</div>
-
-</div>
 
 </section>
 
 
 
+
+
 <nav class="navbar">
 
+
 <div class="nav-container">
+
 
 <a href="index.html">
 الرئيسية
 </a>
+
 
 
 <a href="#about">
@@ -302,14 +484,17 @@ Research • Strategy • Sustainability
 </a>
 
 
+
 <a href="#research">
 الأبحاث
 </a>
 
 
-<a href="knowledge-hub.html">
+
+<a href="#courses">
 مركز المعرفة
 </a>
+
 
 
 <a href="#publications">
@@ -317,65 +502,80 @@ Research • Strategy • Sustainability
 </a>
 
 
+
 <a href="#contact">
 تواصل
 </a>
 
 
+
 </div>
+
 
 </nav>
 
 
 
+
+
 <section id="about">
+
 
 <div class="container">
 
 
 <div class="section-title">
 
+
 <h2>
 من أنا
 </h2>
+
 
 <p>
 رحلتي ورؤيتي
 </p>
 
+
 </div>
+
 
 
 <div class="card">
 
 
 <h3>
-أؤمن بأن بناء الإنسان هو البداية لصناعة أثر مستدام
+بناء المعرفة لصناعة أثر هادف
 </h3>
 
 
+
 <p>
-أنا شذا دويكات، شغوفة ببناء المعرفة وصناعة الأثر من خلال التعلم، التطوير، وتمكين الإنسان.
+الإنسان وإمكاناته هما الاستثمار الأكثر قيمة في بناء مستقبل أفضل.
 </p>
 
 
+
 <p>
-أؤمن بأن كل تغيير حقيقي يبدأ من الوعي، وأن الاستثمار في الإنسان هو الطريق لبناء مجتمعات أكثر قدرة على النمو والتطور.
+يركز مساري الأكاديمي في مجال المسؤولية المجتمعية للشركات والتنمية المستدامة على البحث، والاستدامة، والتمكين، وصناعة أثر اجتماعي هادف.
 </p>
 
 
+
 <p>
-أسعى من خلال مسيرتي ومشاريعي إلى الربط بين المعرفة والممارسة العملية، وتطوير أفكار ومبادرات تساهم في تعزيز الوعي، دعم التغيير الإيجابي، وخلق قيمة مستدامة للمجتمع.
+أسعى إلى الربط بين المعرفة والممارسة العملية، وتطوير أفكار ومبادرات تساهم في تعزيز الوعي، دعم التغيير الإيجابي، وخلق قيمة مستدامة للمجتمع.
 </p>
+
 
 
 </div>
 
 
 </div>
+
 
 </section>
-/* PART 2/3 */
+<!-- PART 2/3 -->
 
 
 <section id="research">
@@ -385,6 +585,7 @@ Research • Strategy • Sustainability
 
 
 <div class="section-title">
+
 
 <h2>
 الأبحاث
@@ -401,6 +602,7 @@ Research • Strategy • Sustainability
 
 
 <div class="cards">
+
 
 
 <div class="small-card">
@@ -420,6 +622,7 @@ CSR
 
 
 
+
 <div class="small-card">
 
 
@@ -434,6 +637,7 @@ CSR
 
 
 </div>
+
 
 
 
@@ -461,6 +665,8 @@ CSR
 
 
 </section>
+
+
 
 
 
@@ -498,19 +704,27 @@ CSR
 
 
 <span class="badge">
+
 دورة مجانية
+
 </span>
 
 
 
+
 <h2>
+
 رحلة التغيير | Journey of Change
+
 </h2>
 
 
 
+
 <p>
+
 رحلة تعليمية تهدف إلى دعم الوعي، فهم مراحل التغيير، وبناء خطوات عملية نحو النمو والتطور الشخصي.
+
 </p>
 
 
@@ -538,6 +752,8 @@ CSR
 
 
 
+
+
 <section id="publications">
 
 
@@ -549,13 +765,17 @@ CSR
 
 
 <h2>
+
 المنشورات
+
 </h2>
 
 
 
 <p>
+
 الأبحاث والمساهمات العلمية
+
 </p>
 
 
@@ -565,17 +785,22 @@ CSR
 
 
 
+
 <div class="card">
 
 
 <h3>
+
 قريبًا
+
 </h3>
 
 
 
 <p>
+
 سيتم إضافة الأبحاث والمنشورات العلمية المستقبلية هنا.
+
 </p>
 
 
@@ -589,7 +814,7 @@ CSR
 
 
 </section>
-/* PART 3/3 */
+<!-- PART 3/3 -->
 
 
 <section id="contact">
@@ -598,22 +823,30 @@ CSR
 <div class="container">
 
 
+
 <div class="card">
 
 
 <h3>
+
 تواصل معي
+
 </h3>
 
 
 
+
 <p>
+
 للتعاون البحثي، المشاريع، والمبادرات التعليمية.
+
 </p>
 
 
 
+
 <p>
+
 📧
 
 <a href="mailto:shatha.dweikat.official@gmail.com">
@@ -626,7 +859,10 @@ shatha.dweikat.official@gmail.com
 
 
 
+
+
 <p>
+
 🔗
 
 <a href="https://www.linkedin.com/in/shatha-dweikat" target="_blank">
@@ -639,6 +875,8 @@ LinkedIn
 
 
 
+
+
 <a href="mailto:shatha.dweikat.official@gmail.com" class="button">
 
 راسلني
@@ -647,13 +885,19 @@ LinkedIn
 
 
 
-</div>
 
 
 </div>
+
+
+
+</div>
+
 
 
 </section>
+
+
 
 
 
@@ -665,15 +909,19 @@ LinkedIn
 
 
 
+
 <footer>
 
 
 <p>
+
 © 2026 Shatha Dweikat. All Rights Reserved.
+
 </p>
 
 
 </footer>
+
 
 
 
