@@ -20,13 +20,11 @@
 --shadow:0 15px 35px rgba(0,0,0,.08);
 }
 
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 }
-
 
 body{
 background:var(--cream);
@@ -35,11 +33,9 @@ font-family:"Inter","Cairo",sans-serif;
 line-height:1.7;
 }
 
-
 html{
 scroll-behavior:smooth;
 }
-
 
 .container{
 width:90%;
@@ -47,11 +43,9 @@ max-width:1150px;
 margin:auto;
 }
 
-
 section{
-padding:80px 0;
+padding:70px 0;
 }
-
 
 
 /* COVER */
@@ -72,26 +66,47 @@ background:var(--cream);
 }
 
 
-/* BRAND */
 
+/* NAME AREA */
 
 .brand{
 
-text-align:center;
-padding:40px 0;
+padding:35px 0;
 
 }
 
 
-.brand h1{
+.profile-brand{
 
-font-size:4rem;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:30px;
+
+}
+
+
+.profile-brand img{
+
+width:120px;
+height:120px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid white;
+box-shadow:var(--shadow);
+
+}
+
+
+.brand-text h1{
+
+font-size:3.5rem;
 line-height:1.1;
 
 }
 
 
-.brand h1 span{
+.brand-text h1 span{
 
 color:var(--emerald);
 
@@ -101,7 +116,7 @@ color:var(--emerald);
 .arabic-name{
 
 font-family:"Cairo";
-font-size:2rem;
+font-size:1.8rem;
 color:#555;
 
 }
@@ -111,20 +126,18 @@ color:#555;
 
 color:var(--emerald);
 font-weight:600;
-font-size:1.2rem;
-margin-top:15px;
+font-size:1.1rem;
 
 }
 
 
 
-/* SECTION TITLES */
-
+/* TITLES */
 
 .section-title{
 
 text-align:center;
-margin-bottom:45px;
+margin-bottom:40px;
 
 }
 
@@ -146,25 +159,9 @@ color:#666;
 
 /* ABOUT */
 
-
 .about{
 
-display:grid;
-grid-template-columns:320px 1fr;
-gap:50px;
-align-items:center;
-
-}
-
-
-.profile img{
-
-width:120px;
-height:120px;
-object-fit:cover;
-border-radius:50%;
-border:8px solid white;
-box-shadow:var(--shadow);
+display:block;
 
 }
 
@@ -185,11 +182,234 @@ color:var(--emerald);
 margin-bottom:20px;
 
 }
+  <!-- RESEARCH -->
+
+<section id="research">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Research</h2>
+
+<p>Academic interests and focus areas</p>
+
+</div>
+
+
+<div class="cards">
+
+
+<div class="small-card">
+
+<h3>CSR</h3>
+
+<p>
+Corporate Social Responsibility and sustainable value creation.
+</p>
+
+</div>
+
+
+<div class="small-card">
+
+<h3>Sustainability</h3>
+
+<p>
+Sustainable development strategies and long-term impact.
+</p>
+
+</div>
+
+
+<div class="small-card">
+
+<h3>Social Impact</h3>
+
+<p>
+Empowerment, community development and human potential.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- COURSES -->
+
+<section id="courses">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Learning Hub</h2>
+
+<p>Free courses and educational resources</p>
+
+</div>
+
+
+<div class="course">
+
+
+<span class="badge">
+Free Course
+</span>
+
+
+<h2>
+رحلة التغيير | Journey of Change
+</h2>
+
+
+<p>
+An educational journey designed to support awareness, growth and meaningful transformation.
+</p>
+
+
+<a href="#" class="button">
+Start Learning
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- INITIATIVE -->
+
+<section id="initiatives">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Social Impact Initiatives</h2>
+
+<p>
+Ideas for future implementation
+</p>
+
+</div>
+
+
+<div class="card">
+
+
+<h3>
+خطوة 19 | Step 19
+</h3>
+
+
+<p>
+A proposed initiative designed to support and empower orphaned girls through education, personal development and opportunities.
+</p>
+
+
+<span class="badge">
+Concept Development
+</span>
+
+
+</div>
+
+</div>
+
+</section>
+  <!-- PUBLICATIONS -->
+
+<section id="publications">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Publications</h2>
+
+<p>
+Research papers and academic contributions
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+Coming Soon
+</h3>
+
+<p>
+Future publications and research work will be added here.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="card">
+
+
+<h3>
+Let's Connect
+</h3>
+
+
+<p>
+Research collaborations, projects and learning initiatives.
+</p>
+
+
+<a href="#" class="button">
+Contact Me
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+© 2026 Shatha Dweikat. All Rights Reserved.
+</p>
+
+</footer>
+
+
+
 <style>
-
-
-/* CARDS */
-
 
 .cards{
 
@@ -217,18 +437,6 @@ transition:.3s;
 transform:translateY(-7px);
 
 }
-
-
-.small-card h3{
-
-color:var(--emerald);
-margin-bottom:15px;
-
-}
-
-
-
-/* COURSES */
 
 
 .course{
@@ -260,49 +468,25 @@ background:var(--emerald);
 color:white;
 padding:12px 30px;
 border-radius:50px;
+text-decoration:none;
 
 }
 
-
-
-/* CONTACT */
-
-
-.contact{
-
-background:white;
-padding:50px;
-border-radius:30px;
-box-shadow:var(--shadow);
-text-align:center;
-
-}
-
-
-
-/* FOOTER */
-
-
-footer{
-
-background:var(--dark);
-color:white;
-text-align:center;
-padding:30px;
-
-}
-
-
-
-/* MOBILE */
 
 
 @media(max-width:900px){
 
-.about{
+.profile-brand{
 
-grid-template-columns:1fr;
+flex-direction:column;
 text-align:center;
+
+}
+
+
+.brand-text h1{
+
+font-size:2.7rem;
 
 }
 
@@ -314,24 +498,9 @@ grid-template-columns:1fr;
 }
 
 
-.brand h1{
-
-font-size:3rem;
-
-}
-
-
 .cover{
 
 height:280px;
-
-}
-
-
-.profile img{
-
-width:230px;
-height:230px;
 
 }
 
@@ -340,399 +509,7 @@ height:230px;
 
 </style>
 
-</head>
-
-
-<body>
-
-
-<main>
-
-
-<section class="cover-section">
-
-<img class="cover" src="cover.png">
-
-</section>
-
-
-
-<section class="brand">
-
-<div class="container">
-
-<div class="profile-brand">
-
-<img src="profile.jpg.png">
-
-
-<div class="brand-text">
-
-<h1>
-Shatha <span>Dweikat</span>
-</h1>
-
-<div class="arabic-name">
-شذا دويكات
-</div>
-
-<div class="tagline">
-Research • Strategy • Sustainability
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-<section id="about">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>About</h2>
-
-<p>My journey and vision</p>
-
-</div>
-
-
-<div class="about">
-
-
-<div class="profile">
-
-<img src="profile.jpg.png">
-
-</div>
-
-
-<div class="card">
-
-<h3>
-Building knowledge for meaningful impact
-</h3>
-
-
-<p>
-Human potential is the world's most valuable investment.
-</p>
-
-
-<p>
-My academic journey in Corporate Social Responsibility and Sustainable Development focuses on research, sustainability, empowerment, and creating meaningful social impact.
-</p>
-
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
-
-
-<section id="research">
-
-
-<div class="container">
-
-
-<div class="section-title">
-
-<h2>Research</h2>
-
-<p>Academic interests and focus areas</p>
-
-</div>
-
-
-
-<div class="cards">
-
-
-<div class="small-card">
-
-<h3>CSR</h3>
-
-<p>
-Corporate Social Responsibility and sustainable value creation.
-</p>
-
-</div>
-
-
-
-<div class="small-card">
-
-<h3>Sustainability</h3>
-
-<p>
-Sustainable development strategies and long-term impact.
-</p>
-
-</div>
-
-
-
-<div class="small-card">
-
-<h3>Social Impact</h3>
-
-<p>
-Empowerment, community development and human potential.
-</p>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section id="courses">
-
-
-<div class="container">
-
-
-<div class="section-title">
-
-<h2>Learning Hub</h2>
-
-<p>Free courses and educational resources</p>
-
-</div>
-
-
-
-<div class="course">
-
-
-<span class="badge">
-Free Course
-</span>
-
-
-<h2>
-رحلة التغيير | Journey of Change
-</h2>
-
-
-<p>
-An educational journey designed to support awareness, growth and meaningful transformation.
-</p>
-
-
-<a href="#" class="button">
-Start Learning
-</a>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section id="initiatives">
-
-
-<div class="container">
-
-
-<div class="section-title">
-
-<h2>Social Impact Initiatives</h2>
-
-<p>
-Ideas for future implementation
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-
-<h3>
-خطوة 19 | Step 19
-</h3>
-
-
-<p>
-A proposed initiative designed to support and empower orphaned girls through education, personal development and opportunities.
-</p>
-
-
-<span class="badge">
-Concept Development
-</span>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section id="publications">
-
-
-<div class="container">
-
-
-<div class="section-title">
-
-<h2>Publications</h2>
-
-<p>
-Research papers and academic contributions
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-
-<h3>
-Coming Soon
-</h3>
-
-
-<p>
-Future publications and research work will be added here.
-</p>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section id="contact">
-
-
-<div class="container">
-
-
-<div class="contact">
-
-
-<h2>
-Let's Connect
-</h2>
-
-
-<p>
-Research collaborations, projects and learning initiatives.
-</p>
-
-
-<a href="#" class="button">
-Contact Me
-</a>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-</main>
-
-
-
-
-<footer>
-
-<p>
-© 2026 Shatha Dweikat. All Rights Reserved.
-</p>
-
-</footer>
-
-
 
 </body>
 
 </html>
-.profile-brand{
-
-display:flex;
-align-items:center;
-justify-content:center;
-gap:50px;
-padding:50px 0;
-
-}
-
-
-.profile-brand img{
-
-width:200px;
-height:200px;
-object-fit:cover;
-border-radius:50%;
-border:8px solid white;
-box-shadow:var(--shadow);
-
-}
-
-
-.brand-text h1{
-
-font-size:4rem;
-}
-
-
-.brand-text h1 span{
-
-color:var(--emerald);
-
-}
-
-
