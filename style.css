@@ -1150,3 +1150,360 @@ section {
 
 
 }
+/* =========================================
+   Publications Section
+========================================= */
+
+
+.publications {
+
+    background: rgba(255,255,255,0.35);
+
+}
+
+
+
+.publication-card {
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--soft-shadow);
+
+    transition:var(--transition);
+
+}
+
+
+
+.publication-card:hover {
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.publication-card h3 {
+
+    color:var(--emerald-dark);
+
+    margin-bottom:15px;
+
+}
+
+
+
+.publication-card p {
+
+    color:#666;
+
+}
+
+
+
+/* =========================================
+   Resume Section
+========================================= */
+
+
+.resume-box {
+
+    text-align:center;
+
+    background:white;
+
+    padding:60px 40px;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--soft-shadow);
+
+}
+
+
+
+.resume-box h2 {
+
+    margin-bottom:20px;
+
+    color:var(--emerald-dark);
+
+}
+
+
+
+.resume-box p {
+
+    max-width:600px;
+
+    margin:0 auto 30px;
+
+    color:#666;
+
+}
+
+
+
+/* =========================================
+   Contact Section
+========================================= */
+
+
+.contact {
+
+    background:rgba(184,227,209,0.18);
+
+}
+
+
+
+.contact-content {
+
+    text-align:center;
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+
+
+.contact-content h2 {
+
+    font-size:2.2rem;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.contact-content p {
+
+    color:#666;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.contact-links {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.contact-links a {
+
+    padding:12px 25px;
+
+    border-radius:50px;
+
+    background:white;
+
+    color:var(--emerald-dark);
+
+    box-shadow:var(--soft-shadow);
+
+    transition:var(--transition);
+
+}
+
+
+
+.contact-links a:hover {
+
+    background:var(--emerald);
+
+    color:white;
+
+    transform:translateY(-4px);
+
+}
+
+
+
+/* =========================================
+   Footer
+========================================= */
+
+
+footer {
+
+    background:var(--charcoal);
+
+    color:white;
+
+    padding:35px 0;
+
+    text-align:center;
+
+}
+
+
+
+footer p {
+
+    font-size:.9rem;
+
+    opacity:.8;
+
+}
+
+
+
+
+/* =========================================
+   Mobile Menu Button
+========================================= */
+
+
+.menu-toggle {
+
+    display:none;
+
+    font-size:1.8rem;
+
+    color:var(--emerald-dark);
+
+    cursor:pointer;
+
+}
+
+
+
+/* =========================================
+   Final Responsive Adjustments
+========================================= */
+
+
+@media(max-width:900px){
+
+
+.navbar {
+
+    height:80px;
+
+}
+
+
+.menu-toggle {
+
+    display:block;
+
+}
+
+
+.nav-links {
+
+    position:absolute;
+
+    top:80px;
+
+    left:0;
+
+    width:100%;
+
+    background:var(--cream);
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:30px;
+
+    gap:25px;
+
+    display:none;
+
+}
+
+
+
+.nav-links.active {
+
+    display:flex;
+
+}
+
+
+
+.hero-text h1 {
+
+    font-size:3rem;
+
+}
+
+
+
+.section-title h2 {
+
+    font-size:2rem;
+
+}
+
+
+}
+
+
+
+@media(max-width:500px){
+
+
+section {
+
+    padding:75px 0;
+
+}
+
+
+
+.container {
+
+    width:88%;
+
+}
+
+
+
+.hero-text .arabic-name {
+
+    font-size:1.5rem;
+
+}
+
+
+
+.btn {
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+
+
+.resume-box {
+
+    padding:40px 20px;
+
+}
+
+
+
+}
