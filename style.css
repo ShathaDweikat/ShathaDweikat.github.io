@@ -1335,7 +1335,22 @@ section {
 
 }
 
+/* CONTACT LINKS */
 
+.card a{
+
+color:var(--emerald);
+text-decoration:none;
+font-weight:600;
+
+}
+
+
+.card a:hover{
+
+text-decoration:underline;
+
+}
 
 /* =========================================
    Footer
