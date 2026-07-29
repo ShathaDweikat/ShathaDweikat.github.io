@@ -1,5 +1,3 @@
-<!-- PART 1/3 -->
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
@@ -10,263 +8,7 @@
 
 <title>Shatha Dweikat | Research • Strategy • Sustainability</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cairo:wght@400;500;700&display=swap" rel="stylesheet">
-
-
-<style>
-
-:root{
-
---cream:#F7F1E7;
---emerald:#0F766E;
---mint:#B8E3D1;
---dark:#222;
---shadow:0 15px 35px rgba(0,0,0,.08);
-
-}
-
-
-*{
-
-margin:0;
-padding:0;
-box-sizing:border-box;
-
-}
-
-
-body{
-
-background:var(--cream);
-color:var(--dark);
-font-family:"Inter","Cairo",sans-serif;
-line-height:1.7;
-
-}
-
-
-
-.container{
-
-width:90%;
-max-width:1150px;
-margin:auto;
-
-}
-
-
-
-section{
-
-padding:70px 0;
-
-}
-
-
-
-/* COVER */
-
-.cover-section{
-
-padding:0;
-
-}
-
-
-.cover{
-
-width:100%;
-height:450px;
-object-fit:contain;
-display:block;
-
-}
-
-
-
-/* PROFILE */
-
-.brand{
-
-padding:35px 0;
-
-}
-
-
-.profile-brand{
-
-display:flex;
-align-items:center;
-justify-content:center;
-gap:30px;
-
-}
-
-
-
-.profile-brand img{
-
-width:180px;
-height:180px;
-object-fit:cover;
-border-radius:50%;
-border:5px solid white;
-box-shadow:var(--shadow);
-
-}
-
-
-
-.brand-text h1{
-
-font-size:3.5rem;
-line-height:1.1;
-
-}
-
-
-
-.brand-text h1 span{
-
-color:var(--emerald);
-
-}
-
-
-
-.arabic-name{
-
-font-family:"Cairo";
-font-size:1.8rem;
-color:#555;
-
-}
-
-
-
-.tagline{
-
-color:var(--emerald);
-font-weight:600;
-
-}
-
-
-
-/* NAVIGATION */
-
-.navbar{
-
-background:white;
-padding:18px 0;
-box-shadow:var(--shadow);
-
-}
-
-
-
-.nav-container{
-
-width:90%;
-max-width:1150px;
-margin:auto;
-
-display:flex;
-justify-content:center;
-align-items:center;
-gap:35px;
-
-}
-
-
-
-.nav-container a{
-
-text-decoration:none;
-color:var(--dark);
-font-weight:600;
-font-family:"Cairo","Inter",sans-serif;
-
-}
-
-
-
-.nav-container a:hover{
-
-color:var(--emerald);
-
-}
-
-
-
-
-/* TITLES */
-
-.section-title{
-
-text-align:center;
-margin-bottom:40px;
-
-}
-
-
-
-.section-title h2{
-
-font-size:2.5rem;
-
-}
-
-
-
-.section-title p{
-
-color:#666;
-
-}
-
-
-
-/* CARD */
-
-.card{
-
-background:white;
-padding:40px;
-border-radius:25px;
-box-shadow:var(--shadow);
-
-}
-
-
-
-.card h3{
-
-color:var(--emerald);
-margin-bottom:20px;
-
-}
-
-
-
-
-/* BUTTON */
-
-.button{
-
-display:inline-block;
-margin-top:20px;
-background:var(--emerald);
-color:white;
-padding:12px 30px;
-border-radius:50px;
-text-decoration:none;
-
-}
-
-
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -274,35 +16,92 @@ text-decoration:none;
 <body>
 
 
+<header>
+
+<div class="container">
+
+<nav class="navbar">
+
+
+<a href="index.html" class="logo">
+
+<img src="logo.png" alt="Shatha Dweikat Logo">
+
+<span>
+Shatha Dweikat
+</span>
+
+</a>
+
+
+
+<ul class="nav-links">
+
+<li>
+<a href="#about">من أنا</a>
+</li>
+
+
+<li>
+<a href="#research">الأبحاث</a>
+</li>
+
+
+<li>
+<a href="#learning">مركز المعرفة</a>
+</li>
+
+
+<li>
+<a href="#publications">المنشورات</a>
+</li>
+
+
+<li>
+<a href="#contact">تواصل</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+</div>
+
+</header>
+
+
+
 <main>
 
 
-<section class="cover-section">
 
-<img class="cover" src="cover.png">
+<!-- HERO -->
 
-</section>
-
-
-
-
-<section class="brand">
+<section class="hero">
 
 
 <div class="container">
 
 
-<div class="profile-brand">
+<div class="hero-content">
 
 
-<img src="profile.jpg.png">
+<div class="hero-text">
 
 
-<div class="brand-text">
+<div class="small-title">
+RESEARCH • STRATEGY • SUSTAINABILITY
+</div>
+
 
 
 <h1>
-Shatha <span>Dweikat</span>
+Shatha
+<span>
+Dweikat
+</span>
 </h1>
 
 
@@ -313,13 +112,50 @@ Shatha <span>Dweikat</span>
 
 
 
-<div class="tagline">
-Research • Strategy • Sustainability
+<div class="hero-tagline">
+Human Potential • Social Impact • Sustainable Change
 </div>
 
 
 
+<p class="hero-description">
+
+الإنسان وإمكاناته هما الاستثمار الأكثر قيمة في بناء مستقبل أفضل.
+أسعى إلى الربط بين المعرفة، البحث، والتنمية المستدامة لصناعة أثر اجتماعي هادف.
+
+</p>
+
+
+
+<div class="hero-buttons">
+
+
+<a href="#about" class="btn btn-primary">
+اكتشف المزيد
+</a>
+
+
+<a href="#contact" class="btn btn-outline">
+تواصل معي
+</a>
+
+
 </div>
+
+
+</div>
+
+
+
+
+<div class="hero-image">
+
+
+<img src="profile.jpg.png" alt="Shatha Dweikat">
+
+
+</div>
+
 
 
 </div>
@@ -334,58 +170,44 @@ Research • Strategy • Sustainability
 
 
 
-<nav class="navbar">
+<!-- BRAND STATEMENT -->
 
 
-<div class="nav-container">
+<section>
 
 
-<a href="index.html">
-الرئيسية
-</a>
+<div class="container">
 
 
-
-<a href="#about">
-من أنا
-</a>
+<div class="brand-statement">
 
 
+<h3>
 
-<a href="#research">
-الأبحاث
-</a>
+أؤمن أن 
+<span>
+بناء الإنسان
+</span>
+هو البداية لصناعة أثر مستدام
 
-
-
-<a href="#courses">
-مركز المعرفة
-</a>
-
-
-
-<a href="#publications">
-المنشورات
-</a>
-
-
-
-<a href="#contact">
-تواصل
-</a>
-
+</h3>
 
 
 </div>
 
 
-</nav>
+</div>
+
+
+</section>
 
 
 
 
 
-<section id="about">
+<!-- ABOUT -->
+
+<section id="about" class="about">
 
 
 <div class="container">
@@ -393,11 +215,9 @@ Research • Strategy • Sustainability
 
 <div class="section-title">
 
-
 <h2>
 من أنا
 </h2>
-
 
 
 <p>
@@ -405,17 +225,19 @@ Research • Strategy • Sustainability
 </p>
 
 
-
 </div>
 
 
 
+<div class="about-content">
 
-<div class="card">
+
+
+<div class="about-text">
 
 
 <h3>
-أؤمن بأن بناء الإنسان هو البداية لصناعة أثر مستدام
+بناء المعرفة لصناعة أثر هادف
 </h3>
 
 
@@ -433,8 +255,29 @@ Research • Strategy • Sustainability
 
 
 <p>
-أسعى من خلال مسيرتي ومشاريعي إلى الربط بين المعرفة والممارسة العملية، وتطوير أفكار ومبادرات تساهم في تعزيز الوعي، دعم التغيير الإيجابي، وخلق قيمة مستدامة للمجتمع.
+يركز مساري الأكاديمي في مجال المسؤولية المجتمعية للشركات والتنمية المستدامة على البحث، الاستدامة، التمكين، وصناعة أثر اجتماعي هادف.
 </p>
+
+
+
+</div>
+
+
+
+<div class="about-card">
+
+
+<h3>
+رؤيتي
+</h3>
+
+
+<p>
+الربط بين البحث العلمي والممارسة العملية لتطوير أفكار ومبادرات تساهم في تعزيز الوعي، دعم التغيير الإيجابي، وخلق قيمة مستدامة للمجتمع.
+</p>
+
+
+</div>
 
 
 
@@ -447,6 +290,8 @@ Research • Strategy • Sustainability
 </section>
 <!-- PART 2/3 -->
 
+
+<!-- RESEARCH -->
 
 <section id="research">
 
@@ -472,37 +317,25 @@ Research • Strategy • Sustainability
 
 
 
-<div class="cards">
+<div class="research-grid">
 
 
-<div class="small-card">
+
+<div class="research-card">
 
 
-<h3>
+<div class="research-icon">
 CSR
-</h3>
-
-
-<p>
-المسؤولية المجتمعية للشركات وصناعة القيمة المستدامة.
-</p>
-
-
 </div>
-
-
-
-
-<div class="small-card">
 
 
 <h3>
-الاستدامة
+المسؤولية المجتمعية للشركات
 </h3>
 
 
 <p>
-استراتيجيات التنمية المستدامة والأثر طويل المدى.
+دراسة دور المؤسسات في خلق قيمة اجتماعية مستدامة وربط الأداء المؤسسي بالأثر المجتمعي.
 </p>
 
 
@@ -511,7 +344,37 @@ CSR
 
 
 
-<div class="small-card">
+
+<div class="research-card">
+
+
+<div class="research-icon">
+SD
+</div>
+
+
+<h3>
+التنمية المستدامة
+</h3>
+
+
+<p>
+استراتيجيات التنمية المستدامة وبناء حلول طويلة المدى تدعم المجتمع والإنسان.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="research-card">
+
+
+<div class="research-icon">
+SI
+</div>
 
 
 <h3>
@@ -520,7 +383,7 @@ CSR
 
 
 <p>
-التمكين، تنمية المجتمع، وتعزيز الإمكانات الإنسانية.
+التمكين، تنمية المجتمع، وتعزيز الإمكانات الإنسانية لصناعة تغيير إيجابي.
 </p>
 
 
@@ -542,11 +405,13 @@ CSR
 
 
 
-<section id="courses">
+<!-- LEARNING HUB -->
+
+
+<section id="learning" class="learning">
 
 
 <div class="container">
-
 
 
 <div class="section-title">
@@ -557,11 +422,9 @@ CSR
 </h2>
 
 
-
 <p>
-الدورات والموارد التعليمية المجانية
+الدورات والموارد التعليمية
 </p>
-
 
 
 </div>
@@ -570,7 +433,11 @@ CSR
 
 
 
-<div class="course">
+<div class="cards-grid">
+
+
+
+<div class="learning-card">
 
 
 <span class="badge">
@@ -578,11 +445,9 @@ CSR
 </span>
 
 
-
-<h2>
+<h3>
 رحلة التغيير | Journey of Change
-</h2>
-
+</h3>
 
 
 <p>
@@ -591,12 +456,13 @@ CSR
 
 
 
-
-<a href="knowledge-hub.html" class="button">
-
+<a href="knowledge-hub.html" class="btn btn-primary">
 استكشف المحتوى
-
 </a>
+
+
+</div>
+
 
 
 
@@ -614,11 +480,80 @@ CSR
 
 
 
-<section id="publications">
+<!-- SOCIAL IMPACT -->
+
+
+<section id="initiatives" class="initiatives">
 
 
 <div class="container">
 
+
+<div class="section-title">
+
+
+<h2>
+المبادرات والأثر الاجتماعي
+</h2>
+
+
+<p>
+أفكار ومشاريع مستقبلية
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="initiative-card">
+
+
+
+<div class="initiative-content">
+
+
+<h3>
+خطوة 19 | Step 19
+</h3>
+
+
+<p>
+مبادرة مقترحة تهدف إلى دعم وتمكين الفتيات اليتيمات من خلال التعليم، التطوير الشخصي، وخلق فرص للنمو.
+</p>
+
+
+
+<span class="status">
+Concept Development
+</span>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- PUBLICATIONS -->
+
+
+<section id="publications" class="publications">
+
+
+<div class="container">
 
 
 <div class="section-title">
@@ -629,31 +564,26 @@ CSR
 </h2>
 
 
-
 <p>
 الأبحاث والمساهمات العلمية
 </p>
-
 
 
 </div>
 
 
 
-
-<div class="card">
+<div class="publication-card">
 
 
 <h3>
-قريبًا
+قريباً
 </h3>
-
 
 
 <p>
 سيتم إضافة الأبحاث والمنشورات العلمية المستقبلية هنا.
 </p>
-
 
 
 </div>
@@ -667,168 +597,20 @@ CSR
 <!-- PART 3/3 -->
 
 
-<style>
+<!-- CONTACT -->
 
-
-/* RESEARCH CARDS */
-
-.cards{
-
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
-
-}
-
-
-.small-card{
-
-background:white;
-padding:30px;
-border-radius:25px;
-box-shadow:var(--shadow);
-transition:.3s;
-text-align:center;
-
-}
-
-
-.small-card:hover{
-
-transform:translateY(-7px);
-
-}
-
-
-.small-card h3{
-
-color:var(--emerald);
-margin-bottom:15px;
-
-}
-
-
-
-/* COURSE */
-
-.course{
-
-background:rgba(184,227,209,.25);
-padding:40px;
-border-radius:30px;
-
-}
-
-
-.badge{
-
-display:inline-block;
-background:var(--mint);
-color:var(--emerald);
-padding:7px 18px;
-border-radius:30px;
-margin-bottom:15px;
-
-}
-
-
-
-/* CONTACT */
-
-#contact .card a{
-
-color:var(--emerald);
-font-weight:600;
-
-}
-
-
-#contact .card a:hover{
-
-text-decoration:underline;
-
-}
-
-
-
-/* FOOTER */
-
-footer{
-
-background:var(--dark);
-color:white;
-text-align:center;
-padding:30px;
-
-}
-
-
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-
-.profile-brand{
-
-flex-direction:column;
-text-align:center;
-
-}
-
-
-.brand-text h1{
-
-font-size:2.7rem;
-
-}
-
-
-.cards{
-
-grid-template-columns:1fr;
-
-}
-
-
-.cover{
-
-height:280px;
-
-}
-
-
-.nav-container{
-
-flex-wrap:wrap;
-gap:15px;
-
-}
-
-
-}
-
-
-
-</style>
-
-
-
-
-
-
-<section id="contact">
+<section id="contact" class="contact">
 
 
 <div class="container">
 
 
-<div class="card">
+<div class="contact-content">
 
 
-<h3>
+<h2>
 تواصل معي
-</h3>
+</h2>
 
 
 
@@ -838,27 +620,30 @@ gap:15px;
 
 
 
-<p>
-📧
+
+<div class="contact-links">
+
+
+
 <a href="mailto:shatha.dweikat.official@gmail.com">
-shatha.dweikat.official@gmail.com
+
+📧 البريد الإلكتروني
+
 </a>
-</p>
 
 
 
-<p>
-🔗
+
 <a href="https://www.linkedin.com/in/shatha-dweikat" target="_blank">
-LinkedIn
+
+🔗 LinkedIn
+
 </a>
-</p>
 
 
 
-<a href="mailto:shatha.dweikat.official@gmail.com" class="button">
-راسلني
-</a>
+
+</div>
 
 
 
@@ -874,7 +659,9 @@ LinkedIn
 
 
 
+
 </main>
+
 
 
 
@@ -883,12 +670,19 @@ LinkedIn
 <footer>
 
 
+<div class="container">
+
+
 <p>
 © 2026 Shatha Dweikat. All Rights Reserved.
 </p>
 
 
+</div>
+
+
 </footer>
+
 
 
 
