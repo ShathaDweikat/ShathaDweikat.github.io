@@ -12,6 +12,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cairo:wght@400;500;700&display=swap" rel="stylesheet">
 
+
 <style>
 
 :root{
@@ -22,119 +23,220 @@
 --shadow:0 15px 35px rgba(0,0,0,.08);
 }
 
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 }
 
+
 body{
+
 background:var(--cream);
 color:var(--dark);
 font-family:"Inter","Cairo",sans-serif;
 line-height:1.7;
+
 }
 
+
 .container{
+
 width:90%;
 max-width:1150px;
 margin:auto;
+
 }
 
+
 section{
+
 padding:70px 0;
+
 }
 
 
 /* COVER */
 
 .cover-section{
+
 padding:0;
+
 }
 
+
 .cover{
+
 width:100%;
 height:450px;
 object-fit:contain;
 display:block;
+
 }
+
 
 
 /* PROFILE */
 
+
 .brand{
+
 padding:35px 0;
+
 }
 
+
 .profile-brand{
+
 display:flex;
 align-items:center;
 justify-content:center;
 gap:30px;
+
 }
 
+
 .profile-brand img{
+
 width:180px;
 height:180px;
 object-fit:cover;
 border-radius:50%;
 border:5px solid white;
 box-shadow:var(--shadow);
+
 }
+
+
 
 .brand-text h1{
+
 font-size:3.5rem;
 line-height:1.1;
+
 }
+
 
 .brand-text h1 span{
+
 color:var(--emerald);
+
 }
 
+
 .arabic-name{
+
 font-family:"Cairo";
 font-size:1.8rem;
 color:#555;
+
 }
 
+
 .tagline{
+
 color:var(--emerald);
 font-weight:600;
+
 }
+
+
+
+/* NAVIGATION */
+
+
+.navbar{
+
+background:white;
+padding:18px 0;
+box-shadow:var(--shadow);
+
+}
+
+
+.nav-container{
+
+width:90%;
+max-width:1150px;
+margin:auto;
+
+display:flex;
+justify-content:center;
+align-items:center;
+gap:35px;
+
+}
+
+
+.nav-container a{
+
+text-decoration:none;
+color:var(--dark);
+font-weight:600;
+font-family:"Cairo","Inter",sans-serif;
+
+}
+
+
+.nav-container a:hover{
+
+color:var(--emerald);
+
+}
+
 
 
 /* TITLES */
 
+
 .section-title{
+
 text-align:center;
 margin-bottom:40px;
+
 }
+
 
 .section-title h2{
+
 font-size:2.5rem;
+
 }
 
+
 .section-title p{
+
 color:#666;
+
 }
+
 
 
 /* CARD */
 
+
 .card{
+
 background:white;
 padding:40px;
 border-radius:25px;
 box-shadow:var(--shadow);
+
 }
 
+
 .card h3{
+
 color:var(--emerald);
 margin-bottom:20px;
+
 }
+  <!-- PART 2/3 -->
 
 
 /* RESEARCH CARDS */
+
 
 .cards{
 
@@ -169,10 +271,11 @@ color:var(--emerald);
 margin-bottom:15px;
 
 }
-  <!-- PART 2/3 -->
+
 
 
 /* COURSE */
+
 
 .course{
 
@@ -195,6 +298,7 @@ margin-bottom:15px;
 }
 
 
+
 .button{
 
 display:inline-block;
@@ -211,6 +315,7 @@ text-decoration:none;
 
 /* FOOTER */
 
+
 footer{
 
 background:var(--dark);
@@ -224,7 +329,9 @@ padding:30px;
 
 /* MOBILE */
 
+
 @media(max-width:900px){
+
 
 .profile-brand{
 
@@ -234,11 +341,13 @@ text-align:center;
 }
 
 
+
 .brand-text h1{
 
 font-size:2.7rem;
 
 }
+
 
 
 .cards{
@@ -248,11 +357,22 @@ grid-template-columns:1fr;
 }
 
 
+
 .cover{
 
 height:280px;
 
 }
+
+
+
+.nav-container{
+
+flex-wrap:wrap;
+gap:15px;
+
+}
+
 
 }
 
@@ -262,10 +382,13 @@ height:280px;
 </head>
 
 
+
 <body>
 
 
+
 <main>
+
 
 
 <section class="cover-section">
@@ -276,9 +399,12 @@ height:280px;
 
 
 
+
 <section class="brand">
 
+
 <div class="container">
+
 
 <div class="profile-brand">
 
@@ -286,11 +412,14 @@ height:280px;
 <img src="profile.jpg.png">
 
 
+
 <div class="brand-text">
+
 
 <h1>
 Shatha <span>Dweikat</span>
 </h1>
+
 
 
 <div class="arabic-name">
@@ -298,43 +427,114 @@ Shatha <span>Dweikat</span>
 </div>
 
 
+
 <div class="tagline">
 Research • Strategy • Sustainability
 </div>
 
 
-</div>
 
 </div>
 
+
 </div>
+
+
+</div>
+
 
 </section>
 
 
 
+
+
+<nav class="navbar">
+
+
+<div class="nav-container">
+
+
+<a href="index.html">
+الرئيسية
+</a>
+
+
+
+<a href="#about">
+من أنا
+</a>
+
+
+
+<a href="#research">
+الأبحاث
+</a>
+
+
+
+<a href="knowledge-hub.html">
+مركز المعرفة
+</a>
+
+
+
+<a href="#publications">
+المنشورات
+</a>
+
+
+
+<a href="#contact">
+تواصل
+</a>
+
+
+
+</div>
+
+
+</nav>
+
+
+
+
+
 <section id="about">
+
 
 <div class="container">
 
+
+
 <div class="section-title">
+
 
 <h2>
 من أنا
 </h2>
 
+
+
 <p>
 رحلتي ورؤيتي
 </p>
 
+
+
 </div>
+
+
+
 
 
 <div class="card">
 
+
 <h3>
 بناء المعرفة لصناعة أثر هادف
 </h3>
+
 
 
 <p>
@@ -342,28 +542,39 @@ Research • Strategy • Sustainability
 </p>
 
 
+
 <p>
-يركز مساري الأكاديمي في مجال المسؤولية المجتمعية للشركات والتنمية المستدامة على البحث، والاستدامة، والتمكين، وصناعة أثر اجتماعي meaningful.
+يركز مساري الأكاديمي في مجال المسؤولية المجتمعية للشركات والتنمية المستدامة على البحث، والاستدامة، والتمكين، وصناعة أثر اجتماعي هادف.
 </p>
 
 
-</div>
 
 </div>
+
+
+
+</div>
+
 
 </section>
 
 
 
+
+
 <section id="research">
+
 
 <div class="container">
 
+
 <div class="section-title">
+
 
 <h2>
 الأبحاث
 </h2>
+
 
 
 <p>
@@ -371,13 +582,17 @@ Research • Strategy • Sustainability
 </p>
 
 
+
 </div>
 
 
+
 <div class="cards">
+  <!-- PART 3/3 -->
 
 
 <div class="small-card">
+
 
 <h3>
 CSR
@@ -393,7 +608,9 @@ CSR
 
 
 
+
 <div class="small-card">
+
 
 <h3>
 الاستدامة
@@ -409,7 +626,9 @@ CSR
 
 
 
+
 <div class="small-card">
+
 
 <h3>
 الأثر الاجتماعي
@@ -424,23 +643,34 @@ CSR
 </div>
 
 
-</div>
 
 </div>
+
+
+</div>
+
 
 </section>
-<!-- PART 3/3 -->
+
+
+
+
 
 
 <section id="courses">
 
+
 <div class="container">
 
+
+
 <div class="section-title">
+
 
 <h2>
 مركز المعرفة
 </h2>
+
 
 
 <p>
@@ -448,7 +678,11 @@ CSR
 </p>
 
 
+
 </div>
+
+
+
 
 
 <div class="course">
@@ -459,9 +693,11 @@ CSR
 </span>
 
 
+
 <h2>
 رحلة التغيير | Journey of Change
 </h2>
+
 
 
 <p>
@@ -469,14 +705,23 @@ CSR
 </p>
 
 
+
+
 <a href="knowledge-hub.html" class="button">
+
 استكشف المحتوى
+
 </a>
 
 
-</div>
+
 
 </div>
+
+
+
+</div>
+
 
 </section>
 
@@ -484,16 +729,22 @@ CSR
 
 
 
+
+
 <section id="publications">
+
 
 <div class="container">
 
 
+
 <div class="section-title">
+
 
 <h2>
 المنشورات
 </h2>
+
 
 
 <p>
@@ -501,7 +752,9 @@ CSR
 </p>
 
 
+
 </div>
+
 
 
 
@@ -513,15 +766,20 @@ CSR
 </h3>
 
 
+
 <p>
 سيتم إضافة الأبحاث والمنشورات العلمية المستقبلية هنا.
 </p>
 
 
+
 </div>
 
 
+
+
 </div>
+
 
 </section>
 
@@ -529,9 +787,13 @@ CSR
 
 
 
+
+
 <section id="contact">
 
+
 <div class="container">
+
 
 
 <div class="card">
@@ -542,22 +804,36 @@ CSR
 </h3>
 
 
+
+
 <p>
 للتعاون البحثي، المشاريع، والمبادرات التعليمية.
 </p>
 
 
+
+
+
 <a href="#" class="button">
+
 تواصل
+
 </a>
 
 
-</div>
 
 
 </div>
+
+
+
+</div>
+
+
 
 </section>
+
+
 
 
 
@@ -565,14 +841,20 @@ CSR
 
 
 
+
+
 <footer>
+
 
 <p>
 © 2026 Shatha Dweikat. All Rights Reserved.
 </p>
 
 
+
 </footer>
+
+
 
 
 
