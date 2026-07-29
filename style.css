@@ -14,7 +14,6 @@
 
 :root {
 
-    /* Brand Colors */
     --cream: #F7F1E7;
     --emerald: #0F766E;
     --emerald-dark: #115E59;
@@ -22,17 +21,15 @@
     --charcoal: #262626;
     --white: #FFFFFF;
 
-    /* Shadows */
     --soft-shadow:
     0 10px 30px rgba(15, 118, 110, 0.08);
 
-    /* Border */
     --radius: 20px;
 
-    /* Transition */
     --transition: all 0.35s ease;
 
 }
+
 
 
 /* =========================================
@@ -40,15 +37,21 @@
 ========================================= */
 
 * {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
+
 
 
 html {
+
     scroll-behavior: smooth;
+
 }
+
 
 
 body {
@@ -66,6 +69,7 @@ body {
 }
 
 
+
 a {
 
     text-decoration: none;
@@ -75,11 +79,13 @@ a {
 }
 
 
+
 ul {
 
     list-style: none;
 
 }
+
 
 
 img {
@@ -96,6 +102,7 @@ img {
    Container
 ========================================= */
 
+
 .container {
 
     width: min(1120px, 90%);
@@ -103,6 +110,7 @@ img {
     margin: auto;
 
 }
+
 
 
 
@@ -147,6 +155,7 @@ header {
 
 /* Logo */
 
+
 .logo {
 
     display: flex;
@@ -156,6 +165,7 @@ header {
     gap: 12px;
 
 }
+
 
 
 .logo img {
@@ -184,6 +194,7 @@ header {
 
 /* Menu */
 
+
 .nav-links {
 
     display: flex;
@@ -191,6 +202,7 @@ header {
     gap: 35px;
 
 }
+
 
 
 .nav-links a {
@@ -267,6 +279,7 @@ section {
 }
 
 
+
 .section-title h2 {
 
     font-size: 2.3rem;
@@ -288,6 +301,7 @@ section {
     margin: auto;
 
 }
+
 
 
 /* =========================================
@@ -348,10 +362,6 @@ section {
     color: white;
 
 }
-
-
-
-/* End of Part 1 */
 /* =========================================
    Hero Section
 ========================================= */
@@ -375,7 +385,6 @@ section {
 
 
 
-/* Decorative Background Shapes */
 
 .hero::before {
 
@@ -400,6 +409,7 @@ section {
     z-index: -1;
 
 }
+
 
 
 
@@ -582,6 +592,8 @@ section {
 
 
 
+
+
 /* Floating Animation */
 
 
@@ -680,7 +692,7 @@ section {
 ========================================= */
 
 
-@media(max-width: 900px) {
+@media(max-width:900px) {
 
 
     .hero-content {
@@ -732,6 +744,8 @@ section {
 
 
 }
+
+
 
 /* =========================================
    About Section
@@ -830,9 +844,6 @@ section {
     transform: translateY(-8px);
 
 }
-
-
-
 /* =========================================
    Research Section
 ========================================= */
@@ -1037,6 +1048,7 @@ section {
 
 
 
+
 /* =========================================
    Social Impact Initiatives
 ========================================= */
@@ -1150,6 +1162,9 @@ section {
 
 
 }
+
+
+
 /* =========================================
    Publications Section
 ========================================= */
@@ -1335,22 +1350,33 @@ section {
 
 }
 
-/* CONTACT LINKS */
 
-.card a{
 
-color:var(--emerald);
-text-decoration:none;
-font-weight:600;
+/* CONTACT LINKS - Added */
+
+.contact-links a,
+.card a {
+
+    color:var(--emerald);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+
+
+.contact-links a:hover,
+.card a:hover {
+
+    color:var(--emerald-dark);
+
+    text-decoration:underline;
 
 }
 
 
-.card a:hover{
-
-text-decoration:underline;
-
-}
 
 /* =========================================
    Footer
@@ -1376,149 +1402,5 @@ footer p {
     font-size:.9rem;
 
     opacity:.8;
-
-}
-
-
-
-
-/* =========================================
-   Mobile Menu Button
-========================================= */
-
-
-.menu-toggle {
-
-    display:none;
-
-    font-size:1.8rem;
-
-    color:var(--emerald-dark);
-
-    cursor:pointer;
-
-}
-
-
-
-/* =========================================
-   Final Responsive Adjustments
-========================================= */
-
-
-@media(max-width:900px){
-
-
-.navbar {
-
-    height:80px;
-
-}
-
-
-.menu-toggle {
-
-    display:block;
-
-}
-
-
-.nav-links {
-
-    position:absolute;
-
-    top:80px;
-
-    left:0;
-
-    width:100%;
-
-    background:var(--cream);
-
-    flex-direction:column;
-
-    align-items:center;
-
-    padding:30px;
-
-    gap:25px;
-
-    display:none;
-
-}
-
-
-
-.nav-links.active {
-
-    display:flex;
-
-}
-
-
-
-.hero-text h1 {
-
-    font-size:3rem;
-
-}
-
-
-
-.section-title h2 {
-
-    font-size:2rem;
-
-}
-
-
-}
-
-
-
-@media(max-width:500px){
-
-
-section {
-
-    padding:75px 0;
-
-}
-
-
-
-.container {
-
-    width:88%;
-
-}
-
-
-
-.hero-text .arabic-name {
-
-    font-size:1.5rem;
-
-}
-
-
-
-.btn {
-
-    width:100%;
-
-    text-align:center;
-
-}
-
-
-
-.resume-box {
-
-    padding:40px 20px;
-
-}
-
-
 
 }
