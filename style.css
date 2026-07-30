@@ -1448,7 +1448,7 @@ footer p {
 
 .cover{
 
-    width:90%;
+    width:100%;
     max-width:1200px;
     height:auto;
     object-fit:contain;
