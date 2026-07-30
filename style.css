@@ -825,7 +825,7 @@ section {
 
 .about-card {
 
-    background: white;
+    background: var(--emerald);
 
     padding: 45px;
 
@@ -834,6 +834,33 @@ section {
     box-shadow: var(--soft-shadow);
 
     transition: var(--transition);
+
+    color: white;
+
+}
+
+
+.about-card h3 {
+
+    color: white;
+
+    margin-bottom: 20px;
+
+}
+
+
+.about-card p {
+
+    color: rgba(255,255,255,0.9);
+
+    line-height: 1.9;
+
+}
+
+
+.about-card:hover {
+
+    transform: translateY(-8px);
 
 }
 
