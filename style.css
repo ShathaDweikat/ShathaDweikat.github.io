@@ -1433,24 +1433,25 @@ footer p {
 }
 
 
+/* COVER */
+
 .cover-section{
 
-    padding-top:90px;
-    padding-bottom:20px;
+    padding-top:120px;
+    padding-bottom:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
 }
 
 
 .cover{
 
-    width:100%;
-
+    width:90%;
+    max-width:1200px;
     height:auto;
-
-    max-height:520px;
-
     object-fit:contain;
-
     display:block;
 
 }
