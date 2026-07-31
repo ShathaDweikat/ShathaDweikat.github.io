@@ -1455,3 +1455,105 @@ footer p {
     display:block;
 
 }
+/* =========================================
+   Knowledge Library Section
+========================================= */
+
+
+.library {
+
+    background: rgba(255,255,255,0.35);
+
+}
+
+
+
+/* =========================================
+   Articles Section
+========================================= */
+
+
+.publications {
+
+    background: rgba(255,255,255,0.35);
+
+}
+
+
+
+/* =========================================
+   New Sections Alignment
+========================================= */
+
+
+.learning-card a {
+
+    margin-top: 10px;
+
+}
+
+
+
+.library .learning-card {
+
+    height: 100%;
+
+}
+
+
+
+/* =========================================
+   Mobile Adjustments
+========================================= */
+
+
+@media(max-width:900px){
+
+
+    .library .cards-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}
+/* =========================================
+   Updated Navbar For New Sections
+========================================= */
+
+
+.nav-links {
+
+    gap: 25px;
+
+}
+
+
+.nav-links a {
+
+    font-size: 0.9rem;
+
+}
+
+
+
+
+@media(max-width:1100px){
+
+
+    .nav-links {
+
+        gap:18px;
+
+    }
+
+
+    .nav-links a {
+
+        font-size:0.85rem;
+
+    }
+
+
+}
