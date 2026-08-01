@@ -1,11 +1,11 @@
 /* =========================================================
-   Shatha Dweikat — Website Interactions
+   Shatha Dweikat Website
+   Main JavaScript
 ========================================================= */
 
 
-/* =========================
-   Mobile Navigation
-========================= */
+/* ================= MOBILE NAVIGATION ================= */
+
 
 const navToggle = document.getElementById("navToggle");
 const navLinks = document.getElementById("navLinks");
@@ -59,9 +59,7 @@ if (navToggle && navLinks) {
 
 
 
-/* =========================
-   Scroll Reveal Animation
-========================= */
+/* ================= SCROLL REVEAL ================= */
 
 
 const revealElements =
@@ -75,7 +73,7 @@ if (
 ){
 
 
-    const observer =
+    const revealObserver =
     new IntersectionObserver(
         entries => {
 
@@ -91,7 +89,7 @@ if (
                     );
 
 
-                    observer.unobserve(
+                    revealObserver.unobserve(
                         entry.target
                     );
 
@@ -104,17 +102,16 @@ if (
 
         },
         {
-            threshold:0.15
+            threshold:.15
         }
     );
-
 
 
 
     revealElements.forEach(element => {
 
 
-        observer.observe(element);
+        revealObserver.observe(element);
 
 
     });
@@ -124,7 +121,7 @@ if (
 }else{
 
 
-    revealElements.forEach(element => {
+    revealElements.forEach(element=>{
 
 
         element.classList.add(
@@ -143,15 +140,48 @@ if (
 
 
 
-/* =========================
-   Smooth Anchor Offset
-   (for fixed header)
-========================= */
+/* ================= CLOSE MENU WHEN CLICK OUTSIDE ================= */
 
 
-document
-.querySelectorAll('a[href^="#"]')
-.forEach(anchor => {
+document.addEventListener(
+"click",
+(event)=>{
+
+
+    if(
+        navLinks &&
+        navToggle &&
+        !navLinks.contains(event.target) &&
+        !navToggle.contains(event.target)
+    ){
+
+
+        navLinks.classList.remove("open");
+
+
+        navToggle.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+
+    }
+
+
+});
+
+
+
+
+
+
+
+/* ================= SMOOTH SCROLL ================= */
+
+
+document.querySelectorAll(
+'a[href^="#"]'
+).forEach(anchor=>{
 
 
     anchor.addEventListener(
@@ -171,23 +201,11 @@ document
                 e.preventDefault();
 
 
+                target.scrollIntoView({
 
-                const headerHeight =
-                document.querySelector("header")
-                ?.offsetHeight || 0;
+                    behavior:"smooth",
 
-
-
-                const position =
-                target.offsetTop - headerHeight;
-
-
-
-                window.scrollTo({
-
-                    top:position,
-
-                    behavior:"smooth"
+                    block:"start"
 
                 });
 
@@ -207,44 +225,43 @@ document
 
 
 
-/* =========================
-   Profile Floating Effect
-========================= */
+
+/* ================= HEADER EFFECT ================= */
 
 
-const profileImage =
-document.querySelector(".profile-image");
-
-
-
-if(profileImage){
-
-
-    window.addEventListener(
-        "mousemove",
-        (e)=>{
-
-
-            const x =
-            (window.innerWidth / 2 - e.clientX)
-            / 60;
+const header =
+document.querySelector("header");
 
 
 
-            const y =
-            (window.innerHeight / 2 - e.clientY)
-            / 80;
+window.addEventListener(
+"scroll",
+()=>{
 
 
-
-            profileImage.style.transform =
-            `
-            translate(${x}px,${y}px)
-            `;
+    if(window.scrollY > 50){
 
 
-        }
-    );
+        header.style.background =
+        "rgba(247,241,231,.96)";
 
 
-}
+        header.style.backdropFilter =
+        "blur(15px)";
+
+
+    }else{
+
+
+        header.style.background =
+        "transparent";
+
+
+        header.style.backdropFilter =
+        "none";
+
+
+    }
+
+
+});
