@@ -1,47 +1,28 @@
-// =========================================================
-// Shatha Dweikat — Personal Research Platform
-// Main JavaScript
-// =========================================================
-
+/* =========================================================
+   Shatha Dweikat — Website Interactions
+========================================================= */
 
 
 /* =========================
    Mobile Navigation
 ========================= */
 
-
 const navToggle = document.getElementById("navToggle");
 const navLinks = document.getElementById("navLinks");
 
 
-function closeMenu(){
-
-    if(!navLinks || !navToggle) return;
-
-    navLinks.classList.remove("open");
-
-    navToggle.setAttribute(
-        "aria-expanded",
-        "false"
-    );
-
-}
-
-
-
-if(navToggle && navLinks){
+if (navToggle && navLinks) {
 
 
     navToggle.addEventListener("click", () => {
 
 
-        const isOpen =
-        navLinks.classList.toggle("open");
+        const opened = navLinks.classList.toggle("open");
 
 
         navToggle.setAttribute(
             "aria-expanded",
-            isOpen
+            opened
         );
 
 
@@ -49,75 +30,30 @@ if(navToggle && navLinks){
 
 
 
-
-    // Close after clicking a link
-
-    navLinks
-    .querySelectorAll("a")
-    .forEach(link => {
+    navLinks.querySelectorAll("a").forEach(link => {
 
 
-        link.addEventListener(
-            "click",
-            closeMenu
-        );
+        link.addEventListener("click", () => {
+
+
+            navLinks.classList.remove("open");
+
+
+            navToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+
+        });
 
 
     });
-
-
-
-
-    // Close when clicking outside
-
-
-    document.addEventListener(
-        "click",
-        (event)=>{
-
-
-            const clickedInside =
-            navLinks.contains(event.target)
-            ||
-            navToggle.contains(event.target);
-
-
-
-            if(!clickedInside){
-
-                closeMenu();
-
-            }
-
-
-        }
-
-    );
-
-
-
-
-    // Escape key closes menu
-
-
-    document.addEventListener(
-        "keydown",
-        (event)=>{
-
-
-            if(event.key === "Escape"){
-
-                closeMenu();
-
-            }
-
-
-        }
-
-    );
 
 
 }
+
+
 
 
 
@@ -133,77 +69,70 @@ document.querySelectorAll(".reveal");
 
 
 
-if(
-    "IntersectionObserver" in window
-    &&
+if (
+    "IntersectionObserver" in window &&
     revealElements.length
 ){
 
 
-    const revealObserver =
+    const observer =
     new IntersectionObserver(
-        (entries)=>{
+        entries => {
 
 
-            entries.forEach(
-                (entry)=>{
+            entries.forEach(entry => {
 
 
-                    if(entry.isIntersecting){
+                if(entry.isIntersecting){
 
 
-
-                        entry.target.classList.add(
-                            "in-view"
-                        );
-
+                    entry.target.classList.add(
+                        "in-view"
+                    );
 
 
-                        revealObserver.unobserve(
-                            entry.target
-                        );
-
-
-                    }
-
+                    observer.unobserve(
+                        entry.target
+                    );
 
 
                 }
-            );
+
+
+            });
 
 
         },
         {
-            threshold:.15
+            threshold:0.15
         }
     );
 
 
 
-    revealElements.forEach(
-        (element)=>{
+
+    revealElements.forEach(element => {
 
 
-            revealObserver.observe(element);
+        observer.observe(element);
 
 
-        }
-    );
+    });
 
 
 
 }else{
 
 
-    revealElements.forEach(
-        element=>{
+    revealElements.forEach(element => {
 
-            element.classList.add(
-                "in-view"
-            );
 
-        }
-    );
+        element.classList.add(
+            "in-view"
+        );
+
+
+    });
 
 
 }
@@ -215,14 +144,14 @@ if(
 
 
 /* =========================
-   Smooth Navigation Offset
-   for fixed Header
+   Smooth Anchor Offset
+   (for fixed header)
 ========================= */
 
 
 document
 .querySelectorAll('a[href^="#"]')
-.forEach(anchor=>{
+.forEach(anchor => {
 
 
     anchor.addEventListener(
@@ -250,8 +179,7 @@ document
 
 
                 const position =
-                target.offsetTop -
-                headerHeight;
+                target.offsetTop - headerHeight;
 
 
 
@@ -268,8 +196,55 @@ document
 
 
         }
-
     );
 
 
 });
+
+
+
+
+
+
+
+/* =========================
+   Profile Floating Effect
+========================= */
+
+
+const profileImage =
+document.querySelector(".profile-image");
+
+
+
+if(profileImage){
+
+
+    window.addEventListener(
+        "mousemove",
+        (e)=>{
+
+
+            const x =
+            (window.innerWidth / 2 - e.clientX)
+            / 60;
+
+
+
+            const y =
+            (window.innerHeight / 2 - e.clientY)
+            / 80;
+
+
+
+            profileImage.style.transform =
+            `
+            translate(${x}px,${y}px)
+            `;
+
+
+        }
+    );
+
+
+}
