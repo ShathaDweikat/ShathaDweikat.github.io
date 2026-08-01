@@ -4,9 +4,17 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Shatha Dweikat | Research • Strategy • Sustainability</title>
+<title>
+Shatha Dweikat | Research • Social Impact • Sustainable Development
+</title>
+
+<meta name="description" content="
+Shatha Dweikat - Researcher in Corporate Social Responsibility,
+Sustainable Development, Social Impact and Human Potential.
+">
 
 <link rel="stylesheet" href="style.css">
 
@@ -15,6 +23,10 @@
 
 <body>
 
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -35,45 +47,61 @@ Shatha Dweikat
 
 
 
-<ul class="nav-links">
+<ul class="nav-links" id="navLinks">
 
 
 <li>
-<a href="#about">من أنا</a>
+<a href="#about">
+من أنا
+</a>
 </li>
 
 
 <li>
-<a href="#courses">الدورات المجانية</a>
+<a href="#research">
+البحث
+</a>
 </li>
 
 
 <li>
-<a href="#articles">المقالات والتحليلات</a>
+<a href="#courses">
+التعلم
+</a>
 </li>
 
 
 <li>
-<a href="#research">مجالات البحث</a>
+<a href="#initiatives">
+الأثر
+</a>
 </li>
 
 
 <li>
-<a href="#library">مكتبة المعرفة</a>
-</li>
-
-
-<li>
-<a href="#initiatives">المبادرات</a>
-</li>
-
-
-<li>
-<a href="#contact">تواصل</a>
+<a href="#contact" class="nav-cta">
+تواصل
+</a>
 </li>
 
 
 </ul>
+
+
+
+<button 
+class="nav-toggle"
+id="navToggle"
+aria-label="فتح القائمة"
+aria-expanded="false"
+aria-controls="navLinks">
+
+<span></span>
+<span></span>
+<span></span>
+
+</button>
+
 
 
 </nav>
@@ -85,13 +113,21 @@ Shatha Dweikat
 
 
 
+
 <main>
 
 
 
+<!-- =========================
+     COVER
+========================= -->
+
+
 <section class="cover-section">
 
-<img class="cover" src="cover.png" alt="Shatha Dweikat Cover">
+<img 
+src="cover.png"
+alt="Shatha Dweikat Personal Brand Cover">
 
 </section>
 
@@ -99,24 +135,34 @@ Shatha Dweikat
 
 
 
-<!-- HERO -->
+<!-- =========================
+     IDENTITY
+========================= -->
 
 
-<section class="hero">
+<section class="identity">
 
 
-<div class="container">
+<div class="identity-wrap reveal">
 
 
-<div class="hero-content">
+<div class="identity-card">
 
 
-<div class="hero-text">
+
+<div class="identity-avatar-wrap">
+
+<img 
+src="profile.jpg.png"
+alt="Shatha Dweikat">
+
+</div>
 
 
-<div class="small-title">
 
-RESEARCH • STRATEGY • SUSTAINABILITY
+<div class="identity-eyebrow">
+
+RESEARCH • SOCIAL IMPACT • SUSTAINABLE DEVELOPMENT
 
 </div>
 
@@ -124,12 +170,9 @@ RESEARCH • STRATEGY • SUSTAINABILITY
 
 <h1>
 
-Shatha
-
+Shatha 
 <span>
-
 Dweikat
-
 </span>
 
 </h1>
@@ -144,24 +187,28 @@ Dweikat
 
 
 
-<div class="hero-tagline">
+
+<p class="identity-tagline">
 
 Human Potential • Social Impact • Sustainable Change
-
-</div>
-
-
-
-<p class="hero-description">
-
-أؤمن أن بناء مجتمعات أكثر استدامة يبدأ بفهم الإنسان واحتياجاته، وأن المعرفة والوعي يمثلان أساساً لصناعة أثر إيجابي حقيقي.
 
 </p>
 
 
 
 
-<div class="hero-buttons">
+<p class="identity-description">
+
+باحثة مهتمة بالعلاقة بين الإنسان والمجتمع والتنمية،
+أسعى إلى بناء معرفة تطبيقية تجمع بين البحث،
+التعلم المستمر، وصناعة أثر اجتماعي مستدام.
+
+</p>
+
+
+
+
+<div class="identity-buttons">
 
 
 <a href="#about" class="btn btn-primary">
@@ -171,26 +218,13 @@ Human Potential • Social Impact • Sustainable Change
 </a>
 
 
+
 <a href="#contact" class="btn btn-outline">
 
 تواصل معي
 
 </a>
 
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="hero-image">
-
-
-<img src="profile.jpg.png" alt="Shatha Dweikat">
 
 
 </div>
@@ -210,8 +244,9 @@ Human Potential • Social Impact • Sustainable Change
 
 
 
-
-<!-- BRAND STATEMENT -->
+<!-- =========================
+     BRAND STATEMENT
+========================= -->
 
 
 <section>
@@ -220,22 +255,28 @@ Human Potential • Social Impact • Sustainable Change
 <div class="container">
 
 
-<div class="brand-statement">
+<div class="brand-statement reveal">
+
+
+<div class="mark">
+
+"
+
+</div>
+
 
 
 <h3>
 
- إن 
-
+إن 
 <span>
-
 بناء الإنسان
-
 </span>
 
 هو البداية لصناعة أثر مستدام
 
 </h3>
+
 
 
 </div>
@@ -245,37 +286,40 @@ Human Potential • Social Impact • Sustainable Change
 
 
 </section>
+<!-- =========================
+     ABOUT
+========================= -->
 
-
-
-
-
-
-
-<!-- ABOUT -->
-
-
-<section id="about" class="about">
-
+<section id="about" class="bg-tint">
 
 <div class="container">
 
 
-<div class="section-title">
+<div class="section-title reveal">
 
 
-<h2>
+<span class="section-eyebrow">
+
+<span class="num">
+٠١
+</span>
 
 من أنا
 
+</span>
+
+
+
+<h2>
+رحلتي ورؤيتي
 </h2>
 
 
+
 <p>
-
-رحلتي ورؤيتي
-
+خلفية أكاديمية واهتمام بحثي بصناعة أثر اجتماعي مستدام
 </p>
+
 
 
 </div>
@@ -288,49 +332,32 @@ Human Potential • Social Impact • Sustainable Change
 
 
 
-<div class="about-text">
+<div class="about-text reveal">
+
 
 
 <h3>
-
 بناء المعرفة لصناعة أثر هادف
-
 </h3>
 
 
 
 <p>
 
-شذا دويكات، مهتمة بمجالات المسؤولية المجتمعية والتنمية المستدامة، أسعى إلى تطوير معرفتي في القضايا الاجتماعية والتنموية من خلال الجمع بين الخلفية الأكاديمية، التعلم المستمر، والممارسات المجتمعية.
+شذا دويكات، باحثة في مجال المسؤولية المجتمعية والتنمية المستدامة،
+أعمل على استكشاف العلاقة بين الإنسان، المجتمع، والمؤسسات
+من خلال الجمع بين المعرفة الأكاديمية، التعلم المستمر،
+والاهتمام بالقضايا الاجتماعية والتنموية.
 
 </p>
 
 
 
-
 <p>
 
-أؤمن أن بناء مجتمعات أكثر استدامة يبدأ بفهم الإنسان واحتياجاته، وأن المعرفة والوعي يمثلان أساساً لصناعة أثر إيجابي حقيقي.
-
-</p>
-
-
-
-
-<h3>
-
-المجالات التي أهتم بها
-
-</h3>
-
-
-<p>
-
-🌱 المسؤولية المجتمعية<br>
-🌍 التنمية المستدامة<br>
-👥 التنمية المجتمعية وتمكين الأفراد<br>
-📚 البحث والتعلم المستمر<br>
-🎓 تصميم المحتوى والبرامج التدريبية
+أؤمن أن التنمية الحقيقية تبدأ من فهم الإنسان،
+وأن الاستثمار في الوعي والمعرفة يمثل أساساً
+لبناء مجتمعات أكثر قدرة على التغيير والاستدامة.
 
 </p>
 
@@ -339,21 +366,52 @@ Human Potential • Social Impact • Sustainable Change
 
 
 <h3>
+مجالات الاهتمام
+</h3>
 
+
+
+<p>
+
+🌱 المسؤولية المجتمعية والاستدامة المؤسسية
+<br>
+
+🌍 التنمية المستدامة وصناعة الأثر الاجتماعي
+<br>
+
+👥 تمكين الأفراد والتنمية المجتمعية
+<br>
+
+📚 البحث العلمي وتحليل القضايا الاجتماعية
+<br>
+
+🎓 تصميم المحتوى والبرامج التعليمية
+
+</p>
+
+
+
+
+
+
+<h3>
 المسار الأكاديمي والمهني
-
 </h3>
 
 
 
-
 <p>
 
-🎓 <strong> ماجستير في المسؤولية المجتمعية والتنمية المستدامة <strong>
+🎓
+
+<strong>
+ماجستير في المسؤولية المجتمعية والتنمية المستدامة
+</strong>
 
 <br>
 
-الاهتمام بالقضايا المرتبطة بالتنمية، المجتمع، والمسؤولية المؤسسية.
+اهتمام بحثي بالقضايا المرتبطة بالتنمية،
+المجتمع، والمسؤولية تجاه الإنسان والمؤسسات.
 
 </p>
 
@@ -362,32 +420,16 @@ Human Potential • Social Impact • Sustainable Change
 
 <p>
 
-🎓<strong> بكالوريوس في الخدمة الاجتماعية والأسرة <strong>
+🎓
+
+<strong>
+بكالوريوس في الخدمة الاجتماعية والأسرة
+</strong>
 
 <br>
 
-بناء أساس معرفي في فهم القضايا الاجتماعية واحتياجات المجتمع.
-
-</p>
-
-<p>
-
-🎓 <strong>عضوية نقابة الأخصائيين الاجتماعيين والنفسيين</strong>
-
-<br>
-
-عضوة في الهيئة العامة للنقابة، وحاصلة على مزاولة مهنة الأخصائي الاجتماعي.
-
-</p>
-
-
-<p>
-
-🎤 <strong>تطوير مهارات التدريب والتواصل<strong>
-
-<br>
-
-من خلال التدريب في مجال الإلقاء، التواصل، وتطوير المحتوى.
+خلفية أكاديمية في فهم القضايا الاجتماعية
+واحتياجات الأفراد والمجتمعات.
 
 </p>
 
@@ -396,13 +438,39 @@ Human Potential • Social Impact • Sustainable Change
 
 <p>
 
-🌱<strong> The Mentor<strong>
+🎤
+
+<strong>
+التدريب والتواصل وتطوير المحتوى
+</strong>
 
 <br>
 
-مشروع معرفي قيد التطوير يهدف إلى مشاركة المعرفة وتقديم محتوى توعوي وتدريبي مجاني.
+تطوير مهارات الإلقاء، التواصل،
+وتصميم التجارب التعليمية.
 
 </p>
+
+
+
+
+
+<p>
+
+🌱
+
+<strong>
+The Mentor
+</strong>
+
+<br>
+
+منصة معرفية قيد التطوير تهدف إلى نشر الوعي،
+تقديم محتوى تدريبي مجاني،
+وتطوير مساحات للتعلم والنمو الشخصي.
+
+</p>
+
 
 
 
@@ -412,7 +480,9 @@ Human Potential • Social Impact • Sustainable Change
 
 
 
-<div class="about-card">
+
+
+<div class="about-card reveal">
 
 
 <h3>
@@ -425,7 +495,9 @@ Human Potential • Social Impact • Sustainable Change
 
 <p>
 
-رؤيتي هي بناء مساحات تساعد الإنسان على اكتشاف إمكاناته، فهم ذاته، واتخاذ خطوات واعية نحو حياة أكثر تأثيراً ومعنى.
+رؤيتي هي بناء مساحات معرفية تساعد الإنسان
+على اكتشاف إمكاناته، تطوير ذاته،
+والمساهمة في صناعة أثر إيجابي داخل مجتمعه.
 
 </p>
 
@@ -433,13 +505,155 @@ Human Potential • Social Impact • Sustainable Change
 
 <p>
 
-لأن التغيير الحقيقي لا يبدأ من الظروف، بل يبدأ من الإنسان نفسه.
+لأن التغيير المستدام لا يبدأ فقط من تحسين الظروف،
+بل يبدأ من بناء الإنسان القادر على صناعة التغيير.
 
 </p>
 
 
 
 </div>
+
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =========================
+     RESEARCH PROFILE
+========================= -->
+
+
+<section class="bg-mint">
+
+
+<div class="container">
+
+
+<div class="section-title reveal">
+
+
+<span class="section-eyebrow">
+
+<span class="num">
+٠٢
+</span>
+
+Research Profile
+
+</span>
+
+
+
+<h2>
+الهوية البحثية
+</h2>
+
+
+
+<p>
+
+مجالات المعرفة التي أعمل على تطويرها من خلال البحث والتعلم المستمر
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="research-profile">
+
+
+
+
+
+<div class="research-tag reveal">
+
+
+<span>
+CSR
+</span>
+
+
+<h4>
+Corporate Social Responsibility
+</h4>
+
+
+</div>
+
+
+
+
+
+<div class="research-tag reveal">
+
+
+<span>
+SD
+</span>
+
+
+<h4>
+Sustainable Development
+</h4>
+
+
+</div>
+
+
+
+
+
+<div class="research-tag reveal">
+
+
+<span>
+WE
+</span>
+
+
+<h4>
+Women Empowerment
+</h4>
+
+
+</div>
+
+
+
+
+
+<div class="research-tag reveal">
+
+
+<span>
+SI
+</span>
+
+
+<h4>
+Social Innovation
+</h4>
+
+
+</div>
+
 
 
 
@@ -450,33 +664,56 @@ Human Potential • Social Impact • Sustainable Change
 
 
 </section>
-<!-- FREE COURSES -->
 
 
-<section id="courses" class="learning">
+
+
+
+
+
+<!-- =========================
+     FREE COURSES
+========================= -->
+
+
+<section id="courses">
 
 
 <div class="container">
 
 
-<div class="section-title">
+
+<div class="section-title reveal">
+
+
+<span class="section-eyebrow">
+
+<span class="num">
+٠٣
+</span>
+
+التعلم
+
+</span>
+
 
 
 <h2>
-
-الدورات المجانية
-
+مساحة تعلم مفتوحة
 </h2>
+
 
 
 <p>
 
-برامج تدريبية معرفية لتطوير المهارات وبناء الوعي
+برامج معرفية تهدف إلى تطوير الوعي والمهارات
 
 </p>
 
 
+
 </div>
+
 
 
 
@@ -488,7 +725,7 @@ Human Potential • Social Impact • Sustainable Change
 
 
 
-<div class="learning-card">
+<div class="learning-card reveal">
 
 
 <span class="badge">
@@ -501,15 +738,22 @@ Human Potential • Social Impact • Sustainable Change
 
 <h3>
 
-رحلة التغيير | Journey of Change
+رحلة التغيير
+
+<br>
+
+Journey of Change
 
 </h3>
 
 
 
+
 <p>
 
-رحلة تعليمية تهدف إلى دعم الوعي، فهم مراحل التغيير، وبناء خطوات عملية نحو النمو والتطور الشخصي.
+رحلة تعليمية تهدف إلى دعم الوعي،
+فهم مراحل التغيير،
+وبناء خطوات عملية نحو النمو والتطور الشخصي.
 
 </p>
 
@@ -532,7 +776,8 @@ Human Potential • Social Impact • Sustainable Change
 
 
 
-<div class="learning-card">
+
+<div class="learning-card reveal">
 
 
 <span class="badge">
@@ -540,6 +785,7 @@ Human Potential • Social Impact • Sustainable Change
 دورة مجانية
 
 </span>
+
 
 
 
@@ -554,18 +800,20 @@ Human Potential • Social Impact • Sustainable Change
 
 <p>
 
-دورة تهدف إلى تطوير مهارات التفكير الاستراتيجي لدى الشباب من خلال فهم مفهوم الاستراتيجية، تحليل الذات، بناء الرؤية، تحديد الأهداف، وتحويل الأفكار إلى خطوات عملية قابلة للتنفيذ.
+برنامج يركز على تطوير التفكير الاستراتيجي،
+بناء الرؤية الشخصية،
+وتحويل الأفكار إلى خطوات عملية قابلة للتنفيذ.
 
 </p>
 
 
 
 
-<a href="#" class="btn btn-primary">
+<span class="btn-soon">
 
-استكشف الدورة
+قريباً
 
-</a>
+</span>
 
 
 
@@ -589,22 +837,36 @@ Human Potential • Social Impact • Sustainable Change
 
 
 
+<!-- =========================
+     ARTICLES
+========================= -->
 
-<!-- ARTICLES & ANALYSIS -->
 
-
-<section id="articles" class="publications">
+<section id="articles" class="bg-tint">
 
 
 <div class="container">
 
 
-<div class="section-title">
+
+<div class="section-title reveal">
+
+
+<span class="section-eyebrow">
+
+<span class="num">
+٠٤
+</span>
+
+المقالات والتحليلات
+
+</span>
+
 
 
 <h2>
 
-المقالات والتحليلات
+قراءات وتحليلات
 
 </h2>
 
@@ -612,9 +874,11 @@ Human Potential • Social Impact • Sustainable Change
 
 <p>
 
-أفكار وقراءات تحليلية حول القضايا الاجتماعية والتنموية
+أفكار وتحليلات حول الإنسان،
+المجتمع، والاستدامة.
 
 </p>
+
 
 
 </div>
@@ -624,7 +888,7 @@ Human Potential • Social Impact • Sustainable Change
 
 
 
-<div class="publication-card">
+<div class="publication-card reveal">
 
 
 <h3>
@@ -637,7 +901,10 @@ Human Potential • Social Impact • Sustainable Change
 
 <p>
 
-سيتم إضافة المقالات والتحليلات المعرفية التي تتناول موضوعات مرتبطة بالمسؤولية المجتمعية، التنمية المستدامة، وقضايا الإنسان والمجتمع.
+سيتم إضافة مقالات وتحليلات معرفية
+تتناول المسؤولية المجتمعية،
+التنمية المستدامة،
+وقضايا الإنسان والمجتمع.
 
 </p>
 
@@ -651,8 +918,9 @@ Human Potential • Social Impact • Sustainable Change
 
 
 </section>
-<!-- RESEARCH -->
-
+<!-- =========================
+     RESEARCH AREAS
+========================= -->
 
 <section id="research">
 
@@ -660,12 +928,26 @@ Human Potential • Social Impact • Sustainable Change
 <div class="container">
 
 
-<div class="section-title">
+
+<div class="section-title reveal">
+
+
+<span class="section-eyebrow">
+
+<span class="num">
+٠٥
+</span>
+
+مجالات البحث
+
+</span>
+
+
 
 
 <h2>
 
-مجالات الاهتمام البحثي
+الاهتمامات البحثية
 
 </h2>
 
@@ -673,7 +955,8 @@ Human Potential • Social Impact • Sustainable Change
 
 <p>
 
-المجالات التي أعمل على تطوير معرفتي فيها
+مجالات أطور معرفتي فيها من خلال الدراسة،
+البحث، والتعلم المستمر.
 
 </p>
 
@@ -691,7 +974,7 @@ Human Potential • Social Impact • Sustainable Change
 
 
 
-<div class="research-card">
+<div class="research-card reveal">
 
 
 <div class="research-icon">
@@ -712,7 +995,8 @@ CSR
 
 <p>
 
-الاهتمام بدور المؤسسات في تحقيق قيمة اجتماعية مستدامة وتعزيز العلاقة بين المؤسسة والمجتمع.
+دراسة دور المؤسسات في تحقيق قيمة اجتماعية،
+وتطوير علاقة أكثر استدامة بين المؤسسة والمجتمع.
 
 </p>
 
@@ -725,9 +1009,7 @@ CSR
 
 
 
-
-
-<div class="research-card">
+<div class="research-card reveal">
 
 
 <div class="research-icon">
@@ -748,7 +1030,8 @@ SD
 
 <p>
 
-فهم مفاهيم التنمية المستدامة واستكشاف الحلول التي تدعم الإنسان والمجتمع على المدى الطويل.
+استكشاف المفاهيم والحلول التي تدعم التنمية
+الإنسانية والاجتماعية على المدى الطويل.
 
 </p>
 
@@ -761,9 +1044,7 @@ SD
 
 
 
-
-
-<div class="research-card">
+<div class="research-card reveal">
 
 
 <div class="research-icon">
@@ -784,13 +1065,16 @@ SI
 
 <p>
 
-الاهتمام بالتمكين، التنمية المجتمعية، وتعزيز الإمكانات الإنسانية لصناعة تغيير إيجابي.
+الاهتمام بتمكين الأفراد،
+التنمية المجتمعية،
+وتعزيز الإمكانات الإنسانية.
 
 </p>
 
 
 
 </div>
+
 
 
 
@@ -809,22 +1093,37 @@ SI
 
 
 
+<!-- =========================
+     KNOWLEDGE LIBRARY
+========================= -->
 
-<!-- KNOWLEDGE LIBRARY -->
 
-
-<section id="library" class="library">
+<section id="library" class="bg-mint">
 
 
 <div class="container">
 
 
-<div class="section-title">
+
+<div class="section-title reveal">
+
+
+<span class="section-eyebrow">
+
+<span class="num">
+٠٦
+</span>
+
+مكتبة المعرفة
+
+</span>
+
+
 
 
 <h2>
 
-مكتبة المعرفة
+مصادر للتعلم والبحث
 
 </h2>
 
@@ -832,7 +1131,8 @@ SI
 
 <p>
 
-مصادر وملفات معرفية للتعلم والبحث
+مساحة مستقبلية لمشاركة الملفات،
+الملخصات، والأدوات المعرفية.
 
 </p>
 
@@ -844,13 +1144,14 @@ SI
 
 
 
+
 <div class="cards-grid">
 
 
 
 
 
-<div class="learning-card">
+<div class="learning-card reveal">
 
 
 <span class="badge">
@@ -863,25 +1164,27 @@ SI
 
 <h3>
 
-أدلة وأدوات البحث العلمي
+أدوات البحث العلمي
 
 </h3>
 
 
 
+
 <p>
 
-مجموعة من الملفات والأدلة التي تساعد على تطوير مهارات البحث، التعلم، والكتابة الأكاديمية.
+ملفات وأدلة تساعد على تطوير مهارات البحث،
+القراءة الأكاديمية، والكتابة العلمية.
 
 </p>
 
 
 
-<a href="#" class="btn btn-primary">
+<span class="btn-soon">
 
-استعرض الملفات
+قريباً
 
-</a>
+</span>
 
 
 
@@ -893,8 +1196,7 @@ SI
 
 
 
-
-<div class="learning-card">
+<div class="learning-card reveal">
 
 
 <span class="badge">
@@ -913,23 +1215,26 @@ SI
 
 
 
+
 <p>
 
-قراءات مختصرة لتقارير عالمية مرتبطة بالتنمية، الاستدامة، والمسؤولية المجتمعية.
+قراءات مبسطة لتقارير مرتبطة بالتنمية،
+الاستدامة، والمسؤولية المجتمعية.
 
 </p>
 
 
 
-<a href="#" class="btn btn-primary">
+<span class="btn-soon">
 
-استكشف المحتوى
+قريباً
 
-</a>
+</span>
 
 
 
 </div>
+
 
 
 
@@ -950,22 +1255,37 @@ SI
 
 
 
+<!-- =========================
+     INITIATIVES
+========================= -->
 
-<!-- SOCIAL IMPACT INITIATIVES -->
 
-
-<section id="initiatives" class="initiatives">
+<section id="initiatives">
 
 
 <div class="container">
 
 
-<div class="section-title">
+
+<div class="section-title reveal">
+
+
+<span class="section-eyebrow">
+
+<span class="num">
+٠٧
+</span>
+
+الأثر الاجتماعي
+
+</span>
+
+
 
 
 <h2>
 
-المبادرات والأثر الاجتماعي
+المبادرات والمشاريع
 
 </h2>
 
@@ -973,7 +1293,7 @@ SI
 
 <p>
 
-أفكار ومشاريع مستقبلية
+أفكار ومشاريع تهدف إلى خلق أثر اجتماعي إيجابي.
 
 </p>
 
@@ -986,7 +1306,8 @@ SI
 
 
 
-<div class="initiative-card">
+<div class="initiative-card reveal">
+
 
 
 <div class="initiative-content">
@@ -1000,11 +1321,15 @@ SI
 
 
 
+
 <p>
 
-مبادرة مقترحة تهدف إلى دعم وتمكين الفتيات اليتيمات من خلال التعليم، التطوير الشخصي، وخلق فرص للنمو.
+مبادرة مقترحة تهدف إلى دعم وتمكين الفتيات
+من خلال التعليم، التطوير الشخصي،
+وبناء فرص للنمو والاعتماد على الذات.
 
 </p>
+
 
 
 
@@ -1036,30 +1361,49 @@ Concept Development
 
 
 
+<!-- =========================
+     CONTACT
+========================= -->
 
-<!-- CONTACT -->
 
-
-<section id="contact" class="contact">
+<section id="contact" class="bg-tint">
 
 
 <div class="container">
 
 
-<div class="contact-content">
+<div class="contact-content reveal">
+
+
+
+<span class="section-eyebrow">
+
+<span class="num">
+٠٨
+</span>
+
+تواصل
+
+</span>
+
+
+
 
 
 <h2>
 
-تواصل معي
+لنتواصل
 
 </h2>
 
 
 
+
 <p>
 
-للتعاون البحثي، المشاريع، والمبادرات التعليمية.
+للتعاون البحثي،
+المشاريع الاجتماعية،
+والمبادرات التعليمية.
 
 </p>
 
@@ -1067,10 +1411,7 @@ Concept Development
 
 
 
-
 <div class="contact-links">
-
-
 
 
 
@@ -1083,10 +1424,9 @@ Concept Development
 
 
 
-
-
-
-<a href="https://www.linkedin.com/in/shatha-dweikat" target="_blank">
+<a href="https://www.linkedin.com/in/shatha-dweikat"
+target="_blank"
+rel="noopener">
 
 🔗 LinkedIn
 
@@ -1096,7 +1436,19 @@ Concept Development
 
 
 
+<a href="https://github.com/ShathaDweikat"
+target="_blank"
+rel="noopener">
+
+💻 GitHub
+
+</a>
+
+
+
+
 </div>
+
 
 
 
@@ -1121,10 +1473,68 @@ Concept Development
 
 
 
+<!-- =========================
+     FOOTER
+========================= -->
+
+
 <footer>
 
 
 <div class="container">
+
+
+<div class="footer-name">
+
+Shatha Dweikat
+
+</div>
+
+
+
+
+<div class="footer-description">
+
+Research • Social Impact • Sustainable Development
+
+</div>
+
+
+
+
+
+<div class="footer-links">
+
+
+<a href="https://www.linkedin.com/in/shatha-dweikat"
+target="_blank">
+
+LinkedIn
+
+</a>
+
+
+
+<a href="https://github.com/ShathaDweikat"
+target="_blank">
+
+GitHub
+
+</a>
+
+
+
+<a href="mailto:shatha.dweikat.official@gmail.com">
+
+Email
+
+</a>
+
+
+
+</div>
+
+
 
 
 <p>
@@ -1132,6 +1542,7 @@ Concept Development
 © 2026 Shatha Dweikat. All Rights Reserved.
 
 </p>
+
 
 
 </div>
@@ -1143,6 +1554,8 @@ Concept Development
 
 
 
+
+<script src="script.js"></script>
 
 
 </body>
