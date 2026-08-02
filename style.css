@@ -1,50 +1,63 @@
 /* =========================================================
    Shatha Dweikat Portfolio
-   Research • Social Impact • Sustainable Development
-   Final Main Stylesheet
+   Main Stylesheet - Part 1
 ========================================================= */
 
 
-/* ================= GOOGLE FONTS ================= */
+/* ================= FONTS ================= */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap');
 
 
 
-/* ================= VARIABLES ================= */
+
+
+/* ================= ROOT ================= */
+
 
 :root{
 
 --cream:#F7F1E7;
+
 --cream-soft:#FBF8F2;
 
 --emerald:#0F766E;
+
 --emerald-dark:#115E59;
 
 --mint:#B8E3D1;
 
 --charcoal:#242424;
+
 --gray:#666;
 
---white:#fff;
+--white:#ffffff;
 
 
 --shadow:
 0 18px 45px rgba(15,118,110,.14);
 
+
 --soft-shadow:
-0 10px 30px rgba(0,0,0,.07);
+0 8px 25px rgba(0,0,0,.07);
 
 
 --radius:24px;
+
 
 --transition:.35s ease;
 
 
 --heading:"Cairo",sans-serif;
+
 --body:"IBM Plex Sans Arabic",sans-serif;
 
+
 }
+
+
+
 
 
 
@@ -52,15 +65,21 @@
 
 
 *{
+
 margin:0;
+
 padding:0;
+
 box-sizing:border-box;
+
 }
 
 
 
 html{
+
 scroll-behavior:smooth;
+
 }
 
 
@@ -82,21 +101,29 @@ overflow-x:hidden;
 
 
 img{
+
 max-width:100%;
+
 display:block;
+
 }
 
 
 
 a{
+
 text-decoration:none;
+
 color:inherit;
+
 }
 
 
 
 ul{
+
 list-style:none;
+
 }
 
 
@@ -108,6 +135,10 @@ width:min(1180px,90%);
 margin:auto;
 
 }
+
+
+
+
 
 
 
@@ -131,6 +162,7 @@ z-index:1000;
 
 
 
+
 .navbar{
 
 height:90px;
@@ -142,6 +174,8 @@ align-items:center;
 justify-content:space-between;
 
 }
+
+
 
 
 
@@ -157,6 +191,7 @@ gap:12px;
 
 
 
+
 .logo img{
 
 width:45px;
@@ -166,6 +201,8 @@ height:45px;
 object-fit:contain;
 
 }
+
+
 
 
 
@@ -182,13 +219,14 @@ color:var(--emerald);
 
 
 
+
 .nav-links{
 
 display:flex;
 
 align-items:center;
 
-gap:25px;
+gap:28px;
 
 }
 
@@ -216,6 +254,8 @@ color:var(--emerald);
 
 
 
+
+
 .nav-cta{
 
 background:var(--emerald);
@@ -232,53 +272,84 @@ border-radius:50px;
 
 
 
+
+
+
 /* ================= COVER ================= */
+
 
 
 .cover-section{
 
+
 width:100%;
+
 
 height:78vh;
 
+
 min-height:620px;
 
-position:relative;
 
 overflow:hidden;
 
+
+position:relative;
+
+
 }
+
+
 
 
 
 .cover-section img{
 
+
 width:100%;
+
 
 height:100%;
 
+
 object-fit:cover;
 
+
+object-position:center;
+
+
 }
+
+
 
 
 
 .cover-section::after{
 
+
 content:"";
+
 
 position:absolute;
 
+
 inset:0;
+
 
 background:
 linear-gradient(
 to bottom,
-transparent 60%,
+transparent 65%,
 var(--cream) 100%
 );
 
+
 }
+
+
+
+
+
 
 
 
@@ -288,133 +359,179 @@ var(--cream) 100%
 
 .brand-line{
 
+
 width:100%;
+
 
 background:var(--emerald);
 
+
 color:white;
 
-padding:16px 0;
 
-position:relative;
+padding:18px 0;
 
-z-index:5;
+
+text-align:center;
+
 
 }
+
+
 
 
 
 .brand-line p{
 
-text-align:center;
 
 font-family:var(--heading);
 
-font-weight:700;
 
 font-size:.95rem;
 
+
+font-weight:700;
+
+
 letter-spacing:1px;
 
-margin:0;
 
 }
-/* ================= HERO ================= */
+
+
+
+
+
+/* ================= HERO IDENTITY ================= */
 
 
 .hero{
 
+
+padding:0 0 90px;
+
+
 position:relative;
 
-padding:70px 0 100px;
 
 }
+
+
 
 
 
 .hero-content{
 
+
 display:flex;
+
+
+flex-direction:column;
+
 
 align-items:center;
 
-gap:70px;
+
+text-align:center;
+
+
+margin-top:-90px;
+
+
+position:relative;
+
+
+z-index:5;
+
 
 }
+
+
 
 
 
 .profile-wrapper{
 
-width:230px;
 
-height:230px;
+width:190px;
 
-flex-shrink:0;
+
+height:190px;
+
+
+border-radius:50%;
+
+
+background:white;
+
+
+padding:8px;
+
+
+box-shadow:var(--shadow);
+
+
+margin-bottom:25px;
+
 
 position:relative;
 
+
 }
+
+
 
 
 
 .profile-wrapper::before{
 
+
 content:"";
+
 
 position:absolute;
 
-inset:-14px;
+
+inset:-12px;
+
 
 border-radius:50%;
 
-background:linear-gradient(
+
+background:
+linear-gradient(
 135deg,
 var(--mint),
 transparent
 );
 
+
+z-index:-1;
+
+
 }
+
+
 
 
 
 .profile-wrapper img{
 
-position:relative;
 
 width:100%;
 
+
 height:100%;
 
-border-radius:50%;
 
 object-fit:cover;
 
-border:8px solid white;
 
-box-shadow:var(--shadow);
+border-radius:50%;
 
-animation:profileFloat 5s ease-in-out infinite;
 
 }
 
-
-
-@keyframes profileFloat{
-
-0%,100%{
-
-transform:translateY(0);
-
-}
-
-50%{
-
-transform:translateY(-8px);
-
-}
-
-}
 
 
 
@@ -422,75 +539,127 @@ transform:translateY(-8px);
 
 .hero-text h1{
 
+
 font-family:var(--heading);
+
 
 font-size:clamp(2.5rem,5vw,3.8rem);
 
+
 font-weight:900;
+
 
 line-height:1.2;
 
+
 }
+
 
 
 
 .hero-text h1 span{
 
+
 color:var(--emerald);
 
+
 }
+
+
 
 
 
 .hero-text h2{
 
+
 font-family:var(--heading);
+
 
 font-size:1.5rem;
 
+
 color:var(--emerald-dark);
 
-margin:10px 0;
+
+margin-top:10px;
+
 
 }
+
+
 
 
 
 .hero-role{
 
+
+margin-top:15px;
+
+
 font-family:var(--heading);
+
 
 font-weight:700;
 
+
 color:var(--emerald);
+
 
 }
 
+
+/* =========================================================
+   PART 2
+   Hero + Buttons + Sections + About
+========================================================= */
+
+
+
+
+
+/* ================= HERO TEXT ================= */
 
 
 .main-statement{
 
-margin-top:25px;
 
-max-width:650px;
+max-width:720px;
+
+
+margin:25px auto;
+
+
+font-size:1.05rem;
+
 
 color:var(--gray);
 
-font-size:1.1rem;
+
+line-height:2;
+
 
 }
+
 
 
 
 .hero-buttons{
 
+
 display:flex;
+
+
+justify-content:center;
+
 
 gap:15px;
 
-margin-top:35px;
 
 flex-wrap:wrap;
+
+
+margin-top:30px;
+
 
 }
 
@@ -503,21 +672,33 @@ flex-wrap:wrap;
 
 .btn{
 
+
 display:inline-flex;
+
 
 align-items:center;
 
+
 justify-content:center;
+
+
+gap:8px;
+
 
 padding:13px 32px;
 
+
 border-radius:50px;
+
 
 font-family:var(--heading);
 
+
 font-weight:700;
 
+
 transition:var(--transition);
+
 
 }
 
@@ -525,9 +706,12 @@ transition:var(--transition);
 
 .btn-primary{
 
+
 background:var(--emerald);
 
+
 color:white;
+
 
 }
 
@@ -535,21 +719,29 @@ color:white;
 
 .btn-primary:hover{
 
+
 background:var(--emerald-dark);
 
+
 transform:translateY(-4px);
+
 
 }
 
 
 
+
 .btn-outline{
+
 
 border:1.5px solid var(--emerald);
 
+
 color:var(--emerald);
 
+
 background:white;
+
 
 }
 
@@ -557,13 +749,20 @@ background:white;
 
 .btn-outline:hover{
 
+
 background:var(--emerald);
+
 
 color:white;
 
+
 transform:translateY(-4px);
 
+
 }
+
+
+
 
 
 
@@ -572,9 +771,12 @@ transform:translateY(-4px);
 /* ================= GENERAL SECTIONS ================= */
 
 
+
 section{
 
+
 padding:100px 0;
+
 
 }
 
@@ -582,53 +784,91 @@ padding:100px 0;
 
 .bg-soft{
 
+
 background:rgba(255,255,255,.45);
 
+
 }
+
+
 
 
 
 .section-heading{
 
-text-align:center;
 
 max-width:750px;
 
+
 margin:0 auto 60px;
 
+
+text-align:center;
+
+
 }
+
 
 
 
 .section-label{
 
+
 display:inline-flex;
+
 
 align-items:center;
 
+
 gap:8px;
 
-color:var(--emerald);
 
 font-family:var(--heading);
 
+
 font-weight:700;
 
+
+color:var(--emerald);
+
+
 margin-bottom:15px;
+
 
 }
 
 
 
+
+
+.section-label svg{
+
+
+width:18px;
+
+
+height:18px;
+
+
+}
+
+
+
+
 .section-heading h2{
+
 
 font-family:var(--heading);
 
+
 font-size:2.3rem;
+
 
 font-weight:800;
 
+
 margin-bottom:15px;
+
 
 }
 
@@ -636,9 +876,14 @@ margin-bottom:15px;
 
 .section-heading p{
 
+
 color:var(--gray);
 
+
 }
+
+
+
 
 
 
@@ -649,33 +894,50 @@ color:var(--gray);
 
 .about-section{
 
+
 background:white;
 
+
 }
+
+
 
 
 
 .about-grid{
 
+
 display:grid;
+
 
 grid-template-columns:1.15fr .85fr;
 
+
 gap:50px;
+
+
+align-items:start;
+
 
 }
 
 
 
+
 .about-content h3{
+
 
 font-family:var(--heading);
 
+
 font-size:1.5rem;
+
 
 color:var(--emerald-dark);
 
+
 margin-bottom:20px;
+
 
 }
 
@@ -683,53 +945,79 @@ margin-bottom:20px;
 
 .about-content p{
 
+
 color:var(--gray);
 
-margin-bottom:18px;
+
+margin-bottom:20px;
+
+
+line-height:2;
+
 
 }
+
+
+
 
 
 
 .interest-list{
 
+
 display:flex;
 
-flex-wrap:wrap;
 
-gap:12px;
+flex-direction:column;
+
+
+gap:15px;
+
+
+margin-top:25px;
+
 
 }
+
+
 
 
 
 .interest-list div{
 
-background:var(--mint);
-
-color:var(--emerald-dark);
-
-padding:8px 18px;
-
-border-radius:50px;
-
-font-weight:600;
-
-font-size:.9rem;
 
 display:flex;
 
+
 align-items:center;
 
-gap:7px;
+
+gap:12px;
+
+
+font-weight:600;
+
+
+color:var(--emerald-dark);
+
 
 }
+
+
 
 
 
 .interest-list svg{
 
-width:17px;
+
+width:22px;
+
+
+height:22px;
+
+
+color:var(--emerald);
+
 
 }
 
@@ -737,158 +1025,274 @@ width:17px;
 
 
 
-/* ================= VISION MISSION ================= */
+
+
+/* ================= ABOUT SIDE CARDS ================= */
+
 
 
 .about-side{
 
+
 display:flex;
+
 
 flex-direction:column;
 
+
 gap:25px;
 
+
 }
+
+
 
 
 
 .info-card{
 
+
 background:white;
 
-border:2px solid var(--emerald);
 
 border-radius:var(--radius);
 
+
 padding:35px;
+
 
 box-shadow:var(--soft-shadow);
 
+
+border-right:5px solid var(--emerald);
+
+
+transition:var(--transition);
+
+
 }
+
+
+
+
+
+.info-card:hover{
+
+
+transform:translateY(-5px);
+
+
+box-shadow:var(--shadow);
+
+
+}
+
+
 
 
 
 .info-card svg{
 
+
 width:35px;
+
 
 height:35px;
 
+
 color:var(--emerald);
+
 
 margin-bottom:15px;
 
+
 }
+
 
 
 
 .info-card h3{
 
+
 font-family:var(--heading);
+
 
 color:var(--emerald-dark);
 
-font-size:1.4rem;
+
+font-size:1.3rem;
+
 
 margin-bottom:15px;
 
+
 }
+
 
 
 
 .info-card p{
 
+
 color:var(--gray);
+
 
 line-height:2;
 
+
 }
+
+
+
+
+
+.info-card strong{
+
+
+color:var(--emerald-dark);
+
+
+}
+
+
+
+
+
+
+
+
 /* ================= BELIEFS ================= */
+
 
 
 .belief-section{
 
+
 background:var(--cream-soft);
 
+
 }
+
+
 
 
 
 .belief-grid{
 
+
 display:grid;
+
 
 grid-template-columns:repeat(4,1fr);
 
+
 gap:25px;
 
+
 }
+
+
 
 
 
 .belief-card{
 
+
 background:white;
 
-border-radius:var(--radius);
 
 padding:35px 25px;
 
+
+border-radius:var(--radius);
+
+
 text-align:center;
+
 
 box-shadow:var(--soft-shadow);
 
+
 transition:var(--transition);
 
+
 }
+
+
 
 
 
 .belief-card:hover{
 
+
 transform:translateY(-8px);
+
 
 box-shadow:var(--shadow);
 
+
 }
+
 
 
 
 .belief-card svg{
 
-width:42px;
 
-height:42px;
+width:40px;
+
+
+height:40px;
+
 
 color:var(--emerald);
 
+
 margin-bottom:20px;
 
+
 }
+
+
 
 
 
 .belief-card h3{
 
+
 font-family:var(--heading);
+
 
 color:var(--emerald-dark);
 
-font-size:1.2rem;
+
+font-size:1.15rem;
+
 
 margin-bottom:12px;
 
+
 }
+
 
 
 
 .belief-card p{
 
+
 color:var(--gray);
+
 
 font-size:.95rem;
 
+
 }
+
+/* =========================================================
+   PART 3
+   Programs + Research + Library
+========================================================= */
+
 
 
 
@@ -897,91 +1301,142 @@ font-size:.95rem;
 /* ================= PROGRAMS ================= */
 
 
+
+.programs-section{
+
+
+background:var(--cream);
+
+
+}
+
+
+
+
 .program-grid{
+
 
 display:grid;
 
+
 grid-template-columns:repeat(2,1fr);
+
 
 gap:35px;
 
+
 }
+
 
 
 
 .program-card{
 
+
 background:white;
+
 
 border-radius:var(--radius);
 
+
 padding:40px;
+
 
 box-shadow:var(--soft-shadow);
 
-display:flex;
-
-flex-direction:column;
-
-position:relative;
-
-overflow:hidden;
 
 transition:var(--transition);
 
+
+display:flex;
+
+
+flex-direction:column;
+
+
+position:relative;
+
+
+overflow:hidden;
+
+
 }
+
 
 
 
 .program-card::before{
 
+
 content:"";
+
 
 position:absolute;
 
+
 top:0;
+
 
 right:0;
 
-height:5px;
 
 width:100%;
 
+
+height:5px;
+
+
 background:var(--emerald);
 
+
 }
+
 
 
 
 .program-card:hover{
 
+
 transform:translateY(-8px);
 
+
 box-shadow:var(--shadow);
+
 
 }
 
 
 
+
 .program-icon{
+
 
 width:65px;
 
+
 height:65px;
+
 
 border-radius:50%;
 
+
 background:var(--mint);
+
 
 display:flex;
 
+
 align-items:center;
+
 
 justify-content:center;
 
+
 color:var(--emerald-dark);
 
-margin-bottom:20px;
+
+margin-bottom:25px;
+
 
 }
 
@@ -989,89 +1444,152 @@ margin-bottom:20px;
 
 .program-icon svg{
 
+
 width:30px;
 
+
+height:30px;
+
+
 }
+
+
 
 
 
 .program-status{
 
+
+display:inline-flex;
+
+
 align-self:flex-start;
+
 
 background:rgba(184,227,209,.45);
 
+
 color:var(--emerald-dark);
+
 
 padding:6px 16px;
 
+
 border-radius:50px;
+
 
 font-size:.8rem;
 
+
 font-weight:700;
+
 
 margin-bottom:20px;
 
+
 }
+
 
 
 
 .program-card h3{
 
+
 font-family:var(--heading);
+
 
 font-size:1.35rem;
 
+
 font-weight:800;
 
-line-height:1.8;
+
+line-height:1.7;
+
 
 margin-bottom:15px;
 
+
 }
+
 
 
 
 .program-card p{
 
+
 color:var(--gray);
 
-flex-grow:1;
 
 margin-bottom:25px;
 
+
+flex-grow:1;
+
+
 }
+
+
 
 
 
 .program-meta{
 
+
 display:flex;
+
 
 gap:20px;
 
+
 flex-wrap:wrap;
+
 
 margin-bottom:25px;
 
+
 }
+
 
 
 
 .program-meta span{
 
+
 display:flex;
+
 
 align-items:center;
 
+
 gap:6px;
+
 
 color:var(--emerald-dark);
 
+
 font-size:.85rem;
 
+
 }
+
+
+
+
+.program-meta svg{
+
+
+width:16px;
+
+
+height:16px;
+
+
+}
+
+
+
+
 
 
 
@@ -1080,167 +1598,261 @@ font-size:.85rem;
 /* ================= RESEARCH ================= */
 
 
+
 .research-section{
+
 
 background:white;
 
+
 }
+
+
 
 
 
 .research-feature{
 
+
 background:white;
+
 
 border-radius:30px;
 
+
 padding:50px;
+
 
 box-shadow:var(--shadow);
 
+
 border-right:5px solid var(--emerald);
 
+
 }
+
+
 
 
 
 .research-header{
 
+
 display:flex;
+
 
 gap:10px;
 
+
 flex-wrap:wrap;
+
 
 margin-bottom:25px;
 
+
 }
+
 
 
 
 .research-tag{
 
+
 background:var(--mint);
+
 
 color:var(--emerald-dark);
 
+
 padding:7px 18px;
+
 
 border-radius:50px;
 
+
 font-size:.85rem;
+
 
 font-weight:700;
 
+
 }
+
+
 
 
 
 .research-feature h3{
 
+
 font-family:var(--heading);
 
-font-size:1.65rem;
 
-line-height:1.8;
+font-size:1.6rem;
+
+
+line-height:1.9;
+
 
 margin-bottom:20px;
 
+
 }
+
 
 
 
 .research-feature h4{
 
-direction:ltr;
-
-text-align:left;
 
 font-family:var(--heading);
 
-color:var(--emerald-dark);
 
 font-size:1rem;
 
+
+font-weight:600;
+
+
+color:var(--emerald-dark);
+
+
+direction:ltr;
+
+
+text-align:left;
+
+
 margin-bottom:25px;
 
+
 }
+
 
 
 
 .research-feature p{
 
+
 color:var(--gray);
+
+
+line-height:2;
+
 
 margin-bottom:30px;
 
+
 }
+
+
 
 
 
 .research-actions{
 
+
 display:flex;
+
 
 gap:15px;
 
+
 flex-wrap:wrap;
 
+
 }
+
+
+
+
+
+
+
+
+
 /* ================= ARTICLES ================= */
+
 
 
 .article-placeholder{
 
+
 background:white;
+
 
 border-radius:var(--radius);
 
+
 padding:55px;
+
 
 text-align:center;
 
+
 box-shadow:var(--soft-shadow);
 
+
 }
+
+
 
 
 
 .article-placeholder svg{
 
+
 width:50px;
+
 
 height:50px;
 
+
 color:var(--emerald);
+
 
 margin-bottom:20px;
 
+
 }
+
 
 
 
 .article-placeholder h3{
 
+
 font-family:var(--heading);
+
 
 font-size:1.4rem;
 
+
 margin-bottom:15px;
 
+
 }
+
 
 
 
 .article-placeholder p{
 
+
 color:var(--gray);
+
 
 max-width:650px;
 
+
 margin:auto;
 
+
 }
+
+
+
+
 
 
 
@@ -1249,117 +1861,194 @@ margin:auto;
 /* ================= KNOWLEDGE LIBRARY ================= */
 
 
+
 .library-section{
+
 
 background:rgba(184,227,209,.18);
 
+
 }
+
+
 
 
 
 .library-grid{
 
+
 display:grid;
+
 
 grid-template-columns:repeat(3,1fr);
 
+
 gap:28px;
 
+
 }
+
+
 
 
 
 .resource-card{
 
+
 background:white;
+
 
 padding:35px;
 
+
 border-radius:var(--radius);
+
 
 box-shadow:var(--soft-shadow);
 
+
 transition:var(--transition);
 
+
 }
+
+
 
 
 
 .resource-card:hover{
 
+
 transform:translateY(-8px);
+
 
 box-shadow:var(--shadow);
 
+
 }
+
+
 
 
 
 .resource-icon{
 
+
 width:60px;
+
 
 height:60px;
 
+
 border-radius:50%;
+
 
 background:var(--mint);
 
+
 display:flex;
+
 
 align-items:center;
 
+
 justify-content:center;
+
 
 color:var(--emerald-dark);
 
-margin-bottom:20px;
+
+margin-bottom:22px;
+
 
 }
+
 
 
 
 .resource-icon svg{
 
+
 width:28px;
 
+
+height:28px;
+
+
 }
+
+
 
 
 
 .resource-card h3{
 
+
 font-family:var(--heading);
+
+
+font-size:1.2rem;
+
 
 margin-bottom:15px;
 
+
 }
+
+
 
 
 
 .resource-card p{
 
+
 color:var(--gray);
 
-margin-bottom:20px;
+
+margin-bottom:22px;
+
 
 }
+
+
 
 
 
 .resource-link{
 
-color:var(--emerald);
-
-font-weight:700;
 
 display:flex;
 
+
 align-items:center;
+
 
 gap:8px;
 
+
+color:var(--emerald);
+
+
+font-weight:700;
+
+
 }
+
+
+
+
+
+.resource-link svg{
+
+
+width:17px;
+
+
+}
+/* =========================================================
+   PART 4
+   Initiatives + Contact + Footer + Responsive
+========================================================= */
 
 
 
@@ -1368,75 +2057,189 @@ gap:8px;
 /* ================= INITIATIVES ================= */
 
 
+.initiatives-section{
+
+
+background:var(--cream);
+
+
+}
+
+
+
+
+
 .initiative-grid{
+
 
 display:grid;
 
+
 grid-template-columns:repeat(2,1fr);
+
 
 gap:30px;
 
+
 }
+
+
 
 
 
 .initiative-card{
 
+
 background:white;
+
 
 border-radius:var(--radius);
 
+
 padding:40px;
+
 
 box-shadow:var(--soft-shadow);
 
+
+transition:var(--transition);
+
+
 }
+
+
+
+
+
+.initiative-card:hover{
+
+
+transform:translateY(-8px);
+
+
+box-shadow:var(--shadow);
+
+
+}
+
+
 
 
 
 .initiative-icon{
 
+
 width:65px;
+
 
 height:65px;
 
-background:var(--mint);
 
 border-radius:50%;
 
+
+background:var(--mint);
+
+
 display:flex;
+
 
 align-items:center;
 
+
 justify-content:center;
+
 
 color:var(--emerald-dark);
 
-margin-bottom:20px;
+
+margin-bottom:25px;
+
 
 }
+
+
+
+
+
+.initiative-icon svg{
+
+
+width:30px;
+
+
+height:30px;
+
+
+}
+
+
 
 
 
 .initiative-card h3{
 
+
 font-family:var(--heading);
+
+
+font-size:1.45rem;
+
 
 color:var(--emerald-dark);
 
-font-size:1.4rem;
+
+margin-bottom:15px;
+
 
 }
+
+
 
 
 
 .initiative-card p{
 
+
 color:var(--gray);
 
-margin:15px 0;
+
+margin-bottom:20px;
+
 
 }
+
+
+
+
+
+.initiative-card span{
+
+
+display:inline-block;
+
+
+background:rgba(184,227,209,.45);
+
+
+color:var(--emerald-dark);
+
+
+padding:7px 18px;
+
+
+border-radius:50px;
+
+
+font-size:.85rem;
+
+
+font-weight:700;
+
+
+}
+
+
 
 
 
@@ -1447,89 +2250,233 @@ margin:15px 0;
 
 .contact-section{
 
+
 background:white;
 
+
 }
+
+
 
 
 
 .contact-box{
 
-text-align:center;
 
 max-width:700px;
 
+
 margin:auto;
 
+
+text-align:center;
+
+
 }
+
+
 
 
 
 .contact-box h2{
 
+
 font-family:var(--heading);
+
 
 font-size:2.2rem;
 
+
+margin-bottom:15px;
+
+
 }
+
+
 
 
 
 .contact-box p{
 
+
 color:var(--gray);
 
-margin:20px 0 35px;
+
+margin-bottom:35px;
+
 
 }
+
+
 
 
 
 .contact-buttons{
 
+
 display:flex;
+
 
 justify-content:center;
 
+
 gap:18px;
+
 
 flex-wrap:wrap;
 
+
 }
+
+
 
 
 
 .contact-buttons a{
 
-background:var(--cream);
-
-padding:13px 28px;
-
-border-radius:50px;
 
 display:flex;
 
+
 align-items:center;
+
 
 gap:10px;
 
+
+background:var(--cream);
+
+
+padding:13px 28px;
+
+
+border-radius:50px;
+
+
 color:var(--emerald-dark);
+
 
 font-weight:700;
 
+
 transition:var(--transition);
 
+
 }
+
+
 
 
 
 .contact-buttons a:hover{
 
+
 background:var(--emerald);
+
 
 color:white;
 
+
 }
+
+
+
+
+
+.contact-buttons svg{
+
+
+width:20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ================= BACK TO TOP ================= */
+
+
+.back-to-top{
+
+
+position:fixed;
+
+
+bottom:30px;
+
+
+left:30px;
+
+
+width:48px;
+
+
+height:48px;
+
+
+border-radius:50%;
+
+
+background:var(--emerald);
+
+
+color:white;
+
+
+display:flex;
+
+
+align-items:center;
+
+
+justify-content:center;
+
+
+box-shadow:var(--shadow);
+
+
+z-index:999;
+
+
+transition:var(--transition);
+
+
+}
+
+
+
+
+
+.back-to-top:hover{
+
+
+transform:translateY(-5px);
+
+
+background:var(--emerald-dark);
+
+
+}
+
+
+
+
+.back-to-top svg{
+
+
+width:22px;
+
+
+}
+
+
+
 
 
 
@@ -1540,70 +2487,35 @@ color:white;
 
 footer{
 
+
 background:var(--charcoal);
 
+
 color:white;
+
 
 padding:35px 0;
 
+
 text-align:center;
+
 
 border-top:4px solid var(--emerald);
 
-}
-
-
-
-
-
-/* ================= BACK TO TOP ================= */
-
-
-.back-top{
-
-position:fixed;
-
-bottom:25px;
-
-left:25px;
-
-width:45px;
-
-height:45px;
-
-border-radius:50%;
-
-background:var(--emerald);
-
-color:white;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-font-size:22px;
-
-cursor:pointer;
-
-opacity:0;
-
-visibility:hidden;
-
-transition:.3s;
-
-z-index:999;
 
 }
 
 
 
-.back-top.show{
 
-opacity:1;
+footer p{
 
-visibility:visible;
+
+opacity:.85;
+
+
+font-size:.9rem;
+
 
 }
 
@@ -1611,152 +2523,257 @@ visibility:visible;
 
 
 
-/* ================= REVEAL ================= */
 
 
-.reveal{
-
-opacity:0;
-
-transform:translateY(30px);
-
-transition:.7s ease;
-
-}
-
-
-
-.reveal.in-view{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-
-
-
-
-/* ================= MOBILE ================= */
+/* ================= MOBILE MENU ================= */
 
 
 .nav-toggle{
 
+
 display:none;
 
+
+flex-direction:column;
+
+
+gap:6px;
+
+
+background:none;
+
+
+border:0;
+
+
 }
+
+
+
+
+
+.nav-toggle span{
+
+
+width:35px;
+
+
+height:3px;
+
+
+background:var(--emerald);
+
+
+border-radius:10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ================= RESPONSIVE ================= */
 
 
 
 @media(max-width:1000px){
 
 
-.hero-content{
-
-flex-direction:column;
-
-text-align:center;
-
-}
-
-
-.about-grid{
-
-grid-template-columns:1fr;
-
-}
-
-
-.belief-grid{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-
-.library-grid{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-
-.nav-toggle{
-
-display:flex;
-
-}
-
 
 .nav-links{
 
+
 position:fixed;
+
 
 top:90px;
 
+
 right:-100%;
+
 
 width:280px;
 
+
 height:calc(100vh - 90px);
+
 
 background:white;
 
+
 flex-direction:column;
+
 
 padding:30px;
 
-transition:.3s;
+
+gap:20px;
+
+
+box-shadow:var(--shadow);
+
+
+transition:.4s;
+
 
 }
+
+
 
 
 .nav-links.open{
 
+
 right:0;
 
+
 }
 
 
+
+
+
+.nav-toggle{
+
+
+display:flex;
+
+
 }
+
+
+
+
+.about-grid{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+
+.belief-grid{
+
+
+grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+
+.library-grid{
+
+
+grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+}
+
+
+
+
+
+
 
 
 
 @media(max-width:700px){
 
 
+
 .container{
+
 
 width:92%;
 
+
 }
+
+
+
+
+section{
+
+
+padding:70px 0;
+
+
+}
+
 
 
 
 .cover-section{
 
-height:55vh;
+
+height:60vh;
+
 
 min-height:450px;
 
+
 }
+
+
+
+
+
+.hero-content{
+
+
+margin-top:-60px;
+
+
+}
+
 
 
 
 .profile-wrapper{
 
-width:150px;
 
-height:150px;
+width:140px;
+
+
+height:140px;
+
 
 }
 
 
 
-.hero{
 
-padding-top:50px;
+
+.hero-text h1{
+
+
+font-size:2.2rem;
+
+
+}
+
+
+
+
+.hero-role{
+
+
+font-size:.9rem;
+
 
 }
 
@@ -1764,7 +2781,12 @@ padding-top:50px;
 
 .hero-buttons{
 
+
 flex-direction:column;
+
+
+width:100%;
+
 
 }
 
@@ -1772,37 +2794,67 @@ flex-direction:column;
 
 .btn{
 
+
 width:100%;
 
-}
-
-
-
-.belief-grid,
-
-.program-grid,
-
-.library-grid,
-
-.initiative-grid{
-
-grid-template-columns:1fr;
 
 }
+
 
 
 
 .section-heading h2{
 
+
 font-size:1.8rem;
+
 
 }
 
 
 
-.research-feature{
+
+.belief-grid,
+.program-grid,
+.library-grid,
+.initiative-grid{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+
+.program-card,
+.research-feature,
+.info-card{
+
 
 padding:30px;
+
+
+}
+
+
+
+
+.back-to-top{
+
+
+width:42px;
+
+
+height:42px;
+
+
+bottom:20px;
+
+
+left:20px;
+
 
 }
 
@@ -1810,9 +2862,15 @@ padding:30px;
 
 .brand-line p{
 
-font-size:.75rem;
+
+font-size:12px;
+
+
+line-height:1.8;
+
 
 padding:0 15px;
+
 
 }
 
