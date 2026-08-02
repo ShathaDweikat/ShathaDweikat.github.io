@@ -1,7 +1,7 @@
 /* =========================================================
-   Shatha Dweikat
+   Shatha Dweikat Portfolio
    Research • Social Impact • Sustainable Development
-   Main Stylesheet
+   Final Main Stylesheet
 ========================================================= */
 
 
@@ -15,44 +15,36 @@
 
 :root{
 
-    --cream:#F7F1E7;
-    --cream-soft:#FBF8F2;
-    --emerald:#0F766E;
-    --emerald-dark:#115E59;
-    --mint:#B8E3D1;
+--cream:#F7F1E7;
+--cream-soft:#FBF8F2;
 
-    --charcoal:#242424;
-    --gray:#666666;
+--emerald:#0F766E;
+--emerald-dark:#115E59;
 
-    --white:#ffffff;
+--mint:#B8E3D1;
 
+--charcoal:#242424;
+--gray:#666;
 
-    --shadow:
-    0 15px 45px rgba(15,118,110,.12);
-
-    --soft-shadow:
-    0 8px 25px rgba(0,0,0,.06);
+--white:#fff;
 
 
-    --radius:24px;
+--shadow:
+0 18px 45px rgba(15,118,110,.14);
+
+--soft-shadow:
+0 10px 30px rgba(0,0,0,.07);
 
 
-    --transition:
-    .35s ease;
+--radius:24px;
+
+--transition:.35s ease;
 
 
-    --heading:
-    "Cairo",sans-serif;
-
-
-    --body:
-    "IBM Plex Sans Arabic",sans-serif;
+--heading:"Cairo",sans-serif;
+--body:"IBM Plex Sans Arabic",sans-serif;
 
 }
-
-
-
-
 
 
 
@@ -60,19 +52,15 @@
 
 
 *{
-
 margin:0;
 padding:0;
 box-sizing:border-box;
-
 }
 
 
 
 html{
-
 scroll-behavior:smooth;
-
 }
 
 
@@ -80,6 +68,7 @@ scroll-behavior:smooth;
 body{
 
 background:var(--cream);
+
 color:var(--charcoal);
 
 font-family:var(--body);
@@ -93,35 +82,21 @@ overflow-x:hidden;
 
 
 img{
-
 max-width:100%;
 display:block;
-
 }
 
 
 
 a{
-
 text-decoration:none;
 color:inherit;
-
 }
 
 
 
 ul{
-
 list-style:none;
-
-}
-
-
-
-button{
-
-font-family:inherit;
-
 }
 
 
@@ -129,12 +104,10 @@ font-family:inherit;
 .container{
 
 width:min(1180px,90%);
+
 margin:auto;
 
 }
-
-
-
 
 
 
@@ -147,6 +120,7 @@ header{
 position:absolute;
 
 top:0;
+
 left:0;
 
 width:100%;
@@ -174,7 +148,9 @@ justify-content:space-between;
 .logo{
 
 display:flex;
+
 align-items:center;
+
 gap:12px;
 
 }
@@ -184,6 +160,7 @@ gap:12px;
 .logo img{
 
 width:45px;
+
 height:45px;
 
 object-fit:contain;
@@ -198,13 +175,9 @@ font-family:var(--heading);
 
 font-weight:700;
 
-font-size:1.05rem;
-
 color:var(--emerald);
 
 }
-
-
 
 
 
@@ -225,9 +198,9 @@ gap:25px;
 
 font-family:var(--heading);
 
-font-size:.9rem;
-
 font-weight:600;
+
+font-size:.9rem;
 
 transition:var(--transition);
 
@@ -240,7 +213,6 @@ transition:var(--transition);
 color:var(--emerald);
 
 }
-
 
 
 
@@ -258,48 +230,22 @@ border-radius:50px;
 
 
 
-.nav-cta:hover{
-
-background:var(--emerald-dark);
-
-}
-
-
-
-
-
 
 
 /* ================= COVER ================= */
 
 
-/*
-   الكوفر كامل
-   بدون ارتفاع صغير
-   بدون فراغ فوق او تحت
-*/
-
-
 .cover-section{
-
-
-position:relative;
-
 
 width:100%;
 
-
 height:78vh;
-
 
 min-height:620px;
 
+position:relative;
 
 overflow:hidden;
-
-
-margin:0;
-
 
 }
 
@@ -307,218 +253,154 @@ margin:0;
 
 .cover-section img{
 
-
 width:100%;
-
 
 height:100%;
 
-
 object-fit:cover;
 
-
-object-position:center;
-
-
 }
-
-
 
 
 
 .cover-section::after{
 
-
 content:"";
-
 
 position:absolute;
 
-
 inset:0;
-
-
 
 background:
 linear-gradient(
 to bottom,
-rgba(247,241,231,0) 55%,
+transparent 60%,
 var(--cream) 100%
 );
 
-
-
 }
 
 
 
 
+/* ================= BRAND LINE ================= */
 
 
+.brand-line{
 
+width:100%;
 
+background:var(--emerald);
 
-/* ================= HERO IDENTITY ================= */
+color:white;
 
-
-.identity{
-
+padding:16px 0;
 
 position:relative;
-
-
-margin-top:-145px;
-
-
-padding-bottom:90px;
-
 
 z-index:5;
 
-
 }
 
 
 
-
-
-.identity-wrap{
-
-
-width:min(850px,92%);
-
-
-margin:auto;
-
-
-}
-
-
-
-
-.identity-card{
-
-
-background:white;
-
-
-border-radius:30px;
-
-
-padding:
-0 55px 55px;
-
+.brand-line p{
 
 text-align:center;
 
+font-family:var(--heading);
 
-box-shadow:var(--shadow);
+font-weight:700;
+
+font-size:.95rem;
+
+letter-spacing:1px;
+
+margin:0;
+
+}
+/* ================= HERO ================= */
 
 
-border-top:5px solid var(--emerald);
-
+.hero{
 
 position:relative;
 
+padding:70px 0 100px;
 
 }
 
 
 
+.hero-content{
 
+display:flex;
 
+align-items:center;
 
-
-/* PROFILE IMAGE */
-
-
-.identity-avatar-wrap{
-
-
-width:180px;
-
-
-height:180px;
-
-
-margin:-90px auto 25px;
-
-
-position:relative;
-
+gap:70px;
 
 }
 
 
 
+.profile-wrapper{
 
-.identity-avatar-wrap::before{
+width:230px;
 
+height:230px;
+
+flex-shrink:0;
+
+position:relative;
+
+}
+
+
+
+.profile-wrapper::before{
 
 content:"";
 
-
 position:absolute;
 
-
-inset:-12px;
-
+inset:-14px;
 
 border-radius:50%;
 
-
-background:
-linear-gradient(
+background:linear-gradient(
 135deg,
 var(--mint),
 transparent
 );
 
-
-animation:
-floating 5s infinite ease-in-out;
-
-
 }
 
 
 
-.identity-avatar-wrap img{
-
+.profile-wrapper img{
 
 position:relative;
 
-
 width:100%;
-
 
 height:100%;
 
-
 border-radius:50%;
-
 
 object-fit:cover;
 
-
-border:7px solid white;
-
+border:8px solid white;
 
 box-shadow:var(--shadow);
 
-
-animation:
-profileFloat 5s infinite ease-in-out;
-
+animation:profileFloat 5s ease-in-out infinite;
 
 }
-
-
 
 
 
 @keyframes profileFloat{
-
 
 0%,100%{
 
@@ -526,204 +408,93 @@ transform:translateY(0);
 
 }
 
-
 50%{
 
 transform:translateY(-8px);
 
 }
 
-
-}
-
-
-
-@keyframes floating{
-
-
-0%,100%{
-
-transform:rotate(0deg);
-
-}
-
-
-50%{
-
-transform:rotate(8deg);
-
-}
-
-
 }
 
 
 
 
 
-
-
-/* SMALL TITLE */
-
-
-.identity-eyebrow{
-
+.hero-text h1{
 
 font-family:var(--heading);
 
-
-color:var(--emerald);
-
-
-font-size:.85rem;
-
-
-font-weight:700;
-
-
-letter-spacing:1px;
-
-
-margin-bottom:18px;
-
-
-}
-
-
-
-
-
-
-
-.identity-card h1{
-
-
-font-family:var(--heading);
-
-
-font-size:
-clamp(2.4rem,5vw,3.5rem);
-
+font-size:clamp(2.5rem,5vw,3.8rem);
 
 font-weight:900;
 
-
 line-height:1.2;
-
 
 }
 
 
 
-.identity-card h1 span{
-
+.hero-text h1 span{
 
 color:var(--emerald);
 
-
 }
 
 
 
-
-
-
-.arabic-name{
-
+.hero-text h2{
 
 font-family:var(--heading);
 
-
-font-size:1.45rem;
-
-
-font-weight:700;
-
+font-size:1.5rem;
 
 color:var(--emerald-dark);
 
-
-margin-top:8px;
-
+margin:10px 0;
 
 }
 
 
 
-
-
-/* MAIN SLOGAN */
-
-
-.identity-tagline{
-
+.hero-role{
 
 font-family:var(--heading);
 
-
-font-size:1.15rem;
-
-
 font-weight:700;
 
-
-color:var(--emerald-dark);
-
-
-margin:
-20px auto;
-
+color:var(--emerald);
 
 }
 
 
 
+.main-statement{
 
-.identity-description{
-
+margin-top:25px;
 
 max-width:650px;
 
-
-margin:auto;
-
-
 color:var(--gray);
 
-
-font-size:1rem;
-
+font-size:1.1rem;
 
 }
 
 
 
-
-
-
-.identity-buttons{
-
+.hero-buttons{
 
 display:flex;
 
-
-justify-content:center;
-
-
 gap:15px;
-
 
 margin-top:35px;
 
-
 flex-wrap:wrap;
 
-
 }
-/* =========================================================
-   PART 2
-   Buttons + Sections + Beliefs + Vision + About
-========================================================= */
+
+
 
 
 
@@ -732,36 +503,21 @@ flex-wrap:wrap;
 
 .btn{
 
-
 display:inline-flex;
 
 align-items:center;
 
 justify-content:center;
 
-gap:8px;
-
-
 padding:13px 32px;
-
 
 border-radius:50px;
 
-
 font-family:var(--heading);
-
 
 font-weight:700;
 
-
-font-size:.95rem;
-
-
 transition:var(--transition);
-
-
-cursor:pointer;
-
 
 }
 
@@ -769,12 +525,9 @@ cursor:pointer;
 
 .btn-primary{
 
-
 background:var(--emerald);
 
-
 color:white;
-
 
 }
 
@@ -782,12 +535,9 @@ color:white;
 
 .btn-primary:hover{
 
-
 background:var(--emerald-dark);
 
-
 transform:translateY(-4px);
-
 
 }
 
@@ -795,15 +545,11 @@ transform:translateY(-4px);
 
 .btn-outline{
 
-
 border:1.5px solid var(--emerald);
-
 
 color:var(--emerald);
 
-
 background:white;
-
 
 }
 
@@ -811,19 +557,13 @@ background:white;
 
 .btn-outline:hover{
 
-
 background:var(--emerald);
-
 
 color:white;
 
-
 transform:translateY(-4px);
 
-
 }
-
-
 
 
 
@@ -834,9 +574,7 @@ transform:translateY(-4px);
 
 section{
 
-
 padding:100px 0;
-
 
 }
 
@@ -844,28 +582,19 @@ padding:100px 0;
 
 .bg-soft{
 
-
-background:
-rgba(255,255,255,.45);
-
+background:rgba(255,255,255,.45);
 
 }
 
 
 
-
 .section-heading{
-
 
 text-align:center;
 
-
 max-width:750px;
 
-
-margin:
-0 auto 60px;
-
+margin:0 auto 60px;
 
 }
 
@@ -873,64 +602,33 @@ margin:
 
 .section-label{
 
-
 display:inline-flex;
-
 
 align-items:center;
 
-
 gap:8px;
-
-
-font-family:var(--heading);
-
-
-font-size:.85rem;
-
-
-font-weight:700;
-
 
 color:var(--emerald);
 
+font-family:var(--heading);
+
+font-weight:700;
 
 margin-bottom:15px;
 
-
 }
-
-
-
-.section-label svg{
-
-
-width:18px;
-
-
-height:18px;
-
-
-}
-
-
 
 
 
 .section-heading h2{
 
-
 font-family:var(--heading);
-
 
 font-size:2.3rem;
 
-
 font-weight:800;
 
-
 margin-bottom:15px;
-
 
 }
 
@@ -938,331 +636,46 @@ margin-bottom:15px;
 
 .section-heading p{
 
-
 color:var(--gray);
 
-
 }
 
 
 
 
 
-
-
-
-
-/* ================= BELIEFS ================= */
-
-
-.belief-section{
-
-
-position:relative;
-
-
-}
-
-
-
-
-.belief-grid{
-
-
-display:grid;
-
-
-grid-template-columns:
-repeat(4,1fr);
-
-
-gap:25px;
-
-
-}
-
-
-
-
-
-.belief-card{
-
-
-background:white;
-
-
-border-radius:var(--radius);
-
-
-padding:35px 25px;
-
-
-text-align:center;
-
-
-box-shadow:var(--soft-shadow);
-
-
-transition:var(--transition);
-
-
-}
-
-
-
-.belief-card:hover{
-
-
-transform:translateY(-10px);
-
-
-box-shadow:var(--shadow);
-
-
-}
-
-
-
-
-.belief-card svg{
-
-
-width:42px;
-
-
-height:42px;
-
-
-color:var(--emerald);
-
-
-margin-bottom:20px;
-
-
-}
-
-
-
-
-.belief-card h3{
-
-
-font-family:var(--heading);
-
-
-font-size:1.15rem;
-
-
-color:var(--emerald-dark);
-
-
-margin-bottom:12px;
-
-
-}
-
-
-
-.belief-card p{
-
-
-font-size:.95rem;
-
-
-color:var(--gray);
-
-
-}
-
-
-
-
-
-
-
-
-
-/* ================= VISION & MISSION ================= */
-
-
-
-.vision-section{
-
-
-background:var(--cream-soft);
-
-
-}
-
-
-
-
-
-.vision-grid{
-
-
-display:grid;
-
-
-grid-template-columns:
-repeat(2,1fr);
-
-
-gap:30px;
-
-
-}
-
-
-
-
-.vision-card{
-
-
-background:white;
-
-
-border-radius:var(--radius);
-
-
-padding:45px;
-
-
-box-shadow:var(--soft-shadow);
-
-
-position:relative;
-
-
-overflow:hidden;
-
-
-}
-
-
-
-
-
-.vision-card::before{
-
-
-content:"";
-
-
-position:absolute;
-
-
-right:0;
-
-
-top:0;
-
-
-width:5px;
-
-
-height:100%;
-
-
-background:var(--emerald);
-
-
-}
-
-
-
-
-.vision-card h3{
-
-
-font-family:var(--heading);
-
-
-font-size:1.5rem;
-
-
-color:var(--emerald-dark);
-
-
-margin-bottom:18px;
-
-
-}
-
-
-
-
-.vision-card p{
-
-
-color:var(--gray);
-
-
-line-height:2;
-
-
-}
-
-
-
-
-
-
-
-
-
-/* ================= ABOUT ME ================= */
-
+/* ================= ABOUT ================= */
 
 
 .about-section{
 
-
 background:white;
 
-
 }
-
-
 
 
 
 .about-grid{
 
-
 display:grid;
 
+grid-template-columns:1.15fr .85fr;
 
-grid-template-columns:
-1.15fr .85fr;
-
-
-gap:60px;
-
-
-align-items:start;
-
+gap:50px;
 
 }
 
 
 
-
-
 .about-content h3{
-
 
 font-family:var(--heading);
 
-
 font-size:1.5rem;
-
 
 color:var(--emerald-dark);
 
-
 margin-bottom:20px;
-
 
 }
 
@@ -1270,57 +683,53 @@ margin-bottom:20px;
 
 .about-content p{
 
-
 color:var(--gray);
-
 
 margin-bottom:18px;
 
-
 }
 
 
 
-
-.about-list{
-
+.interest-list{
 
 display:flex;
 
-
 flex-wrap:wrap;
-
 
 gap:12px;
 
-
-margin-top:25px;
-
-
 }
 
 
 
-.about-list span{
-
+.interest-list div{
 
 background:var(--mint);
 
-
 color:var(--emerald-dark);
-
 
 padding:8px 18px;
 
-
 border-radius:50px;
-
-
-font-size:.9rem;
-
 
 font-weight:600;
 
+font-size:.9rem;
+
+display:flex;
+
+align-items:center;
+
+gap:7px;
+
+}
+
+
+
+.interest-list svg{
+
+width:17px;
 
 }
 
@@ -1328,109 +737,158 @@ font-weight:600;
 
 
 
+/* ================= VISION MISSION ================= */
 
 
-/* Academic side card */
+.about-side{
+
+display:flex;
+
+flex-direction:column;
+
+gap:25px;
+
+}
 
 
-.profile-side-card{
 
+.info-card{
 
-background:var(--emerald);
+background:white;
 
-
-color:white;
-
-
-padding:40px;
-
+border:2px solid var(--emerald);
 
 border-radius:var(--radius);
 
+padding:35px;
 
-box-shadow:var(--shadow);
-
-
-position:sticky;
-
-
-top:120px;
-
+box-shadow:var(--soft-shadow);
 
 }
 
 
 
+.info-card svg{
+
+width:35px;
+
+height:35px;
+
+color:var(--emerald);
+
+margin-bottom:15px;
+
+}
 
 
-.profile-side-card h3{
 
+.info-card h3{
 
 font-family:var(--heading);
 
+color:var(--emerald-dark);
 
 font-size:1.4rem;
 
-
-margin-bottom:20px;
-
+margin-bottom:15px;
 
 }
 
 
 
-.profile-side-card p{
+.info-card p{
 
+color:var(--gray);
 
 line-height:2;
 
+}
+/* ================= BELIEFS ================= */
 
-color:
-rgba(255,255,255,.92);
 
+.belief-section{
+
+background:var(--cream-soft);
 
 }
 
 
 
+.belief-grid{
 
+display:grid;
 
-/* ================= REVEAL ANIMATION ================= */
+grid-template-columns:repeat(4,1fr);
 
-
-
-.reveal{
-
-
-opacity:0;
-
-
-transform:translateY(30px);
-
-
-transition:
-opacity .7s ease,
-transform .7s ease;
-
+gap:25px;
 
 }
 
 
 
-.reveal.in-view{
+.belief-card{
 
+background:white;
 
-opacity:1;
+border-radius:var(--radius);
 
+padding:35px 25px;
 
-transform:translateY(0);
+text-align:center;
 
+box-shadow:var(--soft-shadow);
+
+transition:var(--transition);
 
 }
-/* =========================================================
-   PART 3
-   Programs + Research + Articles + Knowledge Library
-========================================================= */
+
+
+
+.belief-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:var(--shadow);
+
+}
+
+
+
+.belief-card svg{
+
+width:42px;
+
+height:42px;
+
+color:var(--emerald);
+
+margin-bottom:20px;
+
+}
+
+
+
+.belief-card h3{
+
+font-family:var(--heading);
+
+color:var(--emerald-dark);
+
+font-size:1.2rem;
+
+margin-bottom:12px;
+
+}
+
+
+
+.belief-card p{
+
+color:var(--gray);
+
+font-size:.95rem;
+
+}
 
 
 
@@ -1439,304 +897,181 @@ transform:translateY(0);
 /* ================= PROGRAMS ================= */
 
 
-
-.programs-section{
-
-
-background:var(--cream);
-
-
-}
-
-
-
-
 .program-grid{
-
 
 display:grid;
 
-
-grid-template-columns:
-repeat(2,1fr);
-
+grid-template-columns:repeat(2,1fr);
 
 gap:35px;
 
-
 }
-
-
 
 
 
 .program-card{
 
-
 background:white;
-
 
 border-radius:var(--radius);
 
-
 padding:40px;
-
 
 box-shadow:var(--soft-shadow);
 
-
-transition:var(--transition);
-
-
 display:flex;
-
 
 flex-direction:column;
 
-
 position:relative;
-
 
 overflow:hidden;
 
+transition:var(--transition);
 
 }
-
-
 
 
 
 .program-card::before{
 
-
 content:"";
-
 
 position:absolute;
 
-
 top:0;
-
 
 right:0;
 
+height:5px;
 
 width:100%;
 
-
-height:5px;
-
-
 background:var(--emerald);
 
-
 }
-
-
 
 
 
 .program-card:hover{
 
-
 transform:translateY(-8px);
-
 
 box-shadow:var(--shadow);
 
-
 }
-
-
 
 
 
 .program-icon{
 
-
 width:65px;
-
 
 height:65px;
 
-
 border-radius:50%;
-
 
 background:var(--mint);
 
-
 display:flex;
-
 
 align-items:center;
 
-
 justify-content:center;
-
 
 color:var(--emerald-dark);
 
-
-margin-bottom:25px;
-
+margin-bottom:20px;
 
 }
-
-
 
 
 
 .program-icon svg{
 
-
 width:30px;
 
-
-height:30px;
-
-
 }
-
-
 
 
 
 .program-status{
 
-
-display:inline-flex;
-
-
 align-self:flex-start;
-
 
 background:rgba(184,227,209,.45);
 
-
 color:var(--emerald-dark);
-
 
 padding:6px 16px;
 
-
 border-radius:50px;
-
 
 font-size:.8rem;
 
-
 font-weight:700;
-
 
 margin-bottom:20px;
 
-
 }
-
-
 
 
 
 .program-card h3{
 
-
 font-family:var(--heading);
-
 
 font-size:1.35rem;
 
-
 font-weight:800;
 
-
-line-height:1.7;
-
+line-height:1.8;
 
 margin-bottom:15px;
 
-
 }
-
-
 
 
 
 .program-card p{
 
-
 color:var(--gray);
-
-
-margin-bottom:25px;
-
 
 flex-grow:1;
 
+margin-bottom:25px;
 
 }
-
-
 
 
 
 .program-meta{
 
-
 display:flex;
 
-
-gap:18px;
-
+gap:20px;
 
 flex-wrap:wrap;
 
-
 margin-bottom:25px;
 
-
 }
-
-
 
 
 
 .program-meta span{
 
-
 display:flex;
-
 
 align-items:center;
 
-
 gap:6px;
-
-
-font-size:.85rem;
-
 
 color:var(--emerald-dark);
 
+font-size:.85rem;
 
 }
-
-
-
-.program-meta svg{
-
-
-width:16px;
-
-
-height:16px;
-
-
-}
-
-
-
-
 
 
 
@@ -1745,262 +1080,167 @@ height:16px;
 /* ================= RESEARCH ================= */
 
 
-
 .research-section{
-
 
 background:white;
 
-
 }
-
-
 
 
 
 .research-feature{
 
-
 background:white;
-
 
 border-radius:30px;
 
-
 padding:50px;
-
 
 box-shadow:var(--shadow);
 
-
 border-right:5px solid var(--emerald);
 
-
 }
-
-
 
 
 
 .research-header{
 
-
 display:flex;
-
 
 gap:10px;
 
-
 flex-wrap:wrap;
-
 
 margin-bottom:25px;
 
-
 }
-
-
 
 
 
 .research-tag{
 
-
 background:var(--mint);
-
 
 color:var(--emerald-dark);
 
-
 padding:7px 18px;
-
 
 border-radius:50px;
 
-
 font-size:.85rem;
-
 
 font-weight:700;
 
-
 }
-
-
 
 
 
 .research-feature h3{
 
-
 font-family:var(--heading);
-
 
 font-size:1.65rem;
 
-
 line-height:1.8;
-
 
 margin-bottom:20px;
 
-
 }
-
-
 
 
 
 .research-feature h4{
 
-
-font-family:var(--heading);
-
-
-font-size:1rem;
-
-
-font-weight:600;
-
-
-color:var(--emerald-dark);
-
-
 direction:ltr;
-
 
 text-align:left;
 
+font-family:var(--heading);
+
+color:var(--emerald-dark);
+
+font-size:1rem;
 
 margin-bottom:25px;
 
-
 }
-
-
 
 
 
 .research-feature p{
 
-
 color:var(--gray);
-
 
 margin-bottom:30px;
 
-
 }
-
-
 
 
 
 .research-actions{
 
-
 display:flex;
-
 
 gap:15px;
 
-
 flex-wrap:wrap;
 
-
 }
-
-
-
-
-
-
-
-
 /* ================= ARTICLES ================= */
-
 
 
 .article-placeholder{
 
-
 background:white;
-
 
 border-radius:var(--radius);
 
-
 padding:55px;
-
 
 text-align:center;
 
-
 box-shadow:var(--soft-shadow);
 
-
 }
-
-
 
 
 
 .article-placeholder svg{
 
-
 width:50px;
-
 
 height:50px;
 
-
 color:var(--emerald);
-
 
 margin-bottom:20px;
 
-
 }
-
-
 
 
 
 .article-placeholder h3{
 
-
 font-family:var(--heading);
-
 
 font-size:1.4rem;
 
-
 margin-bottom:15px;
 
-
 }
-
-
 
 
 
 .article-placeholder p{
 
-
 color:var(--gray);
-
 
 max-width:650px;
 
-
 margin:auto;
 
-
 }
-
-
-
-
 
 
 
@@ -2009,136 +1249,89 @@ margin:auto;
 /* ================= KNOWLEDGE LIBRARY ================= */
 
 
-
 .library-section{
 
-
-background:
-rgba(184,227,209,.18);
-
+background:rgba(184,227,209,.18);
 
 }
-
 
 
 
 .library-grid{
 
-
 display:grid;
 
-
-grid-template-columns:
-repeat(3,1fr);
-
+grid-template-columns:repeat(3,1fr);
 
 gap:28px;
 
-
 }
-
-
 
 
 
 .resource-card{
 
-
 background:white;
-
 
 padding:35px;
 
-
 border-radius:var(--radius);
-
 
 box-shadow:var(--soft-shadow);
 
-
 transition:var(--transition);
 
-
 }
-
-
 
 
 
 .resource-card:hover{
 
-
 transform:translateY(-8px);
 
+box-shadow:var(--shadow);
 
 }
-
-
 
 
 
 .resource-icon{
 
-
 width:60px;
-
 
 height:60px;
 
-
 border-radius:50%;
-
 
 background:var(--mint);
 
-
 display:flex;
-
 
 align-items:center;
 
-
 justify-content:center;
-
 
 color:var(--emerald-dark);
 
-
-margin-bottom:22px;
-
+margin-bottom:20px;
 
 }
-
-
 
 
 
 .resource-icon svg{
 
-
 width:28px;
-
-
-height:28px;
-
 
 }
 
 
 
-
-
 .resource-card h3{
-
 
 font-family:var(--heading);
 
-
-font-size:1.2rem;
-
-
 margin-bottom:15px;
-
 
 }
 
@@ -2146,84 +1339,27 @@ margin-bottom:15px;
 
 .resource-card p{
 
-
 color:var(--gray);
 
-
-font-size:.95rem;
-
-
-margin-bottom:22px;
-
+margin-bottom:20px;
 
 }
-
-
 
 
 
 .resource-link{
 
+color:var(--emerald);
+
+font-weight:700;
 
 display:flex;
 
-
 align-items:center;
-
 
 gap:8px;
 
-
-color:var(--emerald);
-
-
-font-weight:700;
-
-
 }
-
-
-
-.resource-link svg{
-
-
-width:17px;
-
-
-}
-
-
-
-
-.resource-soon{
-
-
-display:inline-block;
-
-
-padding:7px 18px;
-
-
-border-radius:50px;
-
-
-background:var(--mint);
-
-
-color:var(--emerald-dark);
-
-
-font-size:.85rem;
-
-
-font-weight:700;
-
-
-}
-/* =========================================================
-   PART 4
-   Initiatives + Contact + Footer + Responsive
-========================================================= */
 
 
 
@@ -2232,190 +1368,75 @@ font-weight:700;
 /* ================= INITIATIVES ================= */
 
 
-.initiatives-section{
-
-
-background:var(--cream);
-
-
-}
-
-
-
-
 .initiative-grid{
-
 
 display:grid;
 
-
-grid-template-columns:
-repeat(2,1fr);
-
+grid-template-columns:repeat(2,1fr);
 
 gap:30px;
 
-
 }
-
-
 
 
 
 .initiative-card{
 
-
 background:white;
-
 
 border-radius:var(--radius);
 
-
 padding:40px;
-
 
 box-shadow:var(--soft-shadow);
 
-
-transition:var(--transition);
-
-
 }
-
-
-
-
-.initiative-card:hover{
-
-
-transform:translateY(-8px);
-
-
-box-shadow:var(--shadow);
-
-
-}
-
-
 
 
 
 .initiative-icon{
 
-
 width:65px;
-
 
 height:65px;
 
+background:var(--mint);
 
 border-radius:50%;
 
-
-background:var(--mint);
-
-
 display:flex;
-
 
 align-items:center;
 
-
 justify-content:center;
-
 
 color:var(--emerald-dark);
 
-
-margin-bottom:25px;
-
+margin-bottom:20px;
 
 }
-
-
-
-
-
-.initiative-icon svg{
-
-
-width:30px;
-
-
-height:30px;
-
-
-}
-
-
 
 
 
 .initiative-card h3{
 
-
 font-family:var(--heading);
-
-
-font-size:1.45rem;
-
 
 color:var(--emerald-dark);
 
-
-margin-bottom:15px;
-
+font-size:1.4rem;
 
 }
-
-
 
 
 
 .initiative-card p{
 
-
 color:var(--gray);
 
-
-margin-bottom:20px;
-
+margin:15px 0;
 
 }
-
-
-
-
-
-.initiative-card span{
-
-
-display:inline-block;
-
-
-background:rgba(184,227,209,.45);
-
-
-color:var(--emerald-dark);
-
-
-padding:7px 18px;
-
-
-border-radius:50px;
-
-
-font-size:.85rem;
-
-
-font-weight:700;
-
-
-}
-
-
-
-
 
 
 
@@ -2426,150 +1447,89 @@ font-weight:700;
 
 .contact-section{
 
-
 background:white;
 
-
 }
-
 
 
 
 .contact-box{
 
-
 text-align:center;
-
 
 max-width:700px;
 
-
 margin:auto;
 
-
 }
-
-
 
 
 
 .contact-box h2{
 
-
 font-family:var(--heading);
-
 
 font-size:2.2rem;
 
-
-margin-bottom:15px;
-
-
 }
-
 
 
 
 .contact-box p{
 
-
 color:var(--gray);
 
-
-margin-bottom:35px;
-
+margin:20px 0 35px;
 
 }
-
-
 
 
 
 .contact-buttons{
 
-
 display:flex;
-
 
 justify-content:center;
 
-
 gap:18px;
-
 
 flex-wrap:wrap;
 
-
 }
-
-
 
 
 
 .contact-buttons a{
 
-
-display:flex;
-
-
-align-items:center;
-
-
-gap:10px;
-
-
 background:var(--cream);
-
 
 padding:13px 28px;
 
-
 border-radius:50px;
 
+display:flex;
+
+align-items:center;
+
+gap:10px;
 
 color:var(--emerald-dark);
 
-
 font-weight:700;
-
 
 transition:var(--transition);
 
-
 }
-
-
 
 
 
 .contact-buttons a:hover{
 
-
 background:var(--emerald);
-
 
 color:white;
 
-
-transform:translateY(-5px);
-
-
 }
-
-
-
-
-
-.contact-buttons svg{
-
-
-width:20px;
-
-
-}
-
-
-
 
 
 
@@ -2578,317 +1538,233 @@ width:20px;
 /* ================= FOOTER ================= */
 
 
-
 footer{
-
 
 background:var(--charcoal);
 
-
 color:white;
-
 
 padding:35px 0;
 
-
 text-align:center;
-
 
 border-top:4px solid var(--emerald);
 
-
-}
-
-
-
-footer p{
-
-
-opacity:.85;
-
-
-font-size:.9rem;
-
-
 }
 
 
 
 
 
+/* ================= BACK TO TOP ================= */
+
+
+.back-top{
+
+position:fixed;
+
+bottom:25px;
+
+left:25px;
+
+width:45px;
+
+height:45px;
+
+border-radius:50%;
+
+background:var(--emerald);
+
+color:white;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:22px;
+
+cursor:pointer;
+
+opacity:0;
+
+visibility:hidden;
+
+transition:.3s;
+
+z-index:999;
+
+}
+
+
+
+.back-top.show{
+
+opacity:1;
+
+visibility:visible;
+
+}
 
 
 
 
-/* ================= MOBILE MENU ================= */
 
+/* ================= REVEAL ================= */
+
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(30px);
+
+transition:.7s ease;
+
+}
+
+
+
+.reveal.in-view{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+
+
+
+/* ================= MOBILE ================= */
 
 
 .nav-toggle{
 
-
 display:none;
 
-
-flex-direction:column;
-
-
-gap:6px;
-
-
-width:38px;
-
-
 }
-
-
-
-.nav-toggle span{
-
-
-height:3px;
-
-
-width:100%;
-
-
-background:var(--emerald);
-
-
-border-radius:10px;
-
-
-}
-
-
-
-
-
-/* ================= RESPONSIVE ================= */
 
 
 
 @media(max-width:1000px){
 
 
-
-.nav-links{
-
-
-position:fixed;
-
-
-top:90px;
-
-
-right:-100%;
-
-
-width:280px;
-
-
-height:calc(100vh - 90px);
-
-
-background:white;
-
+.hero-content{
 
 flex-direction:column;
 
-
-align-items:flex-start;
-
-
-padding:30px;
-
-
-gap:20px;
-
-
-box-shadow:var(--shadow);
-
-
-transition:.4s;
-
+text-align:center;
 
 }
-
-
-
-.nav-links.open{
-
-
-right:0;
-
-
-}
-
-
-
-
-
-.nav-toggle{
-
-
-display:flex;
-
-
-}
-
-
-
-.belief-grid{
-
-
-grid-template-columns:
-repeat(2,1fr);
-
-
-}
-
 
 
 .about-grid{
 
-
 grid-template-columns:1fr;
 
-
 }
 
 
+.belief-grid{
 
-.profile-side-card{
-
-
-position:relative;
-
-
-top:0;
-
+grid-template-columns:repeat(2,1fr);
 
 }
-
 
 
 .library-grid{
 
-
 grid-template-columns:repeat(2,1fr);
 
+}
+
+
+.nav-toggle{
+
+display:flex;
+
+}
+
+
+.nav-links{
+
+position:fixed;
+
+top:90px;
+
+right:-100%;
+
+width:280px;
+
+height:calc(100vh - 90px);
+
+background:white;
+
+flex-direction:column;
+
+padding:30px;
+
+transition:.3s;
+
+}
+
+
+.nav-links.open{
+
+right:0;
 
 }
 
 
 }
-
-
-
-
-
 
 
 
 @media(max-width:700px){
 
 
-
 .container{
-
 
 width:92%;
 
-
 }
-
-
-
-section{
-
-
-padding:70px 0;
-
-
-}
-
 
 
 
 .cover-section{
 
+height:55vh;
 
-height:65vh;
-
-
-min-height:500px;
-
+min-height:450px;
 
 }
 
 
 
-.identity{
+.profile-wrapper{
 
+width:150px;
 
-margin-top:-90px;
-
-
-}
-
-
-
-.identity-card{
-
-
-padding:
-0 25px 35px;
-
+height:150px;
 
 }
 
 
 
-.identity-avatar-wrap{
+.hero{
 
-
-width:135px;
-
-
-height:135px;
-
-
-margin:-68px auto 20px;
-
+padding-top:50px;
 
 }
 
 
 
-.identity-card h1{
-
-
-font-size:2.2rem;
-
-
-}
-
-
-
-.identity-tagline{
-
-
-font-size:1rem;
-
-
-}
-
-
-
-.identity-buttons{
-
+.hero-buttons{
 
 flex-direction:column;
-
 
 }
 
@@ -2896,9 +1772,21 @@ flex-direction:column;
 
 .btn{
 
-
 width:100%;
 
+}
+
+
+
+.belief-grid,
+
+.program-grid,
+
+.library-grid,
+
+.initiative-grid{
+
+grid-template-columns:1fr;
 
 }
 
@@ -2906,89 +1794,28 @@ width:100%;
 
 .section-heading h2{
 
-
 font-size:1.8rem;
 
-
 }
 
 
 
-.belief-grid,
-.program-grid,
-.library-grid,
-.initiative-grid,
-.vision-grid{
-
-
-grid-template-columns:1fr;
-
-
-}
-
-
-
-
-
-.program-card,
 .research-feature{
-
 
 padding:30px;
 
-
 }
 
 
-
-
-
-.research-feature h3{
-
-
-font-size:1.25rem;
-
-
-}
-
-
-
-
-
-.navbar{
-
-
-height:75px;
-
-
-}
-
-/* ================= BRAND LINE ================= */
-
-.brand-line{
-    width:100%;
-    background:#0F766E;
-    color:#FFFFFF;
-    padding:18px 0;
-    text-align:center;
-}
 
 .brand-line p{
-    margin:0;
-    font-family:"Cairo", sans-serif;
-    font-size:15px;
-    font-weight:700;
-    letter-spacing:1px;
-}
 
+font-size:.75rem;
 
-@media(max-width:700px){
-
-    .brand-line p{
-        font-size:12px;
-        line-height:1.8;
-        padding:0 15px;
-    }
+padding:0 15px;
 
 }
+
+
+
 }
