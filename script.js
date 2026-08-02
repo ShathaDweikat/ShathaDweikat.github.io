@@ -4,51 +4,75 @@
 ========================================================= */
 
 
+/* ================= LUCIDE ICONS ================= */
+
+if(window.lucide){
+
+    lucide.createIcons();
+
+}
+
+
+
+
+
+
 /* ================= MOBILE NAVIGATION ================= */
 
 
-const navToggle = document.getElementById("navToggle");
-const navLinks = document.getElementById("navLinks");
+const navToggle =
+document.getElementById("navToggle");
 
 
-if (navToggle && navLinks) {
-
-
-    navToggle.addEventListener("click", () => {
-
-
-        const opened = navLinks.classList.toggle("open");
-
-
-        navToggle.setAttribute(
-            "aria-expanded",
-            opened
-        );
-
-
-    });
+const navLinks =
+document.getElementById("navLinks");
 
 
 
-    navLinks.querySelectorAll("a").forEach(link => {
+if(navToggle && navLinks){
 
 
-        link.addEventListener("click", () => {
+navToggle.addEventListener(
+"click",
+()=>{
 
 
-            navLinks.classList.remove("open");
+const opened =
+navLinks.classList.toggle("open");
 
 
-            navToggle.setAttribute(
-                "aria-expanded",
-                "false"
-            );
+
+navToggle.setAttribute(
+"aria-expanded",
+opened
+);
 
 
-        });
+});
 
 
-    });
+navLinks.querySelectorAll("a")
+.forEach(link=>{
+
+
+link.addEventListener(
+"click",
+()=>{
+
+
+navLinks.classList.remove("open");
+
+
+navToggle.setAttribute(
+"aria-expanded",
+"false"
+);
+
+
+});
+
+
+});
 
 
 }
@@ -67,108 +91,67 @@ document.querySelectorAll(".reveal");
 
 
 
-if (
-    "IntersectionObserver" in window &&
-    revealElements.length
+if(
+"IntersectionObserver" in window &&
+revealElements.length
 ){
 
 
-    const revealObserver =
-    new IntersectionObserver(
-        entries => {
+const observer =
+new IntersectionObserver(
+(entries)=>{
 
 
-            entries.forEach(entry => {
+entries.forEach(
+(entry)=>{
 
 
-                if(entry.isIntersecting){
+if(entry.isIntersecting){
 
 
-                    entry.target.classList.add(
-                        "in-view"
-                    );
-
-
-                    revealObserver.unobserve(
-                        entry.target
-                    );
-
-
-                }
-
-
-            });
-
-
-        },
-        {
-            threshold:.15
-        }
-    );
+entry.target.classList.add(
+"in-view"
+);
 
 
 
-    revealElements.forEach(element => {
-
-
-        revealObserver.observe(element);
-
-
-    });
-
-
-
-}else{
-
-
-    revealElements.forEach(element=>{
-
-
-        element.classList.add(
-            "in-view"
-        );
-
-
-    });
+observer.unobserve(
+entry.target
+);
 
 
 }
 
 
 
-
-
-
-
-/* ================= CLOSE MENU WHEN CLICK OUTSIDE ================= */
-
-
-document.addEventListener(
-"click",
-(event)=>{
-
-
-    if(
-        navLinks &&
-        navToggle &&
-        !navLinks.contains(event.target) &&
-        !navToggle.contains(event.target)
-    ){
-
-
-        navLinks.classList.remove("open");
-
-
-        navToggle.setAttribute(
-            "aria-expanded",
-            "false"
-        );
-
-
-    }
-
-
 });
+
+
+},
+{
+threshold:.15
+}
+);
+
+
+
+revealElements.forEach(
+(el)=>observer.observe(el)
+);
+
+
+
+}else{
+
+
+revealElements.forEach(
+(el)=>el.classList.add("in-view")
+);
+
+
+}
+
+
 
 
 
@@ -181,43 +164,48 @@ document.addEventListener(
 
 document.querySelectorAll(
 'a[href^="#"]'
-).forEach(anchor=>{
+)
+.forEach(anchor=>{
 
 
-    anchor.addEventListener(
-        "click",
-        function(e){
+anchor.addEventListener(
+"click",
+function(e){
 
 
-            const target =
-            document.querySelector(
-                this.getAttribute("href")
-            );
+
+const target =
+document.querySelector(
+this.getAttribute("href")
+);
 
 
-            if(target){
+
+if(target){
 
 
-                e.preventDefault();
+e.preventDefault();
 
 
-                target.scrollIntoView({
+target.scrollIntoView({
 
-                    behavior:"smooth",
+behavior:"smooth",
 
-                    block:"start"
+block:"start"
 
-                });
-
-
-            }
+});
 
 
-        }
-    );
+}
+
 
 
 });
+
+
+});
+
+
 
 
 
@@ -239,29 +227,101 @@ window.addEventListener(
 ()=>{
 
 
-    if(window.scrollY > 50){
+if(!header) return;
 
 
-        header.style.background =
-        "rgba(247,241,231,.96)";
+
+if(window.scrollY > 60){
 
 
-        header.style.backdropFilter =
-        "blur(15px)";
+header.style.background =
+"rgba(247,241,231,.96)";
 
 
-    }else{
+header.style.backdropFilter =
+"blur(15px)";
 
 
-        header.style.background =
-        "transparent";
+
+}else{
 
 
-        header.style.backdropFilter =
-        "none";
+header.style.background =
+"transparent";
 
 
-    }
+header.style.backdropFilter =
+"none";
+
+
+}
 
 
 });
+
+
+
+
+
+
+
+
+
+/* ================= BACK TO TOP ================= */
+
+
+const backTop =
+document.querySelector(".back-to-top");
+
+
+
+if(backTop){
+
+
+
+window.addEventListener(
+"scroll",
+()=>{
+
+
+if(window.scrollY > 500){
+
+
+backTop.style.opacity="1";
+
+backTop.style.pointerEvents="auto";
+
+
+}else{
+
+
+backTop.style.opacity="0";
+
+backTop.style.pointerEvents="none";
+
+
+}
+
+
+});
+
+
+
+backTop.addEventListener(
+"click",
+()=>{
+
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+
+});
+
+
+}
