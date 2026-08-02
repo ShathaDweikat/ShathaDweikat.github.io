@@ -4,76 +4,59 @@
 ========================================================= */
 
 
-/* ================= LUCIDE ICONS ================= */
-
-
-if(window.lucide){
-
-    lucide.createIcons();
-
-}
-
-
 
 /* ================= MOBILE NAVIGATION ================= */
 
 
-const navToggle =
-document.getElementById("navToggle");
-
-
-const navLinks =
-document.getElementById("navLinks");
-
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.getElementById("navLinks");
 
 
 if(navToggle && navLinks){
 
 
-navToggle.addEventListener(
-"click",
-()=>{
+    navToggle.addEventListener("click",()=>{
 
 
-const opened =
-navLinks.classList.toggle("open");
+        const opened =
+        navLinks.classList.toggle("open");
 
 
-navToggle.setAttribute(
-"aria-expanded",
-opened
-);
+        navToggle.setAttribute(
+            "aria-expanded",
+            opened
+        );
 
 
-});
+    });
 
 
 
-navLinks.querySelectorAll("a")
-.forEach(link=>{
+    navLinks.querySelectorAll("a").forEach(link=>{
 
 
-link.addEventListener(
-"click",
-()=>{
+        link.addEventListener("click",()=>{
 
 
-navLinks.classList.remove("open");
+            navLinks.classList.remove("open");
 
 
-navToggle.setAttribute(
-"aria-expanded",
-"false"
-);
+            navToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
 
 
-});
+        });
 
 
-});
+    });
 
 
 }
+
+
+
 
 
 
@@ -84,82 +67,32 @@ navToggle.setAttribute(
 
 document.addEventListener(
 "click",
-(event)=>{
+(e)=>{
 
 
-if(
-navLinks &&
-navToggle &&
-!navLinks.contains(event.target) &&
-!navToggle.contains(event.target)
-
-){
-
-
-navLinks.classList.remove("open");
+    if(
+        navLinks &&
+        navToggle &&
+        !navLinks.contains(e.target) &&
+        !navToggle.contains(e.target)
+    ){
 
 
-navToggle.setAttribute(
-"aria-expanded",
-"false"
-);
+        navLinks.classList.remove("open");
 
 
-}
+        navToggle.setAttribute(
+            "aria-expanded",
+            "false"
+        );
 
 
-});
-
-
-
-
-
-
-
-/* ================= SMOOTH SCROLL ================= */
-
-
-document.querySelectorAll(
-'a[href^="#"]'
-)
-.forEach(anchor=>{
-
-
-anchor.addEventListener(
-"click",
-function(e){
-
-
-const target =
-document.querySelector(
-this.getAttribute("href")
-);
-
-
-
-if(target){
-
-
-e.preventDefault();
-
-
-target.scrollIntoView({
-
-behavior:"smooth",
-
-block:"start"
-
-});
-
-
-}
-
+    }
 
 
 });
 
 
-});
 
 
 
@@ -197,9 +130,11 @@ entry.target.classList.add(
 );
 
 
+
 observer.unobserve(
 entry.target
 );
+
 
 
 }
@@ -210,92 +145,92 @@ entry.target
 
 },
 {
-
 threshold:.15
-
 }
 );
 
 
 
-revealElements.forEach(
-element=>{
-
-observer.observe(element);
-
-}
-);
+revealElements.forEach(el=>{
 
 
-
-}else{
-
-
-revealElements.forEach(
-element=>{
-
-element.classList.add(
-"in-view"
-);
-
-}
-);
-
-
-}
-
-
-
-
-
-
-
-/* ================= BACK TO TOP ================= */
-
-
-const backTop =
-document.querySelector(".back-to-top");
-
-
-
-if(backTop){
-
-
-
-window.addEventListener(
-"scroll",
-()=>{
-
-
-if(window.scrollY > 500){
-
-
-backTop.style.opacity="1";
-
-backTop.style.pointerEvents="auto";
-
-
-}else{
-
-
-backTop.style.opacity="0";
-
-backTop.style.pointerEvents="none";
-
-
-}
+observer.observe(el);
 
 
 });
 
 
 
-backTop.style.opacity="0";
+}else{
 
-backTop.style.pointerEvents="none";
+
+revealElements.forEach(el=>{
+
+
+el.classList.add(
+"in-view"
+);
+
+
+});
 
 
 }
+
+
+
+
+
+
+
+
+
+/* ================= SMOOTH SCROLL ================= */
+
+
+document.querySelectorAll(
+'a[href^="#"]'
+).forEach(anchor=>{
+
+
+anchor.addEventListener(
+"click",
+function(e){
+
+
+const target =
+document.querySelector(
+this.getAttribute("href")
+);
+
+
+
+if(target){
+
+
+e.preventDefault();
+
+
+
+target.scrollIntoView({
+
+behavior:"smooth",
+
+block:"start"
+
+});
+
+
+}
+
+
+
+});
+
+
+});
+
+
 
 
 
@@ -316,15 +251,20 @@ window.addEventListener(
 ()=>{
 
 
+if(!header) return;
+
+
+
 if(window.scrollY > 50){
 
 
 header.style.background =
-"rgba(247,241,231,.95)";
+"rgba(247,241,231,.96)";
 
 
 header.style.backdropFilter =
 "blur(15px)";
+
 
 
 }else{
@@ -338,7 +278,85 @@ header.style.backdropFilter =
 "none";
 
 
+
+}
+
+
+
+});
+
+
+
+
+
+
+
+
+
+/* ================= BACK TO TOP ================= */
+
+
+const backToTop =
+document.querySelector(".back-to-top");
+
+
+
+if(backToTop){
+
+
+
+window.addEventListener(
+"scroll",
+()=>{
+
+
+if(window.scrollY > 500){
+
+
+backToTop.classList.add(
+"show"
+);
+
+
+
+}else{
+
+
+backToTop.classList.remove(
+"show"
+);
+
+
+
 }
 
 
 });
+
+
+
+
+
+backToTop.addEventListener(
+"click",
+(e)=>{
+
+
+e.preventDefault();
+
+
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+
+
+});
+
+
+}
