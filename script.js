@@ -6,14 +6,12 @@
 
 /* ================= LUCIDE ICONS ================= */
 
+
 if(window.lucide){
 
     lucide.createIcons();
 
 }
-
-
-
 
 
 
@@ -41,7 +39,6 @@ const opened =
 navLinks.classList.toggle("open");
 
 
-
 navToggle.setAttribute(
 "aria-expanded",
 opened
@@ -49,6 +46,7 @@ opened
 
 
 });
+
 
 
 navLinks.querySelectorAll("a")
@@ -81,77 +79,36 @@ navToggle.setAttribute(
 
 
 
+/* ================= CLOSE MENU OUTSIDE ================= */
 
 
-/* ================= SCROLL REVEAL ================= */
-
-
-const revealElements =
-document.querySelectorAll(".reveal");
-
+document.addEventListener(
+"click",
+(event)=>{
 
 
 if(
-"IntersectionObserver" in window &&
-revealElements.length
+navLinks &&
+navToggle &&
+!navLinks.contains(event.target) &&
+!navToggle.contains(event.target)
+
 ){
 
 
-const observer =
-new IntersectionObserver(
-(entries)=>{
+navLinks.classList.remove("open");
 
 
-entries.forEach(
-(entry)=>{
-
-
-if(entry.isIntersecting){
-
-
-entry.target.classList.add(
-"in-view"
-);
-
-
-
-observer.unobserve(
-entry.target
+navToggle.setAttribute(
+"aria-expanded",
+"false"
 );
 
 
 }
-
 
 
 });
-
-
-},
-{
-threshold:.15
-}
-);
-
-
-
-revealElements.forEach(
-(el)=>observer.observe(el)
-);
-
-
-
-}else{
-
-
-revealElements.forEach(
-(el)=>el.classList.add("in-view")
-);
-
-
-}
-
-
 
 
 
@@ -171,7 +128,6 @@ document.querySelectorAll(
 anchor.addEventListener(
 "click",
 function(e){
-
 
 
 const target =
@@ -211,47 +167,39 @@ block:"start"
 
 
 
+/* ================= SCROLL REVEAL ================= */
+
+
+const revealElements =
+document.querySelectorAll(".reveal");
 
 
 
-/* ================= HEADER EFFECT ================= */
+if(
+"IntersectionObserver" in window &&
+revealElements.length
+){
 
 
-const header =
-document.querySelector("header");
+const observer =
+new IntersectionObserver(
+(entries)=>{
 
 
-
-window.addEventListener(
-"scroll",
-()=>{
+entries.forEach(entry=>{
 
 
-if(!header) return;
+if(entry.isIntersecting){
 
 
-
-if(window.scrollY > 60){
-
-
-header.style.background =
-"rgba(247,241,231,.96)";
+entry.target.classList.add(
+"in-view"
+);
 
 
-header.style.backdropFilter =
-"blur(15px)";
-
-
-
-}else{
-
-
-header.style.background =
-"transparent";
-
-
-header.style.backdropFilter =
-"none";
+observer.unobserve(
+entry.target
+);
 
 
 }
@@ -260,6 +208,41 @@ header.style.backdropFilter =
 });
 
 
+},
+{
+
+threshold:.15
+
+}
+);
+
+
+
+revealElements.forEach(
+element=>{
+
+observer.observe(element);
+
+}
+);
+
+
+
+}else{
+
+
+revealElements.forEach(
+element=>{
+
+element.classList.add(
+"in-view"
+);
+
+}
+);
+
+
+}
 
 
 
@@ -307,21 +290,55 @@ backTop.style.pointerEvents="none";
 
 
 
-backTop.addEventListener(
-"click",
-()=>{
+backTop.style.opacity="0";
 
-
-window.scrollTo({
-
-top:0,
-
-behavior:"smooth"
-
-});
-
-
-});
+backTop.style.pointerEvents="none";
 
 
 }
+
+
+
+
+
+
+
+/* ================= HEADER EFFECT ================= */
+
+
+const header =
+document.querySelector("header");
+
+
+
+window.addEventListener(
+"scroll",
+()=>{
+
+
+if(window.scrollY > 50){
+
+
+header.style.background =
+"rgba(247,241,231,.95)";
+
+
+header.style.backdropFilter =
+"blur(15px)";
+
+
+}else{
+
+
+header.style.background =
+"transparent";
+
+
+header.style.backdropFilter =
+"none";
+
+
+}
+
+
+});
