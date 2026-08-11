@@ -6,291 +6,157 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>مركز المعرفة | شذا دويكات</title>
+<title>
+مكتبة المعرفة | شذا دويكات
+</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=5">
 
+<script src="https://unpkg.com/lucide@0.468.0"></script>
 
-<style>
-
-:root{
---cream:#F7F1E7;
---emerald:#0F766E;
---mint:#B8E3D1;
---dark:#222;
---white:#fff;
---shadow:0 15px 35px rgba(0,0,0,.08);
-}
-
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-
-body{
-
-background:var(--cream);
-font-family:"Cairo",sans-serif;
-color:var(--dark);
-line-height:1.8;
-
-}
-
-
-.container{
-
-width:90%;
-max-width:1100px;
-margin:auto;
-
-}
-
-
-header{
-
-text-align:center;
-padding:80px 0 40px;
-
-}
-
-
-header h1{
-
-font-size:3rem;
-color:var(--emerald);
-
-}
-
-
-header p{
-
-font-size:1.2rem;
-color:#555;
-margin-top:15px;
-
-}
-
-
-
-.cards{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-padding:40px 0;
-
-}
-
-
-
-.card{
-
-background:white;
-padding:35px;
-border-radius:25px;
-box-shadow:var(--shadow);
-text-align:center;
-
-}
-
-
-
-.card h2{
-
-color:var(--emerald);
-margin-bottom:15px;
-
-}
-
-
-
-.badge{
-
-display:inline-block;
-background:var(--mint);
-color:var(--emerald);
-padding:5px 18px;
-border-radius:30px;
-margin-bottom:20px;
-
-}
-
-
-
-.button{
-
-display:inline-block;
-margin-top:25px;
-background:var(--emerald);
-color:white;
-padding:12px 35px;
-border-radius:50px;
-text-decoration:none;
-
-}
-
-
-
-.button:hover{
-
-opacity:.85;
-
-}
-
-
-
-footer{
-
-text-align:center;
-padding:30px;
-color:#666;
-
-}
-
-
-</style>
-
-
-<meta name="description" content="مركز معرفي يضم أدلة وملفات مجانية وبرامج ودورات قادمة في المسؤولية المجتمعية والتنمية المستدامة.">
+<meta name="description" content="مكتبة المعرفة — كتب ودورات وأدلة بحثية في المسؤولية المجتمعية والتنمية المستدامة والحوكمة.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="مركز المعرفة | Shatha Dweikat">
-<meta property="og:description" content="مركز معرفي يضم أدلة وملفات مجانية وبرامج ودورات قادمة في المسؤولية المجتمعية والتنمية المستدامة.">
-<meta property="og:image" content="https://shathadweikat.github.io/images/cover.webp">
 <meta property="og:url" content="https://shathadweikat.github.io/knowledge-hub.html">
+<meta property="og:title" content="مكتبة المعرفة | شذى دويكات">
+<meta property="og:description" content="كتب ودورات وأدلة بحثية في المسؤولية المجتمعية والتنمية المستدامة.">
+<meta property="og:image" content="https://shathadweikat.github.io/images/logo.webp">
+<meta property="og:locale" content="ar_AR">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="images/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png"><link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"><link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48.png"><link rel="apple-touch-icon" href="images/apple-touch-icon.png"><meta name="theme-color" content="#0F766E">
 </head>
 
-
 <body>
 
-
 <header>
-
 <div class="container">
-
-<h1>
-مركز المعرفة
-</h1>
-
-
-<p>
-مساحة للتعلم، التطوير، والمحتوى المعرفي المجاني
-</p>
-
-
-</div>
-
-</header>
-
-
-
-<section>
-
-<div class="container">
-
-
-<div class="cards">
-
-
-
-<div class="card">
-
-
-<span class="badge">
-دورة مجانية
-</span>
-
-
-<h2>
-رحلة التغيير
-</h2>
-
-
-<p>
-رحلة تعليمية تهدف إلى دعم الوعي الذاتي، فهم مراحل التغيير، وبناء خطوات عملية نحو النمو والتطور الشخصي.
-</p>
-
-
-<a class="button" 
-href="https://drive.google.com/file/d/1HcbnIcszy9lgGp2yQMfIzgUzhtMMx-iX/view?usp=drive_link"
-target="_blank">
-
-ابدأ الدورة
-
+<nav class="navbar">
+<a href="index.html" class="logo">
+<img src="images/logo.webp" width="120" height="120" alt="Shatha Dweikat Logo">
+<span>Shatha Dweikat</span>
 </a>
 
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">الرئيسية</a></li>
+<li><a href="about.html">من أنا</a></li>
+<li><a href="research.html">الأبحاث</a></li>
+<li><a href="projects.html">البرامج</a></li>
+<li><a href="certifications.html">الشهادات</a></li>
+<li><a href="knowledge-hub.html">مكتبة المعرفة</a></li>
+<li><a href="contact.html" class="nav-cta">تواصل</a></li>
+</ul>
 
+<div class="lang-switch">
+<a href="en/knowledge-hub.html">EN</a>
+<a class="active" href="knowledge-hub.html">عربي</a>
 </div>
 
+<button class="nav-toggle" id="navToggle">
+<span></span><span></span><span></span>
+</button>
+</nav>
+</div>
+</header>
 
+<main>
 
-
-<div class="card">
-
-
-<span class="badge">
-قريبًا
-</span>
-
-
-<h2>
-دورات قادمة
-</h2>
-
-
+<section class="page-hero">
+<div class="container">
+<span class="page-label"><i data-lucide="library"></i>Knowledge Hub</span>
+<h1>مكتبة المعرفة</h1>
 <p>
-سيتم إضافة المزيد من الدورات والمواد التعليمية المجانية قريبًا.
+مكتبة معرفية تضم كتبًا وأدلة بحثية وموارد تعليمية في مجالات المسؤولية المجتمعية،
+التنمية المستدامة، والحوكمة — متاحة للقراءة والتحميل مباشرة.
 </p>
-
-
 </div>
-
-
-
-
-<div class="card">
-
-
-<span class="badge">
-موارد
-</span>
-
-
-<h2>
-أدلة وملفات مجانية
-</h2>
-
-
-<p>
-ملفات عمل، أدوات، وقوالب تساعد على التعلم والتطوير.
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
 </section>
 
+<section>
+<div class="container">
 
+<div class="resource-grid">
+
+<div class="resource-card reveal">
+<div class="resource-icon"><i data-lucide="book-open"></i></div>
+<h3>المسؤولية المجتمعية</h3>
+<p>
+كتاب شامل يقدم مفهوم المسؤولية المجتمعية وأبعادها النظرية والتطبيقية،
+وأدوات تصميم البرامج المجتمعية.
+</p>
+<a class="btn btn-primary" href="csr-book.pdf" target="_blank" rel="noopener">قراءة الكتاب</a>
+</div>
+
+<div class="resource-card reveal">
+<div class="resource-icon"><i data-lucide="compass"></i></div>
+<h3>رحلة التغيير — الدورة التدريبية</h3>
+<p>
+دورة تعليمية حول الوعي الذاتي ومراحل التغيير، تقدم مفاهيم عملية
+لبناء خطوات النمو الشخصي.
+</p>
+<a class="btn btn-primary" href="journey-of-change.html">استكشف الدورة</a>
+</div>
+
+<div class="resource-card reveal">
+<div class="resource-icon"><i data-lucide="graduation-cap"></i></div>
+<h3>أدلة بحثية</h3>
+<p>
+مجموعة من الموارد البحثية تشمل دليل أساليب البحث العلمي،
+ومنهجيات إعداد وتنظيم البحوث العلمية.
+</p>
+<a class="btn btn-primary" href="research-guide.pdf" target="_blank" rel="noopener">دليل البحث العلمي</a>
+</div>
+
+</div>
+
+<div class="collab-list reveal" style="margin-top:36px">
+<div class="collab-item"><i data-lucide="leaf"></i>كتب التنمية المستدامة</div>
+<div class="collab-item"><i data-lucide="landmark"></i>أدلة الحوكمة المؤسسية</div>
+<div class="collab-item"><i data-lucide="library"></i>مصادر معرفية متجددة</div>
+</div>
+
+<div class="content-block reveal" style="margin-top:30px">
+<h3>مصادر إضافية</h3>
+<p>
+تجري حاليًا أعمال تطوير لضم مجموعة أوسع من الكتب والأدلة البحثية في المكتبة،
+تشمل مؤلفات في التنمية المستدامة، الحوكمة، والسياسات العامة.
+</p>
+<div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap">
+<a class="btn btn-outline" href="sustainable-development.pdf" target="_blank" rel="noopener">التنمية المستدامة PDF</a>
+<a class="btn btn-outline" href="governance-research.pdf" target="_blank" rel="noopener">بحث الحوكمة PDF</a>
+<a class="btn btn-outline" href="research-methods.pdf" target="_blank" rel="noopener">أساليب البحث PDF</a>
+</div>
+</div>
+
+<a href="#top" class="back-to-top" aria-label="Back to top"><i data-lucide="arrow-up"></i></a>
+
+</div>
+</section>
 
 <footer>
-
-© 2026 شذا دويكات
-
+<div class="container">
+<div class="footer-inner">
+<div class="footer-brand">
+<img src="images/logo.webp" width="52" height="52" alt="Shatha Dweikat">
+<p>Building Knowledge. Creating Sustainable Impact.</p>
+</div>
+<div class="footer-links">
+<h4>روابط سريعة</h4>
+<a href="index.html">الرئيسية</a>
+<a href="about.html">من أنا</a>
+<a href="research.html">الأبحاث</a>
+<a href="projects.html">البرامج</a>
+<a href="knowledge-hub.html">مكتبة المعرفة</a>
+</div>
+<div class="footer-social">
+<h4>تواصل</h4>
+<a href="mailto:shatha.dweikat.official@gmail.com"><i data-lucide="mail"></i>البريد الإلكتروني</a>
+<a href="https://www.linkedin.com/in/shatha-dweikat" target="_blank" rel="noopener"><i data-lucide="linkedin"></i>LinkedIn</a>
+</div>
+</div>
+<p class="footer-copy">© 2026 Shatha Dweikat. All Rights Reserved.</p>
+</div>
 </footer>
 
-
-
+<script>lucide.createIcons();</script>
+<script src="script.js"></script>
 </body>
-
 </html>
