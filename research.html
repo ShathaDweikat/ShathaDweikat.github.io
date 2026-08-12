@@ -10,7 +10,7 @@
 الأبحاث | شذا دويكات — أخصائية اجتماعية مزاولة • باحثة في التمكين والأثر الاجتماعي
 </title>
 
-<link rel="stylesheet" href="style.css?v=19">
+<link rel="stylesheet" href="style.css?v=21">
 
 <script src="https://unpkg.com/lucide@0.468.0"></script>
 
@@ -87,7 +87,7 @@
 للتغيرات المتسارعة في بيئتها.
 </p>
 <div class="research-actions">
-<a class="btn btn-primary" href="governance-research.pdf" target="_blank" rel="noopener">
+<a class="btn btn-primary" href="#" id="openAbstract">
 <i data-lucide="file-text"></i>قراءة الملخص
 </a>
 <a class="btn btn-outline" href="governance-research.pdf" download>
@@ -126,6 +126,27 @@
 </div>
 </section>
 
+<!-- ================= RESEARCH ABSTRACT MODAL ================= -->
+<div class="modal-overlay" id="abstractModal" aria-hidden="true">
+<div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="abstractTitle">
+<div class="modal-head">
+<div>
+<span class="section-label"><i data-lucide="scroll-text"></i>ملخص الدراسة</span>
+<h3 id="abstractTitle">إعادة تشكيل حوكمة التعليم العالي الفلسطيني في ظل عدم الاستقرار</h3>
+</div>
+<button class="modal-close" id="closeAbstract" aria-label="إغلاق"><i data-lucide="x"></i></button>
+</div>
+<div class="modal-body">
+<p>
+هدفت الدراسة الحالية إلى تحليل كيفية إعادة تشكيل حوكمة التعليم العالي الفلسطيني لتعزيز المرونة المؤسسية للجامعات في مواجهة الأزمات المركبة خلال عام 2026م. واعتمدت الدراسة على المنهج الوصفي التحليلي بمساره النوعي (الكيفي)، حيث تم جمع البيانات عبر أداتين متكاملتين: أداة تحليل الوثائق والخطط الاستراتيجية والتقارير السياساتية الرسمية كأداة رئيسة، ودليل الأسئلة المقننة والموجهة لعينة قصدية خبيرة من القيادات الأكاديمية والإدارية في الجامعات الفلسطينية كأداة تدعيمية وتفسيرية. وأسفرت نتائج الدراسة عن أن أنماط الحوكمة التقليدية والبيروقراطية الكلاسيكية تسبب شللًا تنظيميًا وبطءًا في الاستجابة إبان الأزمات، مما دفع الجامعات نحو تبني أنماط هجينة وتفويض لامركزية مكانية وعفوية كآليات دفاعية. كما أظهرت النتائج أن التحول الرقمي والابتكار الإداري شكّلا روافد تمكينية حاسمة لإعادة تشكيل الهياكل التنظيمية واستمرارية الأعمال. ورصدت الدراسة جملة من التحديات المركبة والمتزامنة (السياسية، الخنق المالي الحاد، والمقاومة الثقافية للتغيير) التي تقاوم مرونة الاستجابة. وخلصت الدراسة إلى بناء نموذج استشرافي مقترح لحوكمة المرونة يتلاءم مع استثنائية الخصوصية الفلسطينية، ويرتكز على خمس دعامات نصية رئيسة: التشريع التكيفي، المأسسة الاستباقية للمخاطر، اللامركزية الموجهة، التمكين الرقمي الشامل، والاستدامة المالية عبر الشراكات الدولية.
+</p>
+</div>
+<div class="modal-foot">
+<a class="btn btn-outline" href="governance-research.pdf" target="_blank" rel="noopener"><i data-lucide="file-text"></i>البحث كاملًا PDF</a>
+</div>
+</div>
+</div>
+
 <footer>
 <div class="container">
 <div class="footer-inner">
@@ -152,6 +173,28 @@
 </footer>
 
 <script>lucide.createIcons();</script>
+<script>
+(function () {
+  const overlay = document.getElementById('abstractModal');
+  const openBtn = document.getElementById('openAbstract');
+  const closeBtn = document.getElementById('closeAbstract');
+  if (!overlay || !openBtn) return;
+  function openModal() {
+    overlay.setAttribute('aria-hidden', 'false');
+    overlay.classList.add('modal-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal() {
+    overlay.setAttribute('aria-hidden', 'true');
+    overlay.classList.remove('modal-open');
+    document.body.style.overflow = '';
+  }
+  openBtn.addEventListener('click', function (e) { e.preventDefault(); openModal(); });
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', function (e) { if (e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+})();
+</script>
 <script src="script.js"></script>
 </body>
 </html>
