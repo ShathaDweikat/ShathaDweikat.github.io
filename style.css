@@ -2567,7 +2567,7 @@ max-width:none;
 }
 /* ================= IMPROVEMENTS v8 (Aug 12) ================= */
 /* AR hero: Arabic name leads visually, EN name becomes subtitle */
-.hero-name-en{
+html[dir="rtl"] .hero-name-en{
 font-family:var(--heading);
 font-size:clamp(1.6rem,3.2vw,2.2rem) !important;
 font-weight:800;
@@ -2575,10 +2575,10 @@ line-height:1.25;
 letter-spacing:.4px;
 color:var(--charcoal);
 }
-.hero-name-en span{
+html[dir="rtl"] .hero-name-en span{
 color:var(--emerald);
 }
-.hero-name-ar{
+html[dir="rtl"] .hero-name-ar{
 font-family:var(--heading);
 color:var(--emerald-dark);
 font-size:clamp(2.6rem,5.2vw,3.6rem);
@@ -2587,7 +2587,7 @@ line-height:1.25;
 margin-top:6px;
 display:block;
 }
-.hero-name-ar::before{
+html[dir="rtl"] .hero-name-ar::before{
 content:"";
 display:block;
 width:60px;
