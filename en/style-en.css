@@ -2882,3 +2882,84 @@ margin-top:0;
 
 }
 }
+/* ================= REDESIGN v10 (Aug 12, first-fold comfort) ================= */
+/* Hero: tighter rhythm, integrated photo, vertically centered content */
+.cover-section{
+height:42vh;
+min-height:300px;
+max-height:420px;
+}
+.cover-section img{
+object-position:72% center;
+}
+.cover-section::after{
+background:
+linear-gradient(
+to bottom,
+rgba(247,241,231,0) 60%,
+var(--cream) 100%
+);
+}
+.cover-band{
+position:relative;
+margin-top:-16px;
+z-index:2;
+}
+.hero-section{
+padding:56px 0 88px;
+}
+.hero-card{
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:76px 55px 52px;
+}
+.profile-wrapper{
+width:150px;
+height:150px;
+margin:0 auto 24px;
+}
+.profile-wrapper::before{
+inset:-10px;
+}
+.profile-wrapper img{
+border-width:5px;
+}
+.hero-text{
+display:flex;
+flex-direction:column;
+align-items:center;
+flex:1;
+}
+.hero-divider{
+margin:22px auto;
+}
+.hero-belief{
+font-size:1rem;
+line-height:1.85;
+}
+.hero-buttons{
+margin-top:30px;
+}
+/* Sections: unified comfortable rhythm */
+section{
+padding-top:84px;
+}
+section:first-of-type{
+padding-top:0;
+}
+@media (max-width:768px){
+.cover-section{
+height:36vh;
+min-height:260px;
+}
+.hero-card{
+padding:64px 24px 40px;
+}
+.profile-wrapper{
+width:128px;
+height:128px;
+margin-top:0;
+
+}
+}
