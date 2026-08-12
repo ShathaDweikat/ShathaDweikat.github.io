@@ -2565,3 +2565,69 @@ text-align:center;
 max-width:none;
 }
 }
+/* ================= IMPROVEMENTS v8 (Aug 12) ================= */
+/* AR hero: Arabic name leads visually, EN name becomes subtitle */
+.hero-name-en{
+font-family:var(--heading);
+font-size:clamp(1.6rem,3.2vw,2.2rem) !important;
+font-weight:800;
+line-height:1.25;
+letter-spacing:.4px;
+color:var(--charcoal);
+}
+.hero-name-en span{
+color:var(--emerald);
+}
+.hero-name-ar{
+font-family:var(--heading);
+color:var(--emerald-dark);
+font-size:clamp(2.6rem,5.2vw,3.6rem);
+font-weight:900;
+line-height:1.25;
+margin-top:6px;
+display:block;
+}
+.hero-name-ar::before{
+content:"";
+display:block;
+width:60px;
+height:3px;
+border-radius:3px;
+background:var(--emerald);
+margin:0 auto 14px;
+}
+/* Articles "coming soon" card */
+.coming-soon-cta{
+display:flex;
+gap:14px;
+justify-content:center;
+margin-top:28px;
+flex-wrap:wrap;
+}
+.article-placeholder .btn-outline{
+background:transparent;
+color:var(--emerald-dark);
+border:1.5px solid rgba(13,122,102,.45);
+box-shadow:var(--soft-shadow);
+}
+.article-placeholder .btn-outline:hover{
+background:var(--emerald);
+color:white;
+border-color:var(--emerald);
+}
+@media (max-width:768px){
+.hero-name-ar{
+font-size:2.4rem;
+}
+.hero-name-en{
+font-size:1.5rem;
+}
+.coming-soon-cta{
+flex-direction:column;
+align-items:center;
+}
+.coming-soon-cta .btn{
+width:100%;
+max-width:300px;
+}
+}
