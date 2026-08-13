@@ -8,6 +8,11 @@
   <url><loc>https://shathadweikat.github.io/projects.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   
   <url><loc>https://shathadweikat.github.io/contact.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://shathadweikat.github.io/articles.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://shathadweikat.github.io/resources.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://shathadweikat.github.io/courses.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://shathadweikat.github.io/privacy-policy.html</loc><priority>0.4</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://shathadweikat.github.io/copyright.html</loc><priority>0.4</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://shathadweikat.github.io/governance-research.pdf</loc><priority>0.8</priority></url>
   <url><loc>https://shathadweikat.github.io/csr-book.pdf</loc><priority>0.8</priority></url>
   <url><loc>https://shathadweikat.github.io/research-methods.pdf</loc><priority>0.8</priority></url>
