@@ -3652,3 +3652,76 @@ transition:all .25s ease;
 @media (max-width: 760px) {
   .certs-grid { grid-template-columns: 1fr; }
 }
+
+
+/* ============ v29: POLISHED AESTHETICS (shadows, hovers, motion) ============ */
+.lift,
+.program-card,
+.belief-card,
+.module-card,
+.learn-item,
+.cert-item,
+.whatido-card,
+.join-step,
+.trainer-card,
+.collab-item,
+.research-interest,
+.timeline-item,
+.resource-card,
+.article-card,
+.focus-item{
+  transition:
+    transform .35s cubic-bezier(.22,.8,.36,1),
+    box-shadow .35s ease,
+    border-color .35s ease,
+    background-color .35s ease;
+}
+.program-card:hover,
+.belief-card:hover,
+.module-card:hover,
+.learn-item:hover,
+.cert-item:hover,
+.whatido-card:hover,
+.join-step:hover,
+.trainer-card:hover,
+.collab-item:hover,
+.timeline-item:hover,
+.resource-card:hover,
+.article-card:hover,
+.focus-item:hover{
+  transform:translateY(-6px);
+  border-color:rgba(13,116,96,.32);
+  box-shadow:0 16px 34px rgba(17,94,89,.14) !important;
+}
+.research-interest{cursor:default}
+.research-interest:hover{
+  transform:translateY(-3px);
+  background-color:rgba(13,116,96,.05);
+  box-shadow:0 8px 18px rgba(17,94,89,.1);
+}
+.btn{
+  box-shadow:0 4px 14px rgba(13,116,96,.12);
+}
+.btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 22px rgba(13,116,96,.24);
+}
+.btn:active{transform:translateY(0);box-shadow:0 2px 8px rgba(13,116,96,.14)}
+.footer-brand{transition:opacity .3s ease}
+.footer-brand:hover{opacity:.75}
+.site-logo{transition:transform .4s cubic-bezier(.22,.8,.36,1)}
+.site-logo:hover{transform:scale(1.04)}
+.nav-links a{transition:color .25s ease,transform .25s ease}
+.reveal{will-change:transform,opacity}
+@media (prefers-reduced-motion:reduce){
+  .lift,
+  .program-card,.belief-card,.module-card,.learn-item,.cert-item,.whatido-card,
+  .join-step,.trainer-card,.collab-item,.research-interest,.timeline-item,
+  .resource-card,.article-card,.focus-item,.btn,.site-logo{
+    transition:none !important;
+  }
+  .program-card:hover,.belief-card:hover,.module-card:hover,.learn-item:hover,
+  .cert-item:hover,.whatido-card:hover,.join-step:hover,.trainer-card:hover,
+  .collab-item:hover,.timeline-item:hover,.resource-card:hover,.article-card:hover,
+  .focus-item:hover{transform:none}
+}
