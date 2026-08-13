@@ -3357,6 +3357,7 @@ order:6;
 .hero-buttons{
 justify-content:flex-start;
 margin-top:10px;
+order:7;
 }
 
 /* keywords row inside hero */
@@ -3594,4 +3595,44 @@ html[dir="ltr"] .section-subtitle::after {
 @media (max-width:640px){
 .modal-box{max-height:92vh;border-radius:16px}
 .modal-head,.modal-body,.modal-foot{padding-inline:1.2rem}
+}
+.modal-overlay.modal-open{opacity:1;visibility:visible}
+.modal-box{background:#fff;border-radius:20px;width:100%;max-width:760px;max-height:86vh;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 24px 60px rgba(12,25,28,.3);transform:translateY(16px) scale(.98);transition:transform .25s ease}
+.modal-overlay.modal-open .modal-box{transform:translateY(0) scale(1)}
+.modal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;padding:1.6rem 1.8rem 1rem;border-bottom:1px solid rgba(15,118,110,.15)}
+.modal-head .section-label{display:inline-flex;align-items:center;gap:.4rem;background:rgba(184,227,209,.5);color:var(--emerald-dark);font-size:.8rem;font-weight:700;padding:.35rem .9rem;border-radius:999px;margin-bottom:.6rem}
+.modal-head h3{color:var(--emerald-dark);font-size:1.2rem;line-height:1.6;margin:0}
+.modal-close{background:transparent;border:1px solid rgba(15,118,110,.2);color:var(--emerald-dark);width:38px;height:38px;border-radius:50%;display:grid;place-items:center;cursor:pointer;flex-shrink:0;transition:background .2s}
+.modal-close:hover{background:rgba(15,118,110,.1)}
+.modal-body{padding:1.2rem 1.8rem;overflow-y:auto;line-height:2;text-align:justify}
+.modal-body p{margin:0;font-size:1rem;color:#232931}
+.modal-foot{padding:1rem 1.8rem 1.5rem;border-top:1px solid rgba(15,118,110,.15);display:flex;justify-content:flex-end}
+.modal-foot .btn{display:inline-flex;align-items:center;gap:.5rem}
+@media (max-width:640px){
+.modal-box{max-height:92vh;border-radius:16px}
+.modal-head,.modal-body,.modal-foot{padding-inline:1.2rem}
+}
+
+/* ================= v22 VISUAL REFINEMENT ================= */
+.hero-cred{color:var(--emerald);font-weight:600;font-size:1rem;letter-spacing:.2px;margin:.6rem 0 .9rem;order:4}
+@keyframes profileFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+.hero-split .profile-wrapper img, .profile-wrapper img{animation:profileFloat 4.6s ease-in-out infinite !important;will-change:transform !important}
+@media (prefers-reduced-motion:reduce){.profile-wrapper img{animation:none}}
+.belief-num{display:block;font-size:.85rem;font-weight:800;color:var(--emerald);letter-spacing:2px;margin-bottom:.4rem;opacity:.85}
+.research-interests{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.4rem}
+.research-interest{display:inline-flex;align-items:center;gap:.45rem;background:#fff;border:1px solid rgba(15,118,110,.18);border-radius:999px;padding:.5rem 1rem;font-size:.88rem;font-weight:600;color:var(--emerald-dark);box-shadow:0 4px 10px rgba(17,94,89,.05)}
+.research-interest i{width:16px;height:16px;color:var(--emerald)}
+.research-meta{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1.1rem;padding-top:1rem;border-top:1px dashed rgba(15,118,110,.25);font-size:.9rem;color:#4a5568}
+.research-meta strong{color:var(--emerald-dark)}
+.program-tags{font-size:.8rem;font-weight:700;color:var(--emerald);letter-spacing:.5px;margin-top:.45rem}
+.contact-areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.8rem;margin-top:1.4rem}
+.contact-areas span{display:inline-flex;align-items:center;gap:.55rem;background:rgba(247,241,231,.6);border:1px solid rgba(15,118,110,.15);border-radius:12px;padding:.7rem 1rem;font-size:.88rem;font-weight:600;color:var(--emerald-dark)}
+.contact-areas i{width:17px;height:17px;color:var(--emerald)}
+.footer-tagline{color:var(--emerald);font-weight:600;font-size:.85rem;letter-spacing:.5px;opacity:.85}
+.placeholder-note{font-size:.9rem;opacity:.75;margin-top:.6rem}
+.signature-wave{position:relative}
+.signature-wave::after{content:"";position:absolute;bottom:-24px;left:0;right:0;height:34px;pointer-events:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='34' viewBox='0 0 1440 34' preserveAspectRatio='none'%3E%3Cpath d='M0 17 Q 180 0, 360 14 T 720 18 T 1080 13 T 1440 17 V 34 H 0 Z' fill='rgba(15,118,110,0.07)'/%3E%3C/svg%3E") repeat-x;background-size:1440px 34px}
+@media (max-width:768px){
+.hero-cred{font-size:.92rem}
+.research-meta{flex-direction:column;gap:.45rem}
 }
