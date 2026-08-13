@@ -3789,3 +3789,77 @@ to{opacity:1;transform:scale(1)}
 }
 
 
+
+/* ============ v31: Distinct section separation + refined program cards ============ */
+/* Soft alternating background palette */
+.tint-mint { background: rgba(184, 227, 209, .22); }
+.cream-bg  { background: var(--cream-soft); }
+.mint-bg   { background: rgba(184, 227, 209, .35); }
+.library-section { background: rgba(184, 227, 209, .18); }
+
+/* Gentle vertical rhythm: slightly more breathing room per section */
+section { border-top: 1px solid rgba(26, 139, 101, .06); }
+section:first-of-type, .hero-section { border-top: none; }
+
+/* Refined program card: layered depth + emerald accent rail */
+.program-card {
+  background: #fff;
+  border: 1px solid rgba(184, 227, 209, .55);
+  border-radius: 18px;
+  box-shadow:
+    0 2px 8px rgba(26, 139, 101, .06),
+    0 12px 28px rgba(26, 139, 101, .07);
+  position: relative;
+  overflow: hidden;
+}
+/* emerald gradient rail on the card edge */
+.program-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  padding: 2px;
+  background: linear-gradient(150deg, rgba(16,108,78,.35), rgba(245,238,224,0));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.program-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 4px 12px rgba(26, 139, 101, .1),
+    0 20px 44px rgba(26, 139, 101, .12);
+  border-color: rgba(16, 108, 78, .25);
+}
+/* icon tile inside the card */
+.program-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, var(--emerald), #267b5e);
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(16, 108, 78, .25);
+  margin-bottom: 14px;
+}
+.program-icon i { color: #fff !important; }
+.program-card .program-status.tag-ready {
+  background: linear-gradient(135deg, rgba(16,108,78,.92), rgba(34,120,90,.92));
+  color: #fff;
+}
+
+/* Research card same family */
+.research-feature {
+  background: #fff;
+  border: 1px solid rgba(184, 227, 209, .55);
+  border-radius: 18px;
+  box-shadow:
+    0 2px 8px rgba(26, 139, 101, .06),
+    0 12px 28px rgba(26, 139, 101, .07);
+}
+.library-card {
+  border-radius: 18px;
+}
