@@ -1,17 +1,18 @@
-# تشخيص ترتيب أزرار التواصل (v55)
+# v55 متابعة — شارات contact-areas
 
-المستخدم: "آخر الصفحة الرئيسيه عند المربعات الصغار يلي تحت بالابيض يلي عند البريد الالكتروني ولنكدان خليهم جنب بعش في واحند تحتهم منظره مو لطيف"
+## الحالة الحالية
+- rows=[4166] → الأربعة في سطر واحد ✓ (CSS الجديد يعمل بعد رفع الإصدار إلى 55)
+- لكن الفحص البصري: النصوص تنقطع بشكل قبيح داخل الشارات ("تطوير" و"المشاريع" مقطوعة بسبب white-space:nowrap + أعمدة ضيقة)
+- السبب: grid 4 أعمدة داخل container 700px + RTL + padding يجعل الأعمدة ~153-190px، والنص الطويل "مبادرات الأثر الاجتماعي" لا يتسع مع icon
 
-الفحص البصري (screenshot من localhost:8000/index.html):
-- قسم contact (.contact-section): شارات contact-areas (4 شارات) موزعة على صفين (3+1) بسبب grid auto-fit minmax(190px,1fr) — "التعاون البحثي/تطوير البرامج/المشاريع المعرفية" سطر أول و"مبادرات الأثر الاجتماعي" سطر ثاني. منظره مو لطيف.
-- contact-buttons: زر البريد و LinkedIn هما جنب بعض فعلاً (display:flex, gap:18px) — ليسوا المشكلة.
-- إذن المشكلة: شارات contact-areas الأربعة تنكسر لصفين — يجب أن تكون في سطر واحد.
+## الحل الصحيح
+- إزالة white-space:nowrap (كانت إضافة خاطئة)
+- استخدام grid-template-columns: repeat(4, max-content) مع justify-content:center؟ لا — الأفضل: flex بدل grid:
+  .contact-areas{display:flex;flex-wrap:wrap;justify-content:center;gap:.8rem;margin-top:1.4rem}
+  هكذا كل شارة تأخذ حجمها الطبيعي ومركزية بدون انقطاع
+- الشارات كانت 3+1 بسبب auto-fit minmax(190px)؛ flex center يعطي كل شاراتها عرضها الطبيعي جنب بعض + يلتف فقط إذا ضاق العرض
+- للموبايل (media 768px): لا شيء إضافي — flex-wrap سيكسرها تلقائيًا بشكل أنيق
 
-الحل:
-1. contact-areas: grid-template-columns: repeat(4, 1fr) desktop (بدلاً من auto-fit) و repeat(2,1fr) على الموبايل
-2. التأكد أن الشارات لا تنكسر (white-space:nowrap إذا لزم)
-3. تنطبق AR (index.html) و EN (en/index.html) — نفس البنية
-
-ملفات:
-- /home/ubuntu/site/style.css: قاعدة 3288 .contact-areas
-- index.html / en/index.html: contact-areas div (سطر 293)
+## الملفات
+- style.css سطر 3288
+- index.html و en/index.html — تم رفع الإصدار إلى 55
