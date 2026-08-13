@@ -1,0 +1,2042 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+Shatha Dweikat | Licensed Social Worker • Empowerment & Social Impact Researcher
+</title>
+
+<link rel="stylesheet" href="style-en.css?v=23">
+
+<script src="https://unpkg.com/lucide@0.468.0"></script>
+
+<!-- ===== SEO & Open Graph ===== -->
+<meta name="description" content="Shatha Dweikat — Licensed Social Worker and researcher in empowerment and social impact, specializing in Corporate Social Responsibility and Sustainable Development, and designer of training programs and knowledge initiatives.">
+<meta name="keywords" content="Shatha Dweikat, Corporate Social Responsibility, CSR, Sustainable Development, Governance, Social Impact">
+<meta name="author" content="Shatha Dweikat">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shathadweikat.github.io/en/">
+<meta property="og:title" content="Shatha Dweikat | Licensed Social Worker • Empowerment & Social Impact Researcher">
+<meta property="og:description" content="Shatha Dweikat — Licensed Social Worker & Social Impact Researcher, specializing in CSR & Sustainable Developmentams and community initiatives.">
+<meta property="og:image" content="https://shathadweikat.github.io/en/images/logo.webp">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shatha Dweikat | Licensed Social Worker • Empowerment & Social Impact Researcher">
+<meta name="twitter:description" content="Shatha Dweikat — Licensed Social Worker & Social Impact Researcher, specializing in CSR & Sustainable Developmentrams.">
+<meta name="twitter:image" content="https://shathadweikat.github.io/en/images/cover.webp">
+<link rel="icon" href="../images/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16.png"><link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png"><link rel="icon" type="image/png" sizes="48x48" href="../images/favicon-48.png"><link rel="apple-touch-icon" href="../images/apple-touch-icon.png"><meta name="theme-color" content="#0F766E">
+<link rel="canonical" href="https://shathadweikat.github.io/en/index.html">
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+
+<header>
+
+<div class="container">
+
+<nav class="navbar">
+
+
+<a href="index.html" class="logo">
+
+<img src="../images/logo.webp" width="120" height="120" alt="Shatha Dweikat Logo">
+
+<span>
+Shatha Dweikat
+</span>
+
+</a>
+
+
+
+<ul class="nav-links" id="navLinks">
+
+
+<li>
+<a href="index.html" class="active">
+Home
+</a>
+</li>
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+
+<li>
+<a href="#programs">
+Programs
+</a>
+</li>
+
+
+<li>
+<a href="#research">
+Research
+</a>
+</li>
+
+
+<li>
+<a href="#library">
+Knowledge Hub
+</a>
+</li>
+
+
+<li>
+<a href="#initiatives">
+Initiatives
+</a>
+</li>
+
+
+<li>
+<a href="#contact" class="nav-cta">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+
+<div class="lang-switch">
+<a href="index.html" class="active">EN</a>
+<a href="../index.html">عربي</a>
+</div>
+
+
+
+<button class="nav-toggle" id="navToggle">
+
+<span></span>
+<span></span>
+<span></span>
+
+</button>
+
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+
+
+
+<main>
+
+
+
+<!-- ================= COVER ================= -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= HERO ================= -->
+
+
+<section class="hero-section signature-wave">
+
+
+<div class="container">
+
+
+
+<div class="hero-card reveal hero-split">
+
+
+
+<div class="profile-wrapper">
+
+
+<img src="../images/profile.webp" width="800" height="800"
+alt="Shatha Dweikat Profile">
+
+
+</div>
+
+
+
+
+<div class="hero-text">
+
+
+
+<h1 class="hero-name-lead">
+
+Shatha 
+<span>
+Dweikat
+</span></h1>
+
+
+
+<h2 class="hero-name-sub">شذا دويكات</h2>
+
+
+
+
+
+<p class="hero-role">Licensed Social Worker (PUSWP)</p>
+<div class="hero-divider"></div>
+<p class="hero-role-en">Licensed Social Worker (PUSWP) | CSR &amp; Sustainable Development Researcher | Empowerment &amp; Social Impact</p>
+<p class="hero-cred">Empowerment &amp; Social Impact Researcher &bull; Master's in CSR &amp; Sustainable Development</p>
+
+<p class="hero-belief">
+
+I believe that building more sustainable communities begins with understanding people and their needs,
+
+and that knowledge and awareness are the foundation for creating genuine positive impact.
+
+</p>
+
+
+
+
+
+<div class="hero-buttons">
+<a href="#research"
+class="btn btn-primary">
+Explore My Research
+</a>
+<a href="about.html"
+class="btn btn-outline">
+Get to Know Me
+</a>
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+<!-- ================= BRAND LINE ================= -->
+
+
+<div class="brand-line hero-keywords">
+
+
+<div class="container">
+
+
+<p>
+RESEARCH • SOCIAL IMPACT • SUSTAINABLE DEVELOPMENT • HUMAN POTENTIAL
+</p>
+
+
+</div>
+
+
+</div>
+<!-- ================= WHAT I DO ================= -->
+
+
+<section class="about-section">
+
+
+<div class="container">
+
+
+
+<div class="section-heading reveal">
+
+
+<span class="section-label">
+
+<i data-lucide="briefcase"></i>
+
+What I Do
+
+</span>
+
+
+
+<h2>
+What I Do
+</h2>
+
+
+<p>
+A path that connects people, knowledge, and impact, across four integrated directions.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="whatido-grid reveal">
+
+
+
+
+<div class="whatido-card">
+
+<i data-lucide="file-text"></i>
+
+<h3>Research</h3>
+
+<p>
+Analyzing social and developmental issues grounded in knowledge and evidence.
+</p>
+
+</div>
+
+
+
+
+<div class="whatido-card">
+
+<i data-lucide="heart-handshake"></i>
+
+<h3>Social Impact</h3>
+
+<p>
+Empowering individuals and communities and contributing to meaningful, sustainable change.
+</p>
+
+</div>
+
+
+
+
+<div class="whatido-card">
+
+<i data-lucide="leaf"></i>
+
+<h3>Sustainable Development</h3>
+
+<p>
+Corporate social responsibility and developing sustainable institutional and community practices.
+</p>
+
+</div>
+
+
+
+
+<div class="whatido-card">
+
+<i data-lucide="lightbulb"></i>
+
+<h3>Learning &amp; Program Design</h3>
+
+<p>
+Developing content and programs that connect knowledge with practical growth and capacity building.
+</p>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+<div class="home-cta reveal">
+
+<a href="about.html" class="btn btn-primary">
+Explore My Full Journey
+
+</a>
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- ================= OLD ABOUT (hidden in v23, now in about.html) ================= -->
+
+
+<div id="v23-hidden" style="display:none">
+
+<section id="about" class="about-section">
+
+
+<div class="container">
+
+
+
+<div class="section-heading reveal">
+
+
+<span class="section-label">
+
+<i data-lucide="user-round"></i>
+
+About
+
+</span>
+
+
+
+<h2>
+From Social Work to Research &amp; Impact
+</h2>
+
+
+<p>
+An academic and professional background that brings together people, knowledge, and sustainable development.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="about-grid">
+
+
+
+
+
+
+<div class="about-content reveal">
+
+
+
+<h3>
+From Social Work to Research &amp; Impact
+</h3>
+
+
+
+
+
+<p>
+
+I am a licensed Social Worker and researcher focused on empowerment, social impact, and sustainable development. My path combines an academic foundation in Social Work with a Master's degree in Corporate Social Responsibility and Sustainable Development, along with a continuous commitment to research, learning, and designing knowledge programs and content.
+
+</p>
+
+
+
+
+
+<p>
+
+I focus on understanding the relationship between people, institutions, and society — exploring how knowledge can be turned into interventions and practices that are more conscious and sustainable.
+
+</p>
+
+
+
+
+
+
+<h3 class="interest-title">Where I Work</h3>
+
+
+
+
+
+
+<div class="interest-list">
+<div><i data-lucide="users"></i><strong>Human &amp; Social Development</strong><span>Understanding people, social needs, and capacity building</span></div>
+<div><i data-lucide="leaf"></i><strong>CSR &amp; Sustainability</strong><span>Institutional responsibility and sustainable development practices</span></div>
+<div><i data-lucide="search"></i><strong>Research &amp; Knowledge</strong><span>Research, analysis, and turning knowledge into usable content</span></div>
+<div><i data-lucide="heart-handshake"></i><strong>Empowerment &amp; Social Impact</strong><span>Supporting individuals and communities to participate and create impact</span></div>
+</div>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ================= ACADEMIC PATH ================= -->
+
+
+
+<div class="about-side reveal">
+
+
+
+<div class="academic-card">
+
+
+<h3>
+
+Academic & Professional Path
+
+</h3>
+
+
+
+
+
+<div class="timeline-item">
+
+
+<i data-lucide="graduation-cap"></i>
+
+
+<div>
+
+
+<h4>
+Master's in Corporate Social Responsibility &amp; Sustainable Development
+</h4>
+
+
+<p>
+Al-Quds Open University, Palestine. Specializing in development, community, and institutional responsibility issues.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="timeline-item">
+
+
+<i data-lucide="book-open"></i>
+
+
+<div>
+
+
+<h4>
+Bachelor's in Social Work &amp; Family Studies
+</h4>
+
+
+<p>
+Al-Quds Open University, Palestine. Building a knowledge foundation for understanding social issues and community needs.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="timeline-item">
+
+
+<i data-lucide="badge-check"></i>
+
+
+<div>
+
+
+<h4>
+Member, Palestinian Union of Social Workers &amp; Psychologists (PUSWP)
+</h4>
+
+
+<p>
+Member of the General Assembly of the Palestinian Union of Social Workers &amp; Psychologists (PUSWP), with a licensed Social Worker practice.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="timeline-item">
+
+
+<i data-lucide="mic"></i>
+
+
+<div>
+
+
+<h4>
+Developing Training & Communication Skills
+</h4>
+
+
+<p>
+Through training in public speaking, communication, and content development.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+<!-- ================= VISION & MISSION (moved to about.html in v23) ================= -->
+
+
+
+<div class="vision-grid reveal">
+
+
+
+
+
+<div class="vision-card">
+
+
+<i data-lucide="eye"></i>
+
+
+
+<h3>
+Vision
+</h3>
+
+
+
+
+<p>
+
+Building knowledge and human spaces that help people discover their potential, understand themselves, and develop their abilities — becoming active partners in creating positive, sustainable change in their communities.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="vision-card">
+
+
+<i data-lucide="target"></i>
+
+
+
+<h3>
+Mission
+</h3>
+
+
+
+
+<p>
+
+We create spaces for learning, growth, and knowledge exchange that empower individuals to discover their potential, develop their abilities, and turn knowledge and awareness into practical steps toward a more conscious and sustainable society.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+<!-- ================= WHAT I BELIEVE (moved to about.html in v23) ================= -->
+
+
+<section class="belief-section">
+
+
+<div class="container">
+
+
+
+<div class="section-heading reveal">
+
+
+<span class="section-label">
+
+<i data-lucide="sparkles"></i>
+What Guides My Work?
+</span>
+
+
+
+<h2>What Guides My Work?</h2>
+
+
+
+<p>
+A professional philosophy that guides my approach to work, research, and impact.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="belief-grid">
+
+
+
+
+
+<div class="belief-card reveal">
+
+
+<i data-lucide="heart-handshake"></i>
+
+
+<span class="belief-num">01</span>
+<h3>Human First</h3>
+
+
+<p>
+Understanding people and their needs is the starting point for any real, sustainable change.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="belief-card reveal">
+
+
+<i data-lucide="lightbulb"></i>
+
+
+<span class="belief-num">02</span>
+<h3>Knowledge into Action</h3>
+
+
+<p>
+The value of knowledge is not in holding it, but in its ability to produce awareness, practice, and impact.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="belief-card reveal">
+
+
+<i data-lucide="sprout"></i>
+
+
+<span class="belief-num">03</span>
+<h3>Continuous Growth</h3>
+
+
+<p>
+Continuous learning is not a phase; it is a practice that accompanies personal and professional development.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="belief-card reveal">
+
+
+<i data-lucide="globe-2"></i>
+
+
+<span class="belief-num">04</span>
+<h3>Impact Beyond Self</h3>
+
+
+<p>
+Change becomes more sustainable when individual growth turns into added value for the community.
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+</div>
+
+<!-- ================= PROGRAMS ================= -->
+
+
+<section id="programs" class="programs-section bg-soft">
+
+
+
+<div class="container">
+
+
+
+<div class="section-heading reveal">
+
+
+<span class="section-label">
+
+<i data-lucide="graduation-cap"></i>
+
+Learning & Programs
+
+</span>
+
+
+
+
+<h2>
+Spaces for Learning & Growth
+</h2>
+
+
+
+
+<p>
+Knowledge-based training programs aimed at building awareness, skills, and capabilities.
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="program-grid">
+
+
+
+
+
+
+<div class="program-card reveal">
+
+
+<div class="program-icon">
+
+<i data-lucide="route"></i>
+
+</div>
+
+
+
+
+<span class="program-status">
+
+Available
+
+</span>
+
+
+
+
+<h3>
+
+رحلة التغيير
+
+<br>
+
+Journey of Change
+
+</h3>
+
+
+
+
+<p>
+
+An educational journey supporting self-awareness, understanding the stages of change, and building practical steps toward personal growth and development.
+
+</p>
+
+
+
+
+
+<div class="program-meta">
+
+
+<span>
+<i data-lucide="book-open"></i>
+Free Program
+</span>
+
+
+
+<span>
+<i data-lucide="languages"></i>
+Arabic
+</span>
+
+
+</div>
+
+
+
+
+
+<a href="en/journey-of-change.html"
+class="btn btn-primary">
+
+Explore the Program
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="program-card reveal">
+
+
+<div class="program-icon">
+
+<i data-lucide="compass"></i>
+
+</div>
+
+
+
+
+<span class="program-status tag-soon">
+
+In Development
+
+</span>
+
+
+
+
+
+<h3>
+
+Fundamentals of Strategic Thinking
+
+</h3>
+
+<p class="program-tags">Strategic Thinking &middot; Vision &middot; Goal Setting &middot; Action</p>
+
+
+
+
+
+<p>
+
+A training program introducing the fundamentals of strategic thinking — from self-understanding and vision building to prioritizing and turning goals into actionable steps.
+
+</p>
+
+
+
+
+
+<div class="program-meta">
+
+
+<span>
+<i data-lucide="book-open"></i>
+Free Program
+</span>
+
+
+<span>
+<i data-lucide="languages"></i>
+Arabic
+</span>
+
+
+</div>
+
+
+
+
+
+<a href="en/course-template.html"
+class="btn btn-outline">
+Coming Soon
+</a>
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= HOME CTA ================= -->
+
+
+<section class="home-cta-section">
+
+
+<div class="container">
+
+
+<div class="home-cta-box reveal">
+
+<h2>Explore My Full Journey</h2>
+
+<p>
+The complete professional story: academic path, focus areas, vision and philosophy, and what I am building.
+</p>
+
+<a href="about.html" class="btn btn-primary">
+Explore My Work
+</a>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- ================= RESEARCH ================= -->
+
+
+<section id="research" class="research-section signature-wave">
+
+
+
+<div class="container">
+
+
+
+<div class="section-heading reveal">
+
+
+<span class="section-label">
+
+<i data-lucide="file-text"></i>
+
+Featured Research
+
+</span>
+
+
+
+<h2>
+Research &amp; Inquiry
+</h2>
+
+
+
+
+<p>
+I explore social and developmental issues through a lens that connects people, institutions, and the environments they work in — with a particular focus on empowerment, governance, sustainability, and resilience in crisis contexts.
+</p>
+<div class="research-interests reveal">
+<div class="research-interest"><i data-lucide="heart-handshake"></i>Social Empowerment</div>
+<div class="research-interest"><i data-lucide="users"></i>Community Development</div>
+<div class="research-interest"><i data-lucide="leaf"></i>CSR &amp; Sustainability</div>
+<div class="research-interest"><i data-lucide="shield-check"></i>Institutional Resilience</div>
+<div class="research-interest"><i data-lucide="landmark"></i>Governance</div>
+<div class="research-interest"><i data-lucide="sparkles"></i>Social Impact</div>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="research-feature reveal">
+
+
+
+<div class="research-header">
+
+
+<span class="research-tag">
+Governance
+</span>
+
+
+<span class="research-tag">
+Higher Education
+</span>
+
+
+<span class="research-tag">
+Institutional Resilience
+</span>
+
+
+</div>
+
+
+
+
+
+
+<h3>
+
+Reshaping Palestinian Higher Education Governance amid Instability:
+An Analytical Study of Institutional Resilience in Complex Crises
+
+</h3>
+
+
+
+
+
+<h4>
+
+Reshaping Palestinian Higher Education Governance under Conditions of Instability:
+An Analytical Study of Institutional Resilience in Universities Facing Compound Crises
+
+</h4>
+
+
+
+
+
+<p>
+
+An analytical study addressing the governance challenges of Palestinian higher education institutions amid compound crises, focusing on institutional resilience and universities' capacity to adapt and respond to changing conditions.
+
+</p>
+
+
+
+
+
+
+<div class="research-actions">
+
+
+
+<a href="#research"
+class="btn btn-primary">Read the Summary
+
+</a>
+
+
+
+
+<a href="../governance-research.pdf"
+target="_blank"
+class="btn btn-outline">
+
+Download the Research (PDF)
+
+</a>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+<!-- ================= ARTICLES ================= -->
+
+
+<section class="articles-section bg-soft">
+
+
+<div class="container">
+
+
+<div class="section-heading reveal">
+
+
+<span class="section-label">
+
+<i data-lucide="pen-line"></i>
+
+Articles & Analysis
+
+</span>
+
+
+
+<h2>
+Articles & Analysis
+</h2>
+
+
+
+<p>
+Readings and analyses on CSR, sustainable development, and human and community issues.
+</p>
+
+
+
+</div>
+
+
+
+
+
+<div class="article-placeholder reveal">
+<i data-lucide="sparkles"></i>
+<h3>
+Analyses &amp; Readings</h3>
+<p>
+Analyses and readings that explore contemporary social and developmental issues, connecting research, CSR, and sustainability.</p>
+<p class="placeholder-note">First original perspectives and articles start here soon.</p>
+<div class="coming-soon-cta">
+<a class="btn btn-outline" href="https://www.linkedin.com/in/shatha-dweikat/" target="_blank" rel="noopener">
+<i data-lucide="linkedin"></i>
+My Analyses on LinkedIn
+</a>
+</div>
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= KNOWLEDGE LIBRARY ================= -->
+
+
+<section id="library" class="library-section">
+
+
+<div class="container">
+
+
+
+<div class="section-heading reveal">
+
+
+<span class="section-label">
+
+<i data-lucide="library"></i>
+
+Knowledge Library
+
+</span>
+
+
+
+
+<h2>
+Knowledge Library
+</h2>
+
+
+
+
+<p>
+Knowledge sources and tools supporting continuous learning, research, and development.
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="library-grid">
+
+
+
+
+
+
+
+<div class="resource-card reveal">
+
+
+<div class="resource-icon">
+
+<i data-lucide="book-open"></i>
+
+</div>
+
+
+
+<h3>
+Corporate Social Responsibility Book
+</h3>
+
+
+
+
+<p>
+
+A knowledge reference on the concept of Corporate Social Responsibility and its role in strengthening the relationship between organizations and society.
+
+</p>
+
+
+
+
+<a href="../csr-book.pdf"
+target="_blank"
+class="resource-link">
+
+Open the Book
+
+<i data-lucide="arrow-left"></i>
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="resource-card reveal">
+
+
+<div class="resource-icon">
+
+<i data-lucide="search"></i>
+
+</div>
+
+
+
+
+<h3>
+Research Methods in the Administrative Sciences
+</h3>
+
+
+
+
+<p>
+
+A reference that helps researchers and students understand the methods and approaches of scientific research in administrative fields.
+
+</p>
+
+
+
+
+<a href="../research-methods.pdf"
+target="_blank"
+class="resource-link">
+
+Open the File
+
+<i data-lucide="arrow-left"></i>
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="resource-card reveal">
+
+
+<div class="resource-icon">
+
+<i data-lucide="file-search"></i>
+
+</div>
+
+
+
+
+<h3>
+Procedural Guide to Scientific Research
+</h3>
+
+
+
+
+<p>
+
+A practical guide that clarifies the steps of preparing scientific research and organizing its stages for researchers and students.
+
+</p>
+
+
+
+
+<a href="../research-guide.pdf"
+target="_blank"
+class="resource-link">
+
+Open the Guide
+
+<i data-lucide="arrow-left"></i>
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="resource-card reveal">
+
+
+<div class="resource-icon">
+
+<i data-lucide="globe"></i>
+
+</div>
+
+
+
+
+<h3>
+Sustainable Development Files
+</h3>
+
+
+
+
+<p>
+
+A collection of knowledge materials and presentations related to sustainable development and developmental issues.
+
+</p>
+
+
+
+
+<a href="../sustainable-development.pdf"
+target="_blank"
+class="resource-link">
+
+Explore the File
+
+<i data-lucide="arrow-left"></i>
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="resource-card reveal">
+
+
+<div class="resource-icon">
+
+<i data-lucide="chart-column"></i>
+
+</div>
+
+
+
+
+<h3>
+Knowledge Presentations & Analyses
+</h3>
+
+
+
+
+<p>
+
+A collection of presentations on development initiatives, change management, and work-environment analysis.
+
+</p>
+
+
+
+
+<a href="../government-development.pdf"
+target="_blank"
+class="resource-link">
+
+Explore the Files
+
+<i data-lucide="arrow-left"></i>
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= INITIATIVES ================= -->
+
+
+<section id="initiatives" class="initiatives-section bg-soft">
+
+
+<div class="container">
+
+
+
+<div class="section-heading reveal">
+
+
+<span class="section-label">
+
+<i data-lucide="sprout"></i>
+
+Initiatives
+
+</span>
+
+
+
+<h2>
+Initiatives & Social Impact
+</h2>
+
+
+
+<p>
+Projects aimed at building knowledge, empowering people, and creating lasting impact.
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="initiative-grid">
+
+
+
+
+
+
+<div class="initiative-card reveal">
+
+
+
+<div class="initiative-logo">
+
+
+<img src="../images/the-mentor-logo.webp" loading="lazy"
+alt="The Mentor Logo">
+
+
+</div>
+
+
+
+
+<h3>
+The Mentor
+</h3>
+
+
+
+
+<p>
+
+A knowledge platform aimed at sharing knowledge, delivering awareness and training content, and building spaces that help individuals discover their potential and develop their abilities.
+
+</p>
+
+
+
+
+<span>
+Knowledge Platform
+</span>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="initiative-card reveal">
+
+
+<div class="initiative-icon">
+
+<i data-lucide="heart"></i>
+
+</div>
+
+
+
+
+<h3>
+خطوة 19 | Step 19
+</h3>
+
+
+
+
+<p>
+
+A community initiative concept in development, focused on supporting learning, growth, and capacity-building opportunities for girls in more vulnerable circumstances.
+
+</p>
+
+
+
+<span>
+Concept in Development
+</span>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= CONTACT ================= -->
+
+
+<section id="contact" class="contact-section">
+
+
+<div class="container">
+
+
+
+<div class="contact-box reveal">
+
+
+
+<span class="section-label">
+
+<i data-lucide="mail"></i>
+
+Contact
+
+</span>
+
+
+
+
+<h2>
+Get in Touch
+</h2>
+
+
+
+
+<p>
+
+For research collaborations, educational projects, and social-impact initiatives.
+
+</p>
+
+
+
+
+
+<div class="contact-buttons">
+
+
+
+<a href="mailto:shatha.dweikat.official@gmail.com" class="contact-btn">
+
+<i data-lucide="mail"></i>
+
+Email
+
+</a>
+
+
+
+
+
+<a href="https://www.linkedin.com/in/shatha-dweikat"
+target="_blank"
+rel="noopener" class="contact-btn">
+
+<i data-lucide="linkedin"></i>
+
+LinkedIn
+
+</a>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= BACK TO TOP ================= -->
+
+
+<a href="#top"
+class="back-to-top"
+aria-label="Back to top">
+
+<i data-lucide="arrow-up"></i>
+
+</a>
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+<footer>
+
+
+<div class="container">
+
+
+<div class="footer-inner">
+<div class="footer-brand">
+<img src="../images/logo.webp" width="52" height="52" alt="Shatha Dweikat">
+<p>Building Knowledge.<br>Creating Sustainable Impact.</p>
+</div>
+
+
+<div class="footer-links">
+<h4>Quick Links</h4>
+<a href="en/about.html">About</a>
+<a href="en/research.html">Research</a>
+<a href="en/projects.html">Programs</a>
+<a href="en/knowledge-hub.html">Knowledge Hub</a>
+<a href="en/contact.html">Contact</a>
+</div>
+<div class="footer-tagline">Research · Social Impact · Sustainable Development</div>
+
+
+<div class="footer-social">
+<h4>Contact</h4>
+<a href="mailto:shatha.dweikat.official@gmail.com">
+<i data-lucide="mail"></i>
+Email
+</a>
+<a href="https://www.linkedin.com/in/shatha-dweikat" target="_blank" rel="noopener">
+<i data-lucide="linkedin"></i>
+LinkedIn
+</a>
+</div>
+
+
+</div>
+
+
+<p class="footer-copy">
+© 2026 Shatha Dweikat. All Rights Reserved.
+</p>
+</footer>
+
+
+
+
+
+
+
+
+<script>
+
+lucide.createIcons();
+
+</script>
+
+
+
+<script src="../script.js"></script>
+
+
+
+</body>
+
+</html>

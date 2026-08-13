@@ -3538,3 +3538,72 @@ transition:all .25s ease;
 }
 .contact-btn:hover{background:var(--emerald);color:#fff;}
 .contact-btn i{width:18px;height:18px;}
+
+/* ============ v24: IMPACT FLOW (From Knowledge to Impact) ============ */
+.impact-flow-section {
+  padding: 64px 0;
+  text-align: center;
+}
+.impact-flow {
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.impact-step {
+  width: 260px;
+  padding: 16px 26px;
+  background: var(--emerald);
+  color: #fff;
+  border-radius: 60px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  box-shadow: 0 6px 18px rgba(15,118,110,0.25);
+  transition: transform .25s ease;
+}
+.impact-step:hover { transform: translateY(-3px); }
+.impact-arrow {
+  color: var(--emerald);
+  opacity: 0.85;
+  height: 26px;
+  display: flex;
+  align-items: center;
+}
+.impact-arrow i { width: 24px; height: 24px; }
+
+/* ============ v24: ABOUT PREVIEW ============ */
+.about-preview-section {
+  padding: 56px 0;
+  background: var(--cream);
+}
+.about-preview-box {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 48px 40px;
+  background: #fff;
+  border-radius: 28px;
+  box-shadow: 0 12px 36px rgba(15,23,42,0.08);
+  border: 1px solid rgba(15,118,110,0.10);
+}
+.about-preview-box .section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--emerald);
+  margin-bottom: 14px;
+}
+.about-preview-box h2 {
+  font-size: 1.9rem;
+  color: var(--charcoal);
+  margin-bottom: 16px;
+}
+.about-preview-box p {
+  color: #4b5563;
+  font-size: 1.02rem;
+  line-height: 1.9;
+  margin-bottom: 26px;
+}

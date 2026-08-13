@@ -1,0 +1,2120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+Shatha Dweikat | Licensed Social Worker • Empowerment & Social Impact Researcher
+</title>
+
+<link rel="stylesheet" href="style.css?v=23">
+
+<script src="https://unpkg.com/lucide@0.468.0"></script>
+
+<!-- ===== SEO & Open Graph ===== -->
+<meta name="description" content="شذا دويكات — أخصائية اجتماعية مزاولة (PUSWP)، ماجستير المسؤولية المجتمعية والتنمية المستدامة، وباحثة في التمكين والأثر الاجتماعي. أعمال بحثية وبرامج تدريبية ومحتوى معرفي.">
+<meta name="keywords" content="شذى دويكات, المسؤولية المجتمعية, CSR, التنمية المستدامة, حوكمة, Shatha Dweikat, sustainable development, social impact">
+<meta name="author" content="Shatha Dweikat | شذا دويكات">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shathadweikat.github.io/">
+<meta property="og:title" content="Shatha Dweikat | Licensed Social Worker • Empowerment & Social Impact Researcher">
+<meta property="og:description" content="شذا دويكات — أخصائية اجتماعية مزاولة، وباحثة في التمكين والأثر الاجتماعي، متخصصة في المسؤولية المجتمعية والتنمية المستدامة.">
+<meta property="og:image" content="https://shathadweikat.github.io/images/logo.webp">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shatha Dweikat | Licensed Social Worker • Empowerment & Social Impact Researcher">
+<meta name="twitter:description" content="شذا دويكات — أخصائية اجتماعية مزاولة وباحثة في التمكين والأثر الاجتماعي، متخصصة في المسؤولية المجتمعية والتنمية المستدامة.">
+<meta name="twitter:image" content="https://shathadweikat.github.io/images/cover.webp">
+<link rel="icon" href="images/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png"><link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"><link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48.png"><link rel="apple-touch-icon" href="images/apple-touch-icon.png"><meta name="theme-color" content="#0F766E">
+<link rel="canonical" href="https://shathadweikat.github.io/">
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+
+<header>
+
+<div class="container">
+
+<nav class="navbar">
+
+
+<a href="index.html" class="logo">
+
+<img src="images/logo.webp" width="120" height="120" alt="Shatha Dweikat Logo">
+
+<span>
+Shatha Dweikat
+</span>
+
+</a>
+
+
+
+<ul class="nav-links" id="navLinks">
+
+
+<li>
+<a href="index.html" class="active">
+الرئيسية
+</a>
+</li>
+<li>
+<a href="about.html">
+من أنا
+</a>
+</li>
+
+
+<li>
+<a href="#programs">
+البرامج
+</a>
+</li>
+
+
+<li>
+<a href="#research">
+الأبحاث
+</a>
+</li>
+
+
+<li>
+<a href="#library">
+مكتبة المعرفة
+</a>
+</li>
+
+
+<li>
+<a href="#initiatives">
+المبادرات
+</a>
+</li>
+
+
+<li>
+<a href="#contact" class="nav-cta">
+تواصل
+</a>
+</li>
+
+
+</ul>
+
+
+<div class="lang-switch">
+<a href="en/index.html">EN</a>
+<a class="active" href="index.html">عربي</a>
+</div>
+
+
+
+<button class="nav-toggle" id="navToggle">
+
+<span></span>
+<span></span>
+<span></span>
+
+</button>
+
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+
+
+
+<main>
+
+
+
+<!-- ================= COVER ================= -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= HERO ================= -->
+
+
+<section class="hero-section signature-wave">
+
+
+<div class="container">
+
+
+
+<div class="hero-card reveal hero-split">
+
+
+
+<div class="profile-wrapper">
+
+
+<img src="images/profile.webp" width="800" height="800"
+alt="Shatha Dweikat Profile">
+
+
+</div>
+
+
+
+
+<div class="hero-text">
+
+
+
+<h1 class="hero-name-en">
+
+Shatha 
+<span>
+Dweikat
+</span></h1>
+
+
+
+<h2 class="hero-name-ar">شذا دويكات</h2>
+
+
+
+
+
+<p class="hero-role">
+أخصائية اجتماعية مزاولة (PUSWP)
+</p>
+<p class="hero-role-en">Licensed Social Worker (PUSWP) | CSR &amp; Sustainable Development Researcher | Empowerment &amp; Social Impact</p>
+<p class="hero-cred">باحثة في التمكين والأثر الاجتماعي والتنمية المستدامة</p>
+
+<div class="hero-divider"></div>
+
+<p class="hero-belief">
+
+أعمل عند تقاطع الخدمة الاجتماعية، المسؤولية المجتمعية، والبحث التنموي؛ بهدف تحويل المعرفة إلى ممارسات تسهم في تمكين الإنسان وبناء أثر اجتماعي مستدام.
+
+</p>
+
+
+
+
+
+<div class="hero-buttons">
+
+
+<a href="#research"
+class="btn btn-primary">
+
+استكشف أبحاثي
+
+</a>
+
+
+
+<a href="about.html"
+class="btn btn-outline">
+
+تعرّف إليّ
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+<!-- ================= BRAND LINE ================= -->
+
+
+<div class="brand-line hero-keywords">
+
+
+<div class="container">
+
+
+<p>
+البحث • الأثر الاجتماعي • التنمية المستدامة • الإمكانات الإنسانية
+</p>
+
+
+</div>
+
+
+</div>
+  <!-- ================= WHAT I DO ================= -->
+
+
+<section class="about-section">
+
+
+<div class="container">
+
+
+
+<div class="section-heading reveal">
+
+
+<span class="section-label">
+
+<i data-lucide="briefcase"></i>
+
+What I Do
+
+</span>
+
+
+
+<h2>
+ما الذي أقوم به
+</h2>
+
+
+<p>
+مسار يجمع بين الإنسان والمعرفة والأثر، في أربعة اتجاهات متكاملة.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="whatido-grid reveal">
+
+
+
+
+<div class="whatido-card">
+
+<i data-lucide="file-text"></i>
+
+<h3>
+البحث
+<br>
+<span>Research</span>
+</h3>
+<p>
+تحليل القضايا الاجتماعية والتنموية بالاستناد إلى المعرفة والأدلة.
+</p>
+
+</div>
+
+
+
+
+<div class="whatido-card">
+
+<i data-lucide="heart-handshake"></i>
+
+<h3>
+الأثر الاجتماعي
+<br>
+<span>Social Impact</span>
+</h3>
+<p>
+تمكين الأفراد والمجتمعات والمساهمة في إحداث تغيير هادف ومستدام.
+</p>
+
+</div>
+
+
+
+
+<div class="whatido-card">
+
+<i data-lucide="leaf"></i>
+
+<h3>
+التنمية المستدامة
+<br>
+<span>Sustainable Development</span>
+</h3>
+<p>
+المسؤولية المجتمعية وتطوير ممارسات مؤسسية ومجتمعية مستدامة.
+</p>
+
+</div>
+
+
+
+
+<div class="whatido-card">
+
+<i data-lucide="lightbulb"></i>
+
+<h3>
+التعلم وتصميم البرامج
+<br>
+<span>Learning &amp; Program Design</span>
+</h3>
+<p>
+تطوير محتوى وبرامج تربط المعرفة بالنمو العملي وبناء القدرات.
+</p>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+<div class="home-cta reveal">
+<a href="about.html" class="btn btn-primary">
+تعرف إلى قصتي كاملة
+</a>
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+<div id="v23-hidden" style="display:none">
+
+
+<section id="about-old-hidden" class="about-section" style="display:none">
+
+
+<div class="container">
+
+
+
+<div class="section-heading reveal">
+
+
+<span class="section-label">
+
+<i data-lucide="user-round"></i>
+
+من أنا
+
+</span>
+
+
+
+<h2>
+من أنا
+</h2>
+
+
+<p>
+من الخدمة الاجتماعية إلى البحث وصناعة الأثر
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="about-grid">
+
+
+
+
+
+
+<div class="about-content reveal">
+
+
+
+<h3>
+من الخدمة الاجتماعية إلى البحث وصناعة الأثر
+</h3>
+
+
+
+
+<p>
+
+أنا أخصائية اجتماعية مزاولة وباحثة مهتمة بقضايا التمكين والأثر الاجتماعي والتنمية المستدامة. يجمع مساري بين خلفية أكاديمية في الخدمة الاجتماعية ودراسات عليا في المسؤولية المجتمعية والتنمية المستدامة، إلى جانب اهتمام متواصل بالبحث والتعلم وتصميم البرامج والمحتوى المعرفي.
+
+</p>
+
+
+
+<p>
+
+أركز على فهم العلاقة بين الإنسان والمؤسسات والمجتمع، واستكشاف السبل التي يمكن من خلالها تحويل المعرفة إلى تدخلات وممارسات أكثر وعيًا واستدامة.
+
+</p>
+
+
+
+<h3 class="interest-title">
+
+أعمل عند تقاطع
+
+</h3>
+
+
+
+
+
+
+<div class="interest-list">
+
+
+
+<div>
+
+<i data-lucide="users"></i>
+
+Human &amp; Social Development
+<span>فهم الإنسان والاحتياجات الاجتماعية وبناء القدرات</span>
+
+</div>
+
+
+
+
+<div>
+
+<i data-lucide="leaf"></i>
+
+CSR &amp; Sustainability
+<span>المسؤولية المؤسسية والممارسات التنموية المستدامة</span>
+
+</div>
+
+
+
+
+
+<div>
+
+<i data-lucide="search"></i>
+
+Research &amp; Knowledge
+<span>البحث والتحليل وتحويل المعرفة إلى محتوى قابل للاستخدام</span>
+
+</div>
+
+
+
+
+
+<div>
+
+<i data-lucide="heart-handshake"></i>
+
+Empowerment &amp; Social Impact
+<span>دعم قدرة الأفراد والمجتمعات على المشاركة وصناعة الأثر</span>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ================= ACADEMIC PATH ================= -->
+
+
+
+<div class="about-side reveal">
+
+
+
+<div class="academic-card">
+
+
+<h3>
+
+الخلفية الأكاديمية والمهنية
+
+</h3>
+
+
+
+
+
+<div class="timeline-item">
+
+
+<i data-lucide="graduation-cap"></i>
+
+
+<div>
+
+
+<h4>
+ماجستير في المسؤولية المجتمعية والتنمية المستدامة
+</h4>
+
+
+<p>
+جامعة القدس المفتوحة، فلسطين. اختصاص في قضايا التنمية، المجتمع، والمسؤولية المؤسسية.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="timeline-item">
+
+
+<i data-lucide="book-open"></i>
+
+
+<div>
+
+
+<h4>
+بكالوريوس في الخدمة الاجتماعية ودراسات الأسرة
+</h4>
+
+
+<p>
+جامعة القدس المفتوحة، فلسطين. بناء أساس معرفي في فهم القضايا الاجتماعية واحتياجات المجتمع.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="timeline-item">
+
+
+<i data-lucide="badge-check"></i>
+
+
+<div>
+
+
+<h4>
+Professional Practice — Licensed Social Worker
+</h4>
+
+
+<p>
+مزاولة مهنة الأخصائي الاجتماعي — الاتحاد الفلسطيني للأخصائيين الاجتماعيين والنفسيين (PUSWP).
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="timeline-item">
+
+
+<i data-lucide="mic"></i>
+
+
+<div>
+
+
+<h4>
+Professional Development
+</h4>
+
+
+<p>
+Training · Communication · Content &amp; Program Design.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+  
+
+
+
+<div class="vision-grid reveal">
+
+
+
+
+
+<div class="vision-card">
+
+
+<i data-lucide="eye"></i>
+
+
+
+<h3>
+الرؤية | Vision
+</h3>
+
+
+
+
+<p>
+
+بناء مساحات معرفية وإنسانية تساعد الإنسان على اكتشاف إمكاناته، فهم ذاته، وتنمية قدراته؛ ليصبح شريكاً فاعلاً في صناعة تغيير إيجابي ومستدام داخل مجتمعه.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="vision-card">
+
+
+<i data-lucide="target"></i>
+
+
+
+<h3>
+الرسالة | Mission
+</h3>
+
+
+
+
+<p>
+
+نصنع مساحات للتعلم والنمو وتبادل المعرفة، نُمكّن من خلالها الأفراد من اكتشاف إمكاناتهم، تطوير قدراتهم، وتحويل المعرفة والوعي إلى خطوات عملية تسهم في بناء مجتمع أكثر وعياً واستدامة.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+  
+
+
+<section class="belief-section">
+
+
+<div class="container">
+
+
+
+<div class="section-heading reveal">
+
+
+<span class="section-label">
+
+<i data-lucide="sparkles"></i>
+
+فلسفتي
+
+</span>
+
+
+
+<h2>
+ما الذي يوجّه عملي؟
+</h2>
+
+
+<p>
+فلسفة مهنية تحكم نهجي في العمل والبحث وصناعة الأثر.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="belief-grid">
+
+
+
+
+
+<div class="belief-card reveal">
+
+
+<i data-lucide="heart-handshake"></i>
+
+
+<span class="belief-num">01</span>
+<h3>Human First — الإنسان أولًا</h3>
+
+<p>
+فهم الإنسان واحتياجاته هو نقطة البداية لأي تغيير حقيقي ومستدام.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="belief-card reveal">
+
+
+<i data-lucide="lightbulb"></i>
+
+
+<span class="belief-num">02</span>
+<h3>Knowledge into Action — المعرفة تتحول إلى ممارسة</h3>
+
+<p>
+قيمة المعرفة لا تكتمل بمجرد امتلاكها، بل بقدرتها على إنتاج وعي وممارسة وأثر.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="belief-card reveal">
+
+
+<i data-lucide="sprout"></i>
+
+
+<span class="belief-num">03</span>
+<h3>Continuous Growth — النمو عملية مستمرة</h3>
+
+<p>
+التعلم المستمر ليس مرحلة، بل ممارسة ترافق التطور الشخصي والمهني.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="belief-card reveal">
+
+
+<i data-lucide="globe-2"></i>
+
+
+<span class="belief-num">04</span>
+<h3>Impact Beyond Self — الأثر يتجاوز الفرد</h3>
+
+<p>
+يصبح التغيير أكثر استدامة عندما يتحول النمو الفردي إلى قيمة مضافة للمجتمع.
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= PROGRAMS ================= -->
+
+
+<section id="programs" class="programs-section bg-soft">
+
+
+
+<div class="container">
+
+
+
+<div class="section-heading reveal">
+
+
+<span class="section-label">
+
+<i data-lucide="graduation-cap"></i>
+
+Learning & Programs
+
+</span>
+
+
+
+
+<h2>
+مساحات للتعلم والنمو
+</h2>
+
+
+
+
+<p>
+برامج تدريبية معرفية تهدف إلى تطوير الوعي والمهارات وبناء القدرات.
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="program-grid">
+
+
+
+
+
+
+<div class="program-card reveal">
+
+
+<div class="program-icon">
+
+<i data-lucide="route"></i>
+
+</div>
+
+
+
+
+<span class="program-status tag-ready">
+
+متاح الآن • Available
+
+</span>
+
+
+
+
+<h3>
+
+رحلة التغيير
+
+<br>
+
+Journey of Change
+
+</h3>
+
+<p class="program-tags">Self-Awareness · Change · Personal Growth</p>
+
+
+
+
+<p>
+
+رحلة تعليمية تهدف إلى دعم الوعي الذاتي، فهم مراحل التغيير، وبناء خطوات عملية نحو النمو والتطور الشخصي.
+
+</p>
+
+
+
+
+
+<div class="program-meta">
+
+
+<span>
+<i data-lucide="book-open"></i>
+Free Program
+</span>
+
+
+
+<span>
+<i data-lucide="languages"></i>
+Arabic
+</span>
+
+
+</div>
+
+
+
+
+
+<a href="journey-of-change.html"
+class="btn btn-primary">
+
+استكشف البرنامج
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="program-card reveal">
+
+
+<div class="program-icon">
+
+<i data-lucide="compass"></i>
+
+</div>
+
+
+
+
+<span class="program-status tag-soon">
+
+قيد التطوير • In Development
+
+</span>
+
+
+
+
+
+<h3>
+
+أساسيات التفكير الاستراتيجي
+
+<br>
+
+Fundamentals of Strategic Thinking
+
+</h3>
+
+<p class="program-tags">Strategic Thinking · Vision · Goal Setting · Action</p>
+
+
+
+
+
+<p>
+
+برنامج تدريبي يعرّف المشاركين بأساسيات التفكير الاستراتيجي، من فهم الذات وبناء الرؤية إلى تحديد الأولويات وتحويل الأهداف إلى خطوات قابلة للتنفيذ.
+
+</p>
+
+
+
+
+
+<div class="program-meta">
+
+
+<span>
+<i data-lucide="book-open"></i>
+Free Program
+</span>
+
+
+<span>
+<i data-lucide="languages"></i>
+Arabic
+</span>
+
+
+</div>
+
+
+
+
+
+<a href="course-template.html"
+class="btn btn-outline">
+
+قريبًا
+
+</a>
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+  <!-- ================= HOME CTA ================= -->
+
+
+<section class="home-cta-section">
+
+
+<div class="container">
+
+
+<div class="home-cta-box reveal">
+
+<h2>اكتشف مساري الكامل</h2>
+
+<p>
+قصة مهنية كاملة: المسار الأكاديمي، مجالات التركيز، الرؤية والفلسفة، وما أعمل على بنائه.
+</p>
+
+<a href="about.html" class="btn btn-primary">
+استكشف عملي
+</a>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- ================= RESEARCH ================= -->
+
+
+<section id="research" class="research-section signature-wave">
+
+
+
+<div class="container">
+
+
+
+<div class="section-heading reveal">
+
+
+<span class="section-label">
+
+<i data-lucide="file-text"></i>
+
+Featured Research
+
+</span>
+
+
+
+<h2>
+البحث والتحليل
+</h2>
+
+
+<p>
+أستكشف القضايا الاجتماعية والتنموية من منظور يربط بين الإنسان، المؤسسات، والبيئة التي يعمل داخلها؛ مع اهتمام خاص بالتمكين، الحوكمة، الاستدامة، والقدرة على الصمود في سياقات الأزمات.
+</p>
+
+<div class="research-interests reveal">
+<div class="research-interest"><i data-lucide="heart-handshake"></i>التمكين الاجتماعي</div>
+<div class="research-interest"><i data-lucide="users"></i>التنمية المجتمعية</div>
+<div class="research-interest"><i data-lucide="leaf"></i>المسؤولية المجتمعية والاستدامة</div>
+<div class="research-interest"><i data-lucide="shield-check"></i>المرونة المؤسسية</div>
+<div class="research-interest"><i data-lucide="landmark"></i>الحوكمة</div>
+<div class="research-interest"><i data-lucide="sparkles"></i>الأثر الاجتماعي</div>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="research-feature reveal">
+
+
+
+<div class="research-header">
+
+
+<span class="research-tag">
+Governance
+</span>
+
+
+<span class="research-tag">
+Higher Education
+</span>
+
+
+<span class="research-tag">
+Institutional Resilience
+</span>
+
+
+</div>
+
+
+
+
+
+
+<h3>
+
+إعادة تشكيل حوكمة التعليم العالي الفلسطيني في ظل عدم الاستقرار:
+دراسة تحليلية لمرونة المؤسسات الجامعية في مواجهة الأزمات المركبة
+
+</h3>
+
+
+
+
+
+<h4>
+
+Reshaping Palestinian Higher Education Governance under Conditions of Instability:
+An Analytical Study of Institutional Resilience in Universities Facing Compound Crises
+
+</h4>
+
+
+
+
+
+<p>
+
+دراسة تحليلية تستكشف قدرة مؤسسات التعليم العالي الفلسطيني على التكيف والاستجابة في ظل الأزمات المركبة، مع التركيز على الحوكمة والمرونة المؤسسية.
+
+</p>
+
+<div class="research-meta">
+<div><strong>المجال:</strong> Governance · Higher Education · Institutional Resilience</div>
+<div><strong>السياق:</strong> فلسطين</div>
+<div><strong>النوع:</strong> بحث تحليلي</div>
+</div>
+
+
+
+
+
+
+<div class="research-actions">
+
+
+
+<a href="research.html"
+class="btn btn-primary">قراءة الملخص
+
+</a>
+
+
+
+
+<a href="governance-research.pdf"
+target="_blank"
+class="btn btn-outline">
+
+تحميل البحث PDF
+
+</a>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+<!-- ================= ARTICLES ================= -->
+
+
+<section class="articles-section bg-soft">
+
+
+<div class="container">
+
+
+<div class="section-heading reveal">
+
+
+<span class="section-label">
+
+<i data-lucide="pen-line"></i>
+
+Articles & Analysis
+
+</span>
+
+
+
+<h2>
+المقالات والتحليلات
+</h2>
+
+
+
+<p>
+قراءات وتحليلات حول المسؤولية المجتمعية، التنمية المستدامة، وقضايا الإنسان والمجتمع.
+</p>
+
+
+
+</div>
+
+
+
+
+
+<div class="article-placeholder reveal">
+<i data-lucide="sparkles"></i>
+<h3>
+تحليلات وقراءات
+</h3>
+<p>
+تحليلات وقراءات تستكشف القضايا الاجتماعية والتنموية المعاصرة، وتربط بين البحث، المسؤولية المجتمعية، والاستدامة.
+</p>
+<p class="placeholder-note">نبدأ هنا بأول الآراء والمقالات الأصلية قريبًا.</p>
+<div class="coming-soon-cta">
+<a class="btn btn-outline" href="https://www.linkedin.com/in/shatha-dweikat/" target="_blank" rel="noopener">
+<i data-lucide="linkedin"></i>
+تحليلاتي على LinkedIn
+</a>
+</div>
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= KNOWLEDGE LIBRARY ================= -->
+
+
+<section id="library" class="library-section">
+
+
+<div class="container">
+
+
+
+<div class="section-heading reveal">
+
+
+<span class="section-label">
+
+<i data-lucide="library"></i>
+
+Knowledge Library
+
+</span>
+
+
+
+
+<h2>
+مكتبة المعرفة
+</h2>
+
+
+
+
+<p>
+مصادر وأدوات معرفية لدعم التعلم والبحث والتطوير المستمر.
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="library-grid">
+
+
+
+
+
+
+
+<div class="resource-card reveal">
+
+
+<div class="resource-icon">
+
+<i data-lucide="book-open"></i>
+
+</div>
+
+
+
+<h3>
+كتاب المسؤولية المجتمعية
+</h3>
+
+
+
+
+<p>
+
+مرجع معرفي حول مفهوم المسؤولية المجتمعية ودورها في تعزيز العلاقة بين المؤسسات والمجتمع.
+
+</p>
+
+
+
+
+<a href="csr-book.pdf"
+target="_blank"
+class="resource-link">
+
+فتح الكتاب
+
+<i data-lucide="arrow-left"></i>
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="resource-card reveal">
+
+
+<div class="resource-icon">
+
+<i data-lucide="search"></i>
+
+</div>
+
+
+
+
+<h3>
+أساليب البحث العلمي في ميدان العلوم الإدارية
+</h3>
+
+
+
+
+<p>
+
+مرجع يساعد الباحثين والطلاب على فهم أساليب ومناهج البحث العلمي في المجالات الإدارية.
+
+</p>
+
+
+
+
+<a href="research-methods.pdf"
+target="_blank"
+class="resource-link">
+
+فتح الملف
+
+<i data-lucide="arrow-left"></i>
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="resource-card reveal">
+
+
+<div class="resource-icon">
+
+<i data-lucide="file-search"></i>
+
+</div>
+
+
+
+
+<h3>
+الدليل الإجرائي للبحث العلمي
+</h3>
+
+
+
+
+<p>
+
+دليل عملي يوضح خطوات إعداد البحث العلمي وتنظيم مراحله للباحثين والطلاب.
+
+</p>
+
+
+
+
+<a href="research-guide.pdf"
+target="_blank"
+class="resource-link">
+
+فتح الدليل
+
+<i data-lucide="arrow-left"></i>
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="resource-card reveal">
+
+
+<div class="resource-icon">
+
+<i data-lucide="globe"></i>
+
+</div>
+
+
+
+
+<h3>
+ملفات التنمية المستدامة
+</h3>
+
+
+
+
+<p>
+
+مجموعة مواد معرفية وعروض تقديمية مرتبطة بالتنمية المستدامة والقضايا التنموية.
+
+</p>
+
+
+
+
+<a href="sustainable-development.pdf"
+target="_blank"
+class="resource-link">
+
+استكشاف الملف
+
+<i data-lucide="arrow-left"></i>
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="resource-card reveal">
+
+
+<div class="resource-icon">
+
+<i data-lucide="chart-column"></i>
+
+</div>
+
+
+
+
+<h3>
+عروض وتحليلات معرفية
+</h3>
+
+
+
+
+<p>
+
+مجموعة عروض تقديمية حول المبادرات التنموية، إدارة التغيير، وتحليل بيئات العمل.
+
+</p>
+
+
+
+
+<a href="government-development.pdf"
+target="_blank"
+class="resource-link">
+
+استكشاف الملفات
+
+<i data-lucide="arrow-left"></i>
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= INITIATIVES ================= -->
+
+
+<section id="initiatives" class="initiatives-section bg-soft">
+
+
+<div class="container">
+
+
+
+<div class="section-heading reveal">
+
+
+<span class="section-label">
+
+<i data-lucide="sprout"></i>
+
+Initiatives
+
+</span>
+
+
+
+<h2>
+المبادرات والأثر الاجتماعي
+</h2>
+
+
+
+<p>
+مشاريع تهدف إلى بناء المعرفة وتمكين الإنسان وصناعة أثر مستدام.
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="initiative-grid">
+
+
+
+
+
+
+<div class="initiative-card reveal">
+
+
+
+<div class="initiative-logo">
+
+
+<img src="images/the-mentor-logo.webp" loading="lazy"
+alt="The Mentor Logo">
+
+
+</div>
+
+
+
+
+<h3>
+The Mentor
+</h3>
+
+
+
+
+<p>
+منصة معرفية تهدف إلى مشاركة المعرفة وتصميم مساحات للتعلم والنمو وتطوير القدرات.
+</p>
+
+
+
+
+<span>
+Knowledge Platform
+</span>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="initiative-card reveal">
+
+
+<div class="initiative-icon">
+
+<i data-lucide="heart"></i>
+
+</div>
+
+
+
+
+<h3>
+خطوة 19 | Step 19
+</h3>
+
+
+
+
+<p>
+
+مفهوم مبادرة مجتمعية قيد التطوير يركز على دعم فرص التعلم والنمو وبناء القدرات للفتيات في ظروف أكثر هشاشة.
+
+</p>
+
+
+
+<span>
+Concept in Development
+</span>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= CONTACT ================= -->
+
+
+<section id="contact" class="contact-section">
+
+
+<div class="container">
+
+
+
+<div class="contact-box reveal">
+
+
+
+<span class="section-label">
+
+<i data-lucide="mail"></i>
+
+Contact
+
+</span>
+
+
+
+
+<h2>
+لنصنع أثرًا ذا معنى
+</h2>
+
+
+
+<p>
+
+أرحب بالتواصل حول فرص التعاون البحثي، المشاريع التعليمية، تصميم البرامج، والمبادرات المجتمعية ذات الأثر الاجتماعي.
+
+</p>
+
+<div class="contact-areas">
+<span><i data-lucide="file-text"></i>التعاون البحثي</span>
+<span><i data-lucide="graduation-cap"></i>تطوير البرامج</span>
+<span><i data-lucide="book-open"></i>المشاريع المعرفية</span>
+<span><i data-lucide="sparkles"></i>مبادرات الأثر الاجتماعي</span>
+</div>
+
+
+
+
+
+<div class="contact-buttons">
+
+
+
+<a href="mailto:shatha.dweikat.official@gmail.com" class="contact-btn">
+
+<i data-lucide="mail"></i>
+
+البريد الإلكتروني
+
+</a>
+
+
+
+
+
+<a href="https://www.linkedin.com/in/shatha-dweikat"
+target="_blank"
+rel="noopener" class="contact-btn">
+
+<i data-lucide="linkedin"></i>
+
+LinkedIn
+
+</a>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= BACK TO TOP ================= -->
+
+
+<a href="#top"
+class="back-to-top"
+aria-label="Back to top">
+
+<i data-lucide="arrow-up"></i>
+
+</a>
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+<footer>
+
+
+<div class="container">
+
+
+<div class="footer-inner">
+<div class="footer-brand">
+<img src="images/logo.webp" width="52" height="52" alt="Shatha Dweikat">
+<p>Building Knowledge.<br>Creating Sustainable Impact.</p>
+</div>
+
+
+<div class="footer-links">
+<h4>روابط سريعة</h4>
+<a href="about.html">من أنا</a>
+<a href="research.html">الأبحاث</a>
+<a href="projects.html">البرامج</a>
+<a href="knowledge-hub.html">مكتبة المعرفة</a>
+<a href="contact.html">تواصل</a>
+</div>
+<div class="footer-tagline">Research · Social Impact · Sustainable Development</div>
+
+
+<div class="footer-social">
+<h4>تواصل</h4>
+<a href="mailto:shatha.dweikat.official@gmail.com">
+<i data-lucide="mail"></i>
+البريد الإلكتروني
+</a>
+<a href="https://www.linkedin.com/in/shatha-dweikat" target="_blank" rel="noopener">
+<i data-lucide="linkedin"></i>
+LinkedIn
+</a>
+</div>
+
+
+</div>
+
+
+<p class="footer-copy">
+© 2026 Shatha Dweikat. All Rights Reserved.
+</p>
+</footer>
+
+
+
+
+
+
+
+
+<script>
+
+lucide.createIcons();
+
+</script>
+
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+
+</html>
