@@ -1,25 +1,17 @@
-# حالة v50-v51 — استعادة بطاقة رحلة التغيير
+# تشخيص ترتيب أزرار التواصل (v55)
 
-## الحالة الحالية
-- journey-of-change.html + en/journey-of-change.html: تم استعادتها من git (قالب الدورة الخاص بالمستخدمة)
-- projects.html AR و EN: إعادة بناء grid — 4 بطاقات (2 رحلة التغيير "متاح الآن" برابط journey-of-change.html + 2 التفكير الاستراتيجي "قيد التطوير" بزر قريبًا)
+المستخدم: "آخر الصفحة الرئيسيه عند المربعات الصغار يلي تحت بالابيض يلي عند البريد الالكتروني ولنكدان خليهم جنب بعش في واحند تحتهم منظره مو لطيف"
 
-## المشكلة المتبقية في AR فقط (projects.html)
-البنية الفعلية عند الأسطر 96-131:
-- بطاقة 1 (التفكير الاستراتيجي): meta div يغلق عند 98، زر قريبًا 99، </div> 100 — ثم سطر إضافي: 101 زر قريبًا + 102 </div> (مكرر/عائم = div زائدة 1)
-- بطاقة 2 (رحلة التغيير): صحيحة عند 103-126 (زر قريبًا 125 + </div> 126)
-- 129: </div> إضافي آخر؟ في الحقيقة 127-129 أسطر فارغة + </div> (ناتج فائض من v51b)
-إذن AR يحتاج إزالة السطرين 101-102 فقط (زر قريبًا مكرر + إغلاقه) ليصبح متوازنًا: 23/23.
-- EN متوازن 23/23 ✓
+الفحص البصري (screenshot من localhost:8000/index.html):
+- قسم contact (.contact-section): شارات contact-areas (4 شارات) موزعة على صفين (3+1) بسبب grid auto-fit minmax(190px,1fr) — "التعاون البحثي/تطوير البرامج/المشاريع المعرفية" سطر أول و"مبادرات الأثر الاجتماعي" سطر ثاني. منظره مو لطيف.
+- contact-buttons: زر البريد و LinkedIn هما جنب بعض فعلاً (display:flex, gap:18px) — ليسوا المشكلة.
+- إذن المشكلة: شارات contact-areas الأربعة تنكسر لصفين — يجب أن تكون في سطر واحد.
 
-## أوامر التنفيذ المتبقية
-1. حذف السطرين 101-102 من projects.html AR (sed -i '101,102d')
-2. التحقق: grep -c 'program-card' (يجب 4) و div balance 23/23
-3. رفع: git add -A && commit "v51: restore journey-of-change cards in programs" && git push
-4. تنظيف v51.py v51b.py
-5. معاينة browser: localhost:8000/projects.html ثم تسليم
+الحل:
+1. contact-areas: grid-template-columns: repeat(4, 1fr) desktop (بدلاً من auto-fit) و repeat(2,1fr) على الموبايل
+2. التأكد أن الشارات لا تنكسر (white-space:nowrap إذا لزم)
+3. تنطبق AR (index.html) و EN (en/index.html) — نفس البنية
 
-## تقنية
-- server: python3 -m http.server 8000 في /home/ubuntu/site
-- knowledge-hub: نظيفة ✓ (لا Journey ولا Research Insight)
-- CSS style.css?v=41
+ملفات:
+- /home/ubuntu/site/style.css: قاعدة 3288 .contact-areas
+- index.html / en/index.html: contact-areas div (سطر 293)
