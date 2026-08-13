@@ -2417,6 +2417,55 @@ font-weight:700;
 text-decoration:underline;
 }
 
+.initiatives-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:26px;
+margin-top:26px;
+}
+.initiative-card{
+background:linear-gradient(160deg,var(--cream) 0%,white 55%);
+border:1px solid rgba(13,116,96,.12);
+border-radius:var(--radius);
+padding:30px;
+display:flex;
+align-items:flex-start;
+gap:22px;
+transition:
+  transform .35s cubic-bezier(.22,.8,.36,1),
+  box-shadow .35s ease,
+  border-color .35s ease;
+box-shadow:var(--soft-shadow);
+}
+.initiative-card:hover{
+transform:translateY(-6px);
+border-color:rgba(13,116,96,.32);
+box-shadow:0 16px 34px rgba(17,94,89,.14);
+}
+.initiative-icon{
+width:60px;
+height:60px;
+min-width:60px;
+background:var(--mint);
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:var(--emerald-dark);
+}
+.initiative-icon i{width:28px;height:28px}
+.initiative-body h4{
+font-family:var(--heading);
+color:var(--emerald-dark);
+font-size:1.15rem;
+margin-bottom:10px;
+}
+.initiative-body p{
+color:var(--gray);
+margin:0;
+line-height:1.85;
+}
+
 .cert-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
@@ -6037,6 +6086,55 @@ font-weight:700;
 }
 .content-block a:hover{
 text-decoration:underline;
+}
+
+.initiatives-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:26px;
+margin-top:26px;
+}
+.initiative-card{
+background:linear-gradient(160deg,var(--cream) 0%,white 55%);
+border:1px solid rgba(13,116,96,.12);
+border-radius:var(--radius);
+padding:30px;
+display:flex;
+align-items:flex-start;
+gap:22px;
+transition:
+  transform .35s cubic-bezier(.22,.8,.36,1),
+  box-shadow .35s ease,
+  border-color .35s ease;
+box-shadow:var(--soft-shadow);
+}
+.initiative-card:hover{
+transform:translateY(-6px);
+border-color:rgba(13,116,96,.32);
+box-shadow:0 16px 34px rgba(17,94,89,.14);
+}
+.initiative-icon{
+width:60px;
+height:60px;
+min-width:60px;
+background:var(--mint);
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:var(--emerald-dark);
+}
+.initiative-icon i{width:28px;height:28px}
+.initiative-body h4{
+font-family:var(--heading);
+color:var(--emerald-dark);
+font-size:1.15rem;
+margin-bottom:10px;
+}
+.initiative-body p{
+color:var(--gray);
+margin:0;
+line-height:1.85;
 }
 
 .cert-grid{
