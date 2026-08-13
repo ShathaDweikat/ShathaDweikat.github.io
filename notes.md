@@ -1,18 +1,25 @@
-# v55 متابعة — شارات contact-areas
+# حالة v55 — التحقق النهائي
 
-## الحالة الحالية
-- rows=[4166] → الأربعة في سطر واحد ✓ (CSS الجديد يعمل بعد رفع الإصدار إلى 55)
-- لكن الفحص البصري: النصوص تنقطع بشكل قبيح داخل الشارات ("تطوير" و"المشاريع" مقطوعة بسبب white-space:nowrap + أعمدة ضيقة)
-- السبب: grid 4 أعمدة داخل container 700px + RTL + padding يجعل الأعمدة ~153-190px، والنص الطويل "مبادرات الأثر الاجتماعي" لا يتسع مع icon
+## المشكلة السابقة (تم حلها)
+- index.html و en/index.html كانا يحتويان على روابط anchors قديمة: #programs, #research, #library, #contact
+- تم إصلاحها إلى: projects.html#programs, research.html#featured, knowledge-hub.html, index.html#contact
+- رفع: git commit v55d (6168d72) → main
 
-## الحل الصحيح
-- إزالة white-space:nowrap (كانت إضافة خاطئة)
-- استخدام grid-template-columns: repeat(4, max-content) مع justify-content:center؟ لا — الأفضل: flex بدل grid:
-  .contact-areas{display:flex;flex-wrap:wrap;justify-content:center;gap:.8rem;margin-top:1.4rem}
-  هكذا كل شارة تأخذ حجمها الطبيعي ومركزية بدون انقطاع
-- الشارات كانت 3+1 بسبب auto-fit minmax(190px)؛ flex center يعطي كل شاراتها عرضها الطبيعي جنب بعض + يلتف فقط إذا ضاق العرض
-- للموبايل (media 768px): لا شيء إضافي — flex-wrap سيكسرها تلقائيًا بشكل أنيق
+## التحقق البصري (localhost:8000)
+- research.html ✓ موجودة: عنوان الأبحاث، بطاقة بحث الحوكمة، أزرار "قراءة الملخص" و"تحميل PDF" (governance-research.pdf)، أبرز الأبحاث (research-line)، footer
+- projects.html ✓ موجودة: بطاقتان (رحلة التغيير "متاح الآن" + زر استكشف البرنامج يقود journey-of-change.html؛ التفكير الاستراتيجي "قيد التطوير" + قريبًا غير قابل للنقر)، قسم المبادرات المجتمعية
+- journey-of-change.html موجودة (صفحة الدورة — قالب المستخدم)
+- knowledge-hub.html موجودة (بطاقات المكتبة فقط)
+- about.html موجودة (من أنا)
 
-## الملفات
-- style.css سطر 3288
-- index.html و en/index.html — تم رفع الإصدار إلى 55
+## شارات contact-areas
+- CSS v55c: display:flex; flex-wrap:wrap; justify-content:center — الشارات الأربع في سطر واحد متوسّط
+- رفع: v55c (42259c2)
+
+## ملاحظات
+- style.css?v=55 في كل صفحات HTML
+- المستخدم شكت أن "الصفحات راحت" — السبب كان أن Nav الرئيسية كان #anchors فقط؛ الآن كل الروابط تقود للصفحات المستقلة
+
+## المتبقي
+- رفع v55d تم ✓
+- إرسال رسالة نهائية للمستخدم

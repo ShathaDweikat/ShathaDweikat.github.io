@@ -1907,6 +1907,7 @@ margin-bottom:35px;
 
 
 .contact-buttons{
+margin-top:2.4rem;
 
 display:flex;
 
@@ -5532,29 +5533,16 @@ margin-bottom:15px;
 
 
 .contact-box p{
-
 color:var(--gray);
-
 margin-bottom:35px;
-
 }
-
-
-
 .contact-buttons{
-
 display:flex;
-
 justify-content:center;
-
 gap:18px;
-
 flex-wrap:wrap;
-
+margin-top:2.4rem;
 }
-
-
-
 .contact-buttons a{
 
 display:flex;
@@ -7257,10 +7245,10 @@ transition:all .25s ease;
   background: var(--cream, #faf8f2);
   border: 1px solid rgba(20, 120, 100, 0.12);
   border-radius: 14px;
-  padding: 22px;
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
+  padding: 24px;
+  text-align: center;
+}
+.cert-item h4, .cert-item p{ text-align: center;
 }
 .cert-item h4 {
   font-size: 1rem;
@@ -7348,7 +7336,19 @@ transition:all .25s ease;
 .site-logo{transition:transform .4s cubic-bezier(.22,.8,.36,1)}
 .site-logo:hover{transform:scale(1.04)}
 .nav-links a{transition:color .25s ease,transform .25s ease}
-.reveal{will-change:transform,opacity}
+.reveal{will-change:transform,opacity;opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.22,.9,.32,1), transform .8s cubic-bezier(.22,.9,.32,1)}
+.reveal.in-view{opacity:1;transform:none}
+.reveal:nth-child(2){transition-delay:.08s}
+.reveal:nth-child(3){transition-delay:.16s}
+.reveal:nth-child(4){transition-delay:.24s}
+.reveal:nth-child(5){transition-delay:.32s}
+.reveal:nth-child(6){transition-delay:.4s}
+.reveal:nth-child(7){transition-delay:.48s}
+.reveal:nth-child(8){transition-delay:.56s}
+.reveal:nth-child(9){transition-delay:.64s}
+.reveal:nth-child(10){transition-delay:.72s}
+.reveal:nth-child(11){transition-delay:.8s}
+.reveal:nth-child(12){transition-delay:.88s}
 @media (prefers-reduced-motion:reduce){
   .lift,
   .program-card,.belief-card,.module-card,.learn-item,.cert-item,.whatido-card,
