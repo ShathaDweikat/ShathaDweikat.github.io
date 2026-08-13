@@ -1,21 +1,25 @@
-# حالة v42-v49 — صفحات الأقسام المستقلة
+# حالة v50-v51 — استعادة بطاقة رحلة التغيير
 
-## منجز بالكامل
-- research.html + en/research.html: صفحات أبحاث كاملة مع Featured Research ✓
-- projects.html + en/projects.html: بطاقات v31 للبرامج (رحلة التغيير/التفكير الاستراتيجي) + مبادرات مجتمعية ✓
-- knowledge-hub.html + en/knowledge-hub.html: مكتبة مع قسم highlights ✓
-- knowledge-hub: حُذفت بطاقة "رؤية بحثية/استكشف البحث" وبطاقة "رحلة التغيير — الدورة التدريبية" من AR و EN (v49, v49b) ✓
-- index.html + en/index.html: أقسام research/programs/library → بطاقات whatido-grid مختصرة بروابط للصفحات ✓
-- روابط nav: programs→projects.html, research→research.html, library→knowledge-hub.html, contact→index.html#contact ✓
+## الحالة الحالية
+- journey-of-change.html + en/journey-of-change.html: تم استعادتها من git (قالب الدورة الخاص بالمستخدمة)
+- projects.html AR و EN: إعادة بناء grid — 4 بطاقات (2 رحلة التغيير "متاح الآن" برابط journey-of-change.html + 2 التفكير الاستراتيجي "قيد التطوير" بزر قريبًا)
 
-## معاينة بعد v49
-- knowledge-hub AR: تعمل — 3 بطاقات knowledge-highlights (بقيت LinkedIn/Research Insight... في الواقع حُذف Research Insight، بقي ملخص معرفي فقط في grid: 1+2 = 3) — OK.
-- ملاحظة: knowledge-highlights grid فيه الآن بطاقة واحدة فقط (ملخص معرفي) + resource-grid فيه بطاقتان (CSR book + أدلة بحثية). يبدو جيدًا.
+## المشكلة المتبقية في AR فقط (projects.html)
+البنية الفعلية عند الأسطر 96-131:
+- بطاقة 1 (التفكير الاستراتيجي): meta div يغلق عند 98، زر قريبًا 99، </div> 100 — ثم سطر إضافي: 101 زر قريبًا + 102 </div> (مكرر/عائم = div زائدة 1)
+- بطاقة 2 (رحلة التغيير): صحيحة عند 103-126 (زر قريبًا 125 + </div> 126)
+- 129: </div> إضافي آخر؟ في الحقيقة 127-129 أسطر فارغة + </div> (ناتج فائض من v51b)
+إذن AR يحتاج إزالة السطرين 101-102 فقط (زر قريبًا مكرر + إغلاقه) ليصبح متوازنًا: 23/23.
+- EN متوازن 23/23 ✓
 
-## المتبقي الوحيد
-- رفع: git add -A && git commit -m "v49: standalone pages + library cleanup" && git push origin main
-- تسليم النتيجة للمستخدم
+## أوامر التنفيذ المتبقية
+1. حذف السطرين 101-102 من projects.html AR (sed -i '101,102d')
+2. التحقق: grep -c 'program-card' (يجب 4) و div balance 23/23
+3. رفع: git add -A && commit "v51: restore journey-of-change cards in programs" && git push
+4. تنظيف v51.py v51b.py
+5. معاينة browser: localhost:8000/projects.html ثم تسليم
 
 ## تقنية
 - server: python3 -m http.server 8000 في /home/ubuntu/site
-- CSS: style.css?v=41
+- knowledge-hub: نظيفة ✓ (لا Journey ولا Research Insight)
+- CSS style.css?v=41
