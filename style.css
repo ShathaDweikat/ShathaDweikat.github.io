@@ -3268,7 +3268,7 @@ gap:1.4rem;
 margin-top:2.2rem;
 }
 .whatido-card{
-background:linear-gradient(155deg,#f3faf6 0%,rgba(184,227,209,.42) 100%);
+background:linear-gradient(155deg,#e4f3ea 0%,rgba(184,227,209,.75) 100%);
 border:1px solid rgba(15,118,110,.18);
 border-radius:18px;
 padding:1.6rem 1.3rem;
@@ -3278,7 +3278,7 @@ transition:transform .3s ease, box-shadow .3s ease, background .3s ease;
 }
 .whatido-card:hover{
 transform:translateY(-6px);
-background:linear-gradient(155deg,#ecf7f0 0%,rgba(184,227,209,.62) 100%);
+background:linear-gradient(155deg,#d6eee1 0%,rgba(167,218,197,.9) 100%);
 box-shadow:0 18px 36px rgba(17,94,89,.14);
 }
 .whatido-card i{
@@ -3844,4 +3844,62 @@ section:first-of-type, .hero-section { border-top: none; }
 }
 .library-card {
   border-radius: 18px;
+}
+
+/* ================= v33: Featured research as a single horizontal line ================= */
+.research-line{
+  border-radius:20px;
+  border:1px solid rgba(15,118,110,.14);
+  box-shadow:0 2px 8px rgba(26,139,101,.06), 0 14px 30px rgba(26,139,101,.08);
+  background:#fff;
+  display:flex;
+  align-items:stretch;
+  overflow:hidden;
+  padding:0;
+  margin-top:1.5rem;
+}
+.research-line .accent-rail{
+  flex:0 0 auto;
+  width:8px;
+  background:linear-gradient(to bottom, rgba(16,108,78,.9), rgba(184,227,209,.7));
+  order:1;
+}
+[dir="ltr"] .research-line .accent-rail{order:-1}
+.research-line .research-feature{
+  flex:1 1 auto !important;
+  padding:22px 26px !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  border-right:none !important;
+  margin:0;
+  background:transparent;
+}
+.research-line .research-header{display:none}
+.research-line .research-feature{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:22px;
+}
+.research-line .research-feature h3{
+  flex:1 1 420px;
+  font-size:1.2rem;
+  line-height:1.75;
+  margin-bottom:0;
+  min-width:0;
+}
+.research-line .research-feature h4{display:none}
+.research-line .research-feature p{display:none}
+.research-line .research-meta{display:none}
+.research-line .research-actions{
+  display:flex;
+  flex:0 0 auto;
+  gap:10px;
+  align-items:center;
+}
+.research-line .research-actions .btn{padding:.7rem 1.3rem;font-size:.88rem;white-space:nowrap}
+@media (max-width:900px){
+  .research-line{flex-direction:column}
+  .research-line .accent-rail{width:100%;height:8px}
+  .research-line .research-feature{padding:24px 26px}
 }
