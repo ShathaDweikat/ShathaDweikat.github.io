@@ -7532,3 +7532,16 @@ to{opacity:1;transform:scale(1)}
 @media(max-width:800px){.site-footer .footer-grid{grid-template-columns:repeat(2,1fr)}.site-footer .footer-brand{grid-column:1/-1;text-align:center}.site-footer .footer-brand img{margin:0 auto 10px}}
 
 .initiative-logo{width:72px;height:72px;border-radius:18px;overflow:hidden;flex:0 0 72px;background:#fff;box-shadow:0 8px 20px rgba(25,32,74,.12)}.initiative-logo img{width:100%;height:100%;object-fit:cover}.initiative-actions{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}.initiative-body .btn{display:inline-flex;align-items:center;gap:7px}
+
+/* ================= SHARED VISUAL SYSTEM ================= */
+:root{--archive-surface:#fff;--archive-border:rgba(15,118,110,.16);--archive-shadow:0 12px 32px rgba(15,118,110,.08);--archive-shadow-hover:0 18px 42px rgba(15,118,110,.16);--archive-soft:#eef8f4;--archive-soft-strong:#e1f2eb;--archive-radius:20px}
+.archive-card,.program-card,.initiative-card,.content-block{background:var(--archive-surface);border:1px solid var(--archive-border);border-radius:var(--archive-radius);box-shadow:var(--archive-shadow);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.archive-card:hover,.program-card:hover,.initiative-card:hover,.content-block:hover{transform:translateY(-4px);box-shadow:var(--archive-shadow-hover);border-color:rgba(15,118,110,.28)}
+.archive-card{padding:26px}.program-card{padding:28px}.initiative-card{padding:22px;display:flex;align-items:flex-start;gap:18px}.content-block{padding:30px}
+.archive-badge,.archive-keyword{background:var(--archive-soft-strong);color:#176b61;border:1px solid rgba(15,118,110,.14)}
+.archive-badge.status-progress{background:#fff3d6;color:#875c00}.archive-badge.status-development{background:#eef2f7;color:#52606d}.archive-badge.status-completed{background:#dff4e9;color:#176b61}
+.archive-detail{background:var(--archive-soft);border:1px solid rgba(15,118,110,.08);box-shadow:none}.archive-empty{background:var(--archive-soft);border:1px dashed rgba(15,118,110,.28)}
+.btn{border-radius:999px;min-height:44px;padding:11px 20px;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--emerald);color:#fff;box-shadow:0 8px 20px rgba(15,118,110,.2)}.btn-primary:hover{background:var(--emerald-dark);box-shadow:0 12px 26px rgba(15,118,110,.28)}.btn-outline{background:transparent;color:var(--emerald-dark);border:1px solid rgba(15,118,110,.3)}.btn-outline:hover{background:var(--archive-soft);border-color:var(--emerald)}
+.program-icon,.initiative-icon{background:var(--archive-soft);color:var(--emerald-dark);border-radius:16px}.initiative-logo{border:1px solid rgba(15,118,110,.12);box-shadow:0 8px 20px rgba(15,118,110,.12)}
+.site-footer{background:#173f3c}.site-footer .footer-grid{gap:34px}.site-footer .footer-column a:hover{color:#b8e3d1}.site-footer .footer-copy{color:rgba(255,255,255,.72)}
+@media(max-width:760px){.archive-card,.program-card,.content-block{padding:22px}.initiative-card{padding:18px;gap:14px}}
