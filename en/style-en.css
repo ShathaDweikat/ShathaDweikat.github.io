@@ -7245,3 +7245,47 @@ transition:all .25s ease;
   line-height: 1.9;
   margin-bottom: 26px;
 }
+
+/* ===== CONTENT UPDATE v25: certifications merged into About ===== */
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  margin-top: 32px;
+}
+.cert-item {
+  background: var(--cream, #faf8f2);
+  border: 1px solid rgba(20, 120, 100, 0.12);
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.cert-item h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--charcoal, #2a2f2a);
+  margin: 6px 0 8px;
+  line-height: 1.5;
+}
+.cert-item p {
+  font-size: 0.92rem;
+  color: #575f5a;
+  line-height: 1.75;
+  margin: 0;
+}
+.cert-item .cert-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: var(--emerald, #0d7460);
+  background: rgba(20, 120, 100, 0.08);
+  border: 1px solid rgba(20, 120, 100, 0.18);
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+@media (max-width: 760px) {
+  .certs-grid { grid-template-columns: 1fr; }
+}
