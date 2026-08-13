@@ -1,5 +1,14 @@
-# v33 — الحالة
+# v33 — الحالة النهائية
 
-1. مربعات What I Do أصبحت مظللة بالأخضر داخلها (تدرج نعناعي أوضح). تبدو ممتازة ✓
-2. أبرز الأبحاث ما زال يظهر كبطاقة كبيرة — سطر research-line لم يطبق بعد؟ يبدو أن CSS تم لكن البنية: research-line wrapper تم. لكن اللقطة تظهر بطاقة كاملة العرض (padding كبير). السبب: CSS classes قد تكون متعارضة مع .research-feature القديمة (border-right emerald من القاعدة الأصلية، padding:50px من القاعدة القديمة ما زال يسري لأن .research-line .research-feature specificity كافية لكن border-right:none + padding:30px في لقطة لا يبدو مطبق). في اللقطة: البطاقة ما زالت بزاوية مستديرة كبيرة وpadding كبير وborder-right أخضر يمين (بالصور يظهر rail على اليسار لأن RTL). ربما المتصفح استخدم CSS قديم cache؟ عدت للصفحة من جديد. اللقطة: research-tag في أعلى الوسط، العنوان كبير، يبدو مثل القديم مع rail صغير على اليسار. يبدو أن .research-line طبقت جزئياً (الـ accent-rail ظهر على الحافة اليسرى = order -1 في RTL يعمل مع LTR فقط... في RTL يجب أن يكون على اليمين). المشكلة: في RTL العرض العربي rail ظهر على اليسار — يجب عكسه: في RTL يكون order:1 (النهاية اليسرى) أو بدون order لأن RTL يعكس تلقائياً؟ في RTL flex row يبدأ من اليمين، order:-1 يضعه في أقصى اليسار — غير صحيح. يجب: في LTR order:-1 (أقصى اليسار)، في RTL order:1 (أقصى اليسار أيضاً لأن RTL يعكس، rail بدون order سيكون أقصى اليمين... نريده أقصى اليسار). إذن: [dir="rtl"] rail {order: 1} و [dir="ltr"] rail {order: -1}.
-أيضاً يبدو أن القاعدة القديمة .research-feature padding:50px ما زالت تسري — لأن specificity .research-line .research-feature أعلى لكن اللقطة تظهر padding كبير! ربما لم يطبق بعد؟ سأفحص مباشرة.
+## المنجز ✓
+1. مربعات What I Do مظللة بالأخضر من الداخل (تدرج نعناعي واضح) ✓
+2. أبرز الأبحاث أصبح سطرًا أفقيًا واحدًا (.research-line): عنوان عربي + إنجليزي + وصف واحد سطر + زرين، meta مخفية، tags مخفية، rail أخضر متدرج على الجهة اليسرى في RTL (order:1 لـ dir=rtl، order:-1 لـ dir=ltr). specificity مقوّاة بـ !important. ✓
+3. hero-text أصبح متوسّطًا (text-align:center, align-items:center) بنسخة CSS v=33 في كل الصفحات. الصورة الشخصية دائرة كبيرة على اليمين والنص في المنتصف على يسارها. ✓ (في اللقطة: النص تحت بعض في الوسط بجانب الصورة — جيد)
+
+## ملاحظات متبقية
+- رفع git: v33 committed? لا — آخر commit كان v32. يجب: git add -A + commit + push (كان مُقطع سابقًا). sed تم: style.css?v=33 في كل HTML.
+- المستخدم طلب جديد: توسيط نص الهيرو ✓ تم.
+
+## ملفات
+- /home/ubuntu/site/style.css, index.html, en/index.html, about.html, en/about.html
+- v33.py / v33b.py سكربتات التعديل

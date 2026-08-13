@@ -2940,10 +2940,10 @@ border:none !important;
 
 /* text column */
 .hero-text{
-text-align:right;
+text-align:center;
 display:flex;
 flex-direction:column;
-align-items:flex-start;
+align-items:center;
 gap:12px;
 }
 .hero-text h1.hero-name-en{
@@ -2969,6 +2969,8 @@ font-weight:600;
 color:var(--charcoal);
 margin:6px 0 0 !important;
 order:3;
+text-align:center;
+width:100%;
 }
 .hero-role-en{
 font-size:.95rem !important;
@@ -3034,8 +3036,8 @@ html[dir="ltr"] .hero-split{
 grid-template-columns:1fr 1.25fr;
 }
 html[dir="ltr"] .hero-text{
-text-align:left;
-align-items:flex-start;
+text-align:center;
+align-items:center;
 }
 html[dir="ltr"] .hero-buttons{
 justify-content:flex-start;
@@ -3050,8 +3052,8 @@ right:-140px;
 }
 
 html[dir="ltr"] .hero-role{
-text-align:left !important;
-justify-content:flex-start !important;
+text-align:center !important;
+justify-content:center !important;
 }
 html[dir="ltr"] .hero-role .role-dot{
 display:inline;
