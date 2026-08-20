@@ -4079,3 +4079,5 @@ html[dir="rtl"] .nav-dropdown:hover .dropdown-menu,html[dir="rtl"] .nav-dropdown
 .nav-dropdown.open .dropdown-menu{display:block}
 .dropdown-menu a{white-space:normal;padding:8px 10px}
 }
+/* Accessible keyboard focus states */
+.nav-dropdown-toggle:focus-visible,.nav-links a:focus-visible,.nav-toggle:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
